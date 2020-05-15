@@ -158,7 +158,7 @@ const Topbar = props => {
                     onMouseLeave={mouseout3}
                     id="colorstext3"
                   >
-                    Log In
+                    Contact
                   </Typography>
                 </IconButton>
                 <Button
