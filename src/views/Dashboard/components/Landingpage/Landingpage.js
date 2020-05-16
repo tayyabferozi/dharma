@@ -119,21 +119,28 @@ const  mouseout14 = event => {
     
     <Grid container xs={12} align="center" style={{ marginTop: "16vh",zIndex:'3'}}>
       <Grid item xs={1}/>
-          <Grid item xs={10} align="center" style={{background:'white' }}>
+          <Grid item xs={10} align="center">
     <div style={{zIndex:'3'}}>
+      <Grid item xs={6} style={{backgroundColor: "rgba(255,255,255,0.9)",borderRadius:'15px'}}>
             <Typography
               style={{
                 lineHeight: "83px",
                 fontWeight: "600",
                 color: "rgb(31, 42, 75)",
-                fontSize: "70px"
+                fontSize: "70px",
               }}
             >
               Send money to
 
             </Typography>
+            </Grid>
+            <Grid item xs={1}/>
+
+          
+            <Grid item xs={8} style={{backgroundColor: "rgba(255,255,255,0.9)",borderRadius:'15px'}}>
             <Typography
               style={{
+                
                 background:
                   "webkit-linear-gradient(90deg, rgb(87, 34, 255) 0%, rgb(198, 3, 255) 70%)",
                 lineHeight: "83px",
@@ -149,6 +156,10 @@ const  mouseout14 = event => {
             >
               anyone.
             </Typography>
+            
+            
+            
+            
             <Typography
               style={{
                 color: "rgb(31, 42, 75)",
@@ -160,8 +171,12 @@ const  mouseout14 = event => {
             >
               {" "}
               Earn interest
-              <br />
-            </Typography>
+             </Typography>
+            </Grid>
+          
+
+            
+            <Grid item xs={2} style={{backgroundColor: "rgba(255,255,255,0.9)",borderRadius:'15px'}}>
             <Typography
               style={{
                 lineHeight: "83px",
@@ -173,7 +188,10 @@ const  mouseout14 = event => {
             >
               {"from "}
             </Typography>
+              </Grid>
+             
 
+              <Grid item xs={4} style={{backgroundColor: "rgba(255,255,255,0.9)",borderRadius:'15px'}}>
             <Typography
               style={{
                 background:
@@ -192,6 +210,7 @@ const  mouseout14 = event => {
               anywhere.
               <br />
             </Typography>
+            </Grid>
             </div>
             <Grid item xs={12} style={{ marginTop: "6vh" }}>
               <Typography
@@ -243,29 +262,58 @@ const  mouseout14 = event => {
         <Grid container xs={12} style={{marginTop:'-40vh'}}>
           <Grid item xs={10} />
           <Grid item xs={1} align="center">
-            <div id="bubbles" style={{zIndex:"0"}} style={{marginTop:'0vh'}}>
-            <div class="bubble x1" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
-	
-
-    </div>
+            <div id="bubbles" style={{zIndex:"0"}} style={{borderRadius:'24px',marginTop:'0vh'}}>
+            <div class="bubble x2" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
+           <div id="outerContainer">
+            <div id="container">
+              <div class="item">
+              <img src="https://www.kirupa.com/images/orange.png" />
+              </div>
+              <div class="circle c3"></div>
+            </div>
+          </div>
+        </div>
+         <div class="bubble x2" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
+           <div id="outerContainer">
+            <div id="container">
+              <div class="item">
+              <img src="https://www.kirupa.com/images/orange.png" />
+              </div>
+              <div class="circle c3"></div>
+            </div>
+          </div>
+        </div>
               
-              <div class="bubble x2" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
-	
-
-    </div>
-              
-              <div class="bubble x3" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
-	
-
-  </div>
-              <div class="bubble x4" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
-	
-
-  </div>
-              <div class="bubble x5" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
-	
-
-  </div>
+        <div class="bubble x3" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
+           <div id="outerContainer">
+            <div id="container">
+              <div class="item">
+              <img src="https://www.kirupa.com/images/orange.png" />
+              </div>
+              <div class="circle c3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bubble x4" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
+           <div id="outerContainer">
+            <div id="container">
+              <div class="item">
+              <img src="https://www.kirupa.com/images/orange.png" />
+              </div>
+              <div class="circle c3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bubble x5" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
+           <div id="outerContainer">
+            <div id="container">
+              <div class="item">
+              <img src="https://www.kirupa.com/images/orange.png" />
+              </div>
+              <div class="circle c3"></div>
+            </div>
+          </div>
+        </div>
             </div>
           </Grid>
         </Grid>
