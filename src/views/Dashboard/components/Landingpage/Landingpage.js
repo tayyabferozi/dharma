@@ -121,7 +121,7 @@ const  mouseout14 = event => {
       <Grid item xs={1}/>
           <Grid item xs={10} align="center">
     <div style={{zIndex:'3'}}>
-      <Grid item xs={6} style={{backgroundColor: "rgba(255,255,255,0.9)",borderRadius:'15px'}}>
+      <Grid item xs={6} style={{backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 254, 1), rgba(255, 255, 255, 0.7))",borderRadius:'15px'}}>
             <Typography
               style={{
                 lineHeight: "83px",
@@ -137,7 +137,7 @@ const  mouseout14 = event => {
             <Grid item xs={1}/>
 
           
-            <Grid item xs={8} style={{backgroundColor: "rgba(255,255,255,0.9)",borderRadius:'15px'}}>
+            <Grid item xs={8} style={{backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 254, 1), rgba(255, 255, 255, 0.7))",borderRadius:'15px'}}>
             <Typography
               style={{
                 
@@ -176,7 +176,7 @@ const  mouseout14 = event => {
           
 
             
-            <Grid item xs={2} style={{backgroundColor: "rgba(255,255,255,0.9)",borderRadius:'15px'}}>
+            <Grid item xs={2} style={{backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 254, 1), rgba(255, 255, 255, 0.7))",borderRadius:'15px'}}>
             <Typography
               style={{
                 lineHeight: "83px",
@@ -191,7 +191,7 @@ const  mouseout14 = event => {
               </Grid>
              
 
-              <Grid item xs={4} style={{backgroundColor: "rgba(255,255,255,0.9)",borderRadius:'15px'}}>
+              <Grid item xs={4} style={{ backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 254, 1), rgba(255, 255, 255, 0.7))",borderRadius:'15px'}}>
             <Typography
               style={{
                 background:
@@ -259,56 +259,64 @@ const  mouseout14 = event => {
           </Grid>
           <Grid item xs={1}/>
         </Grid>
-        <Grid container xs={12} style={{marginTop:'-40vh'}}>
+        <Grid container xs={10} style={{marginTop:'15vh'}}>
+              <Grid item xs={3}/>
+              <Grid item xs={4} align='center'><Button variant="contained" color="primary" style={{background:'rgb(31, 42, 75)',fontSize:'12px',fontWeight:'600',height:'85px',width:'32vh',borderRadius:'15px'}}><AppleIcon style={{fontSize:'50px',marginTop:'-2vh',paddingRight:'1vh'}}/>Download on the <br/> App Store</Button></Grid>
+              <Grid item xs={4} align='center'><Button variant="contained" color="primary" style={{background:'rgb(31, 42, 75)',fontSize:'12px',height:'85px',fontWeight:'600',width:'32vh',borderRadius:'15px'}}><PlayArrowIcon style={{fontSize:'60px',marginTop:'0vh',paddingRight:'1vh',marginLeft:'-6vh'}}/>Get it on <br/> Google Play</Button></Grid>
+              <Grid item xs={2}/>
+            </Grid>
+            
+        <Grid container xs={12} style={{marginTop:'-60vh'}}>
           <Grid item xs={10} />
           <Grid item xs={1} align="center">
             <div id="bubbles" style={{zIndex:"0"}} style={{borderRadius:'24px',marginTop:'0vh'}}>
-            <div class="bubble x2" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
-           <div id="outerContainer">
-            <div id="container">
-              <div class="item">
-              <img src="https://www.kirupa.com/images/orange.png" />
+            <div class="bubblex2 x2" style={{padding:'2px',zIndex:'-1'}}>
+            <div class="items">
+              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
+              
               </div>
-              <div class="circle c3"></div>
-            </div>
-          </div>
+              <div class='twitter'>
+                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
+              </div>
+          
         </div>
-         <div class="bubble x2" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
-           <div id="outerContainer">
-            <div id="container">
-              <div class="item">
-              <img src="https://www.kirupa.com/images/orange.png" />
+         <div class="bubblex2 x2" style={{padding:'2px',zIndex:'-1'}}>
+         <div class="items">
+              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
+              
               </div>
-              <div class="circle c3"></div>
-            </div>
-          </div>
+              <div class='twitters'>
+                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
+              </div>
         </div>
               
-        <div class="bubble x3" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
-           <div id="outerContainer">
-            <div id="container">
-              <div class="item">
-              <img src="https://www.kirupa.com/images/orange.png" />
+        <div class="bubblex3 x3" style={{padding:'2px',zIndex:'-1'}}>
+        <div class="items">
+              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
+              
               </div>
-              <div class="circle c3"></div>
-            </div>
-          </div>
-        </div>
-        <div class="bubble x4" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
-           <div id="outerContainer">
-            <div id="container">
-              <div class="item">
-              <img src="https://www.kirupa.com/images/orange.png" />
+              <div class='twitters'>
+                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
               </div>
-              <div class="circle c3"></div>
-            </div>
-          </div>
         </div>
-        <div class="bubble x5" style={{border:'2px solid black',padding:'2px',zIndex:'-1'}}>
+        <div class="bubblex4 x4" style={{padding:'2px',zIndex:'-1'}}>
+        <div class="items">
+              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
+              
+              </div>
+              <div class='twitters'>
+                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
+              </div>
+        </div>
+        <div class="bubblex5 x5" style={{padding:'2px',zIndex:'-1'}}>
            <div id="outerContainer">
             <div id="container">
               <div class="item">
-              <img src="https://www.kirupa.com/images/orange.png" />
+              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
+              
+              </div>
+              <div class='twitter'>
+                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
               </div>
               <div class="circle c3"></div>
             </div>
