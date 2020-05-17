@@ -119,15 +119,15 @@ const  mouseout14 = event => {
     
     <Grid container xs={12} align="center" style={{ marginTop: "16vh",zIndex:'3'}}>
       <Grid item xs={1}/>
-          <Grid item xs={10} align="center">
+          <Grid item xs={10} align="center" style={{backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8))"}}>
     <div style={{zIndex:'3'}}>
-      <Grid item xs={6} style={{backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 254, 1), rgba(255, 255, 255, 0.7))",borderRadius:'15px'}}>
+      <Grid item xs={6} style={{}}>
             <Typography
               style={{
                 lineHeight: "83px",
                 fontWeight: "600",
                 color: "rgb(31, 42, 75)",
-                fontSize: "70px",
+                fontSize: "80px",
               }}
             >
               Send money to
@@ -137,7 +137,7 @@ const  mouseout14 = event => {
             <Grid item xs={1}/>
 
           
-            <Grid item xs={8} style={{backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 254, 1), rgba(255, 255, 255, 0.7))",borderRadius:'15px'}}>
+            <Grid item xs={10} >
             <Typography
               style={{
                 
@@ -150,7 +150,7 @@ const  mouseout14 = event => {
                 webkitBackgroundClip: "text",
                 backgroundClip: "text",
                 fontWeight: "600",
-                fontSize: "70px",
+                fontSize: "80px",
                 display: "inline"
               }}
             >
@@ -166,7 +166,7 @@ const  mouseout14 = event => {
                 lineHeight: "83px",
                 fontWeight: "600",
                 display: "inline",
-                fontSize: "70px"
+                fontSize: "80px"
               }}
             >
               {" "}
@@ -176,23 +176,20 @@ const  mouseout14 = event => {
           
 
             
-            <Grid item xs={2} style={{backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 254, 1), rgba(255, 255, 255, 0.7))",borderRadius:'15px'}}>
+            
             <Typography
               style={{
                 lineHeight: "83px",
                 fontWeight: "600",
                 color: "rgb(31, 42, 75)",
-                fontSize: "70px",
+                fontSize: "80px",
                 display: "inline"
               }}
             >
               {"from "}
             </Typography>
-              </Grid>
              
-
-              <Grid item xs={4} style={{ backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 254, 1), rgba(255, 255, 255, 0.7))",borderRadius:'15px'}}>
-            <Typography
+              <Typography
               style={{
                 background:
                   "linear-gradient(63.74deg, rgb(255, 25, 247) 0%, rgb(255, 46, 93) 40%, rgb(255, 200, 7) 87.53%, rgb(230, 185, 116) 122.25%, rgb(230, 185, 116) 122.25%) text",
@@ -203,14 +200,13 @@ const  mouseout14 = event => {
                 webkitBackgroundClip: "text",
                 backgroundClip: "text",
                 fontWeight: "600",
-                fontSize: "70px",
+                fontSize: "80px",
                 display: "inline"
               }}
             >
               anywhere.
-              <br />
+              
             </Typography>
-            </Grid>
             </div>
             <Grid item xs={12} style={{ marginTop: "6vh" }}>
               <Typography
@@ -270,17 +266,8 @@ const  mouseout14 = event => {
           <Grid item xs={10} />
           <Grid item xs={1} align="center">
             <div id="bubbles" style={{zIndex:"0"}} style={{borderRadius:'24px',marginTop:'0vh'}}>
-            <div class="bubblex2 x2" style={{padding:'2px',zIndex:'-1'}}>
-            <div class="items">
-              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
-              
-              </div>
-              <div class='twitter'>
-                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
-              </div>
-          
-        </div>
-         <div class="bubblex2 x2" style={{padding:'2px',zIndex:'-1'}}>
+            
+         <div class="bubblex2 x2" style={{padding:'2px',zIndex:'-1',animationDelay:'2s'}}>
          <div class="items">
               <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
               
@@ -290,7 +277,7 @@ const  mouseout14 = event => {
               </div>
         </div>
               
-        <div class="bubblex3 x3" style={{padding:'2px',zIndex:'-1'}}>
+        <div class="bubblex3 x3" style={{padding:'2px',zIndex:'-1',animationDelay:'4s'}}>
         <div class="items">
               <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
               
@@ -299,7 +286,7 @@ const  mouseout14 = event => {
                 <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
               </div>
         </div>
-        <div class="bubblex4 x4" style={{padding:'2px',zIndex:'-1'}}>
+        <div class="bubblex4 x4" style={{padding:'2px',zIndex:'-1',animationDelay:'6s'}}>
         <div class="items">
               <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
               
@@ -308,7 +295,42 @@ const  mouseout14 = event => {
                 <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
               </div>
         </div>
-        <div class="bubblex5 x5" style={{padding:'2px',zIndex:'-1'}}>
+        <div class="bubblex5 x5" style={{padding:'2px',zIndex:'-1',animationDelay:'8s'}}>
+           <div id="outerContainer">
+            <div id="container">
+              <div class="item">
+              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
+              
+              </div>
+              <div class='twitter'>
+                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
+              </div>
+              <div class="circle c3"></div>
+            </div>
+          </div>
+        </div>
+        <div class="bubblex6 x6" style={{padding:'2px',zIndex:'-1',animationDelay:'20s'}}>
+        <div class="items">
+              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
+              
+              </div>
+              <div class='twitters'>
+                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
+              </div>
+        </div>
+        <div class="bubblex7 x7" style={{padding:'2px',zIndex:'-1',animationDelay:'21s'}}>
+        <div class="items">
+              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
+              
+              </div>
+              <div class='twitters'>
+                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
+              </div>
+        </div>
+        
+        
+        
+        <div class="bubblex8 x8" style={{padding:'2px',zIndex:'-1',animationDelay:'20s',marginTop:'220px'}}>
            <div id="outerContainer">
             <div id="container">
               <div class="item">
