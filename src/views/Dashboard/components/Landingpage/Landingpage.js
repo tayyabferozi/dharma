@@ -208,7 +208,13 @@ const  mouseout14 = event => {
               
             </Typography>
             </div>
-            <Grid item xs={12} style={{ marginTop: "6vh" }}>
+            
+          </Grid>
+          <Grid item xs={1}/>
+        </Grid>
+        <Grid container xs={12} align='center' >
+        <Grid item xs={2} style={{marginLeft:'-4vh'}}/>
+        <Grid item xs={9} style={{ marginTop: "0vh",backgroundImage: "linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8))",height:'15vh',paddingTop:'2vh' }}>
               <Typography
                 style={{
                   display: "inline",
@@ -239,7 +245,7 @@ const  mouseout14 = event => {
               >
                 {" earning 0.7% APR"}
               </Typography>
-            </Grid>
+            
             <Typography
               style={{
                 display: "inline",
@@ -249,16 +255,16 @@ const  mouseout14 = event => {
                 fontWeight: "400"
               }}
             >
-              You don’t need a bank account to use it, and it’s 100% free to
+              <br/>You don’t need a bank account to use it, and it’s 100% free to
               use.
             </Typography>
           </Grid>
           <Grid item xs={1}/>
         </Grid>
-        <Grid container xs={10} style={{marginTop:'15vh'}}>
+        <Grid container xs={10} style={{marginTop:'10vh'}}>
               <Grid item xs={3}/>
               <Grid item xs={4} align='center'><Button variant="contained" color="primary" style={{background:'rgb(31, 42, 75)',fontSize:'12px',fontWeight:'600',height:'85px',width:'32vh',borderRadius:'15px'}}><AppleIcon style={{fontSize:'50px',marginTop:'-2vh',paddingRight:'1vh'}}/>Download on the <br/> App Store</Button></Grid>
-              <Grid item xs={4} align='center'><Button variant="contained" color="primary" style={{background:'rgb(31, 42, 75)',fontSize:'12px',height:'85px',fontWeight:'600',width:'32vh',borderRadius:'15px'}}><PlayArrowIcon style={{fontSize:'60px',marginTop:'0vh',paddingRight:'1vh',marginLeft:'-6vh'}}/>Get it on <br/> Google Play</Button></Grid>
+              <Grid item xs={4} align='center'><Button variant="contained" color="primary" style={{background:'white',fontSize:'12px',height:'85px',fontWeight:'600',width:'32vh',borderRadius:'15px',color:'#6e7898',}}><PlayArrowIcon style={{fontSize:'60px',marginTop:'0vh',paddingRight:'1vh',marginLeft:'-6vh',color:'#6e7898'}}/>Get it on <br/> Google Play</Button></Grid>
               <Grid item xs={2}/>
             </Grid>
             
@@ -330,7 +336,7 @@ const  mouseout14 = event => {
         
         
         
-        <div class="bubblex8 x8" style={{padding:'2px',zIndex:'-1',animationDelay:'20s',marginTop:'220px'}}>
+        <div class="bubblex8 x8" style={{padding:'2px',zIndex:'-1',animationDelay:'20s',marginTop:'50px'}}>
            <div id="outerContainer">
             <div id="container">
               <div class="item">
@@ -348,11 +354,11 @@ const  mouseout14 = event => {
           </Grid>
         </Grid>
         <Grid container xs={12}>
-          <Grid item xs={1} style={{marginLeft:'-10vh'}}/>
+          <Grid item xs={1} style={{marginLeft:'-6vh'}}/>
           <Grid container xs={10}>
             <Grid item xs={6} align='center'>
               <div>
-                    <img  src={require('../../../../assets/carouselphone.png')} ></img>
+                    <img src={require('../../../../assets/carouselphone.png')} ></img>
                     <Carousel dotPosition="left" autoplay style={{marginLeft:'21vh',marginTop:'-35vh'}}>
                       <div style={{}}>
                         <img src={require('../../../../assets/carousel1.png')}></img>
@@ -367,109 +373,45 @@ const  mouseout14 = event => {
                       <img src={require('../../../../assets/carousel1.png')}></img>
                       </div>
                     </Carousel>
-                  {/* <Grid container xs={12}>
-                    <Grid item xs={2} style={{marginLeft:'2.5vh'}}/>
-                    <Grid item xs={3} align='center'>
-                  <Carousel dotPosition='left' style={{borderRadius:'25px',position:'absolute',width:'40vh',marginTop:'-30vh',backgroundImage:'blue'}} dots='false'>
-                    <div>
-                      <Grid container xs={12} style={{position:'absolute',marginTop:'-20vh'}}>
-                        <Grid item xs={0} style={{marginLeft:'2vh'}}/>
-                        <Grid item xs={1}>
-                        <LocalAtmIcon style={{color:'black',marginTop:'8vh',position:'absolute',fontSize:'35px'}}/>
-                        <SupervisedUserCircleIcon style={{position:'absolute',marginTop:'14vh',fontSize:'35px'}} /> 
-                        </Grid>
-                        <Grid item xs={1}/>
-                        <Grid item xs={4} style={{marginTop:'4.5vh'}}>
-                        <Typography
-              style={{
-                background:
-                  "webkit-linear-gradient(90deg, rgb(87, 34, 255) 0%, rgb(198, 3, 255) 70%)",
-                lineHeight: "1px",
-                backgroundImage:
-                  "linear-gradient(63.74deg, rgb(0, 84, 253) -16.64%, rgb(255, 25, 247) 90%, rgb(255, 46, 93) 120%)",
-                color: "transparent",
-                webkitBackgroundClip: "text",
-                backgroundClip: "text",
-                fontWeight: "600",
-                fontSize: "15px",
-                display: "inline"
+                  </div>
+                </Grid>
+            <Grid item xs={1} style={{marginLeft:'0vh'}}/>
+            <Grid container xs={5} align='center'>
+              <Grid item xs={12}>
                 
-              }}
-            >
-              @Ali
-            </Typography>
-            <Typography style={{display:"inline",fontSize:'15px',color: "rgb(110, 120, 152)"}}>{' sent'}<br/></Typography>               
-            <Typography
-              style={{
-                background:
-                  "webkit-linear-gradient(90deg, rgb(87, 34, 255) 0%, rgb(198, 3, 255) 70%)",
-                
-                backgroundImage:
-                  "linear-gradient(63.74deg, rgb(0, 84, 253) -16.64%, rgb(255, 25, 247) 90%, rgb(255, 46, 93) 120%)",
-                color: "transparent",
-                webkitBackgroundClip: "text",
-                backgroundClip: "text",
-                fontWeight: "600",
-                fontSize: "15px",
-                display:'inline'
+            <img style={{marginLeft:'-9vh'}} width='600px' src={require('../../../../assets/countmobile.png')} ></img>
+              </Grid>
+              <Grid container xs={12} style={{marginTop:'-50vh'}}>
+              <Grid item xs={3} style={{marginLeft:'3vh'}}/>
+              <Grid item xs={5}>
+              <Typography style={{border:'2px solid white',borderRadius:'25px',fontSize:'22px',padding:'4px',color:'white',paddingTop:'2vh',paddingBottom:'2vh'}}>Earning 0.7% APR</Typography>
+              </Grid>
+              <Grid item xs={4}/>
+              </Grid>
+              <Grid container xs={12} style={{marginTop:'-34vh'}}>
+                <Grid item xs={3}/>
+                <Grid item xs={5} style={{marginLeft:'-4vh'}}>
+            <Typography style={{display:'inline',fontSize:'50px',paddingRight:'1vh',color:'white'}}>{"$"}</Typography><CountUp start={500.0100000} decimals={6} end={500.999999} duration={1000000} style={{fontSize:'50px',color:'white',display:'inline'}}></CountUp>
             
-              }}
-            >
-              @Abdullah
-            </Typography>
-            <Typography style={{display:"inline",fontSize:'15px',color: "rgb(110, 120, 152)"}}>$400</Typography>
-                        
-                        </Grid>
-                      </Grid>
-                    </div>
-                    <div>
-                      <h3>2</h3>
-                    </div>
-                    <div>
-                      <h3>3</h3>
-                    </div>
-                    <div>
-                      <h3>4</h3>
-                    </div>
-                  </Carousel>
-                  </Grid>
-                  </Grid>  */}
-                </div>
-              
-                      </Grid>
-            <Grid item xs={1}/>
+            </Grid>
+            <Grid item xs={4}/>
+              </Grid>
+            </Grid>
+          </Grid>
+          
+          
+          <Grid container xs={12} style={{marginTop:'67px',marginLeft:'5vh'}}>
+            <Grid item xs={1} style={{marginLeft:'-10vh'}} />
             <Grid item xs={5} align='center'>
-            <img style={{}} width='600px' src={require('../../../../assets/countmobile.png')} ></img>
-            </Grid>
-          </Grid>
-          
-          <Grid container xs={12} align='center' style={{marginTop:'-60vh',color:'white'}}>
-            <Grid item xs={8} style={{marginLeft:"0vh"}} />
-            <Grid item xs={2} align='center'>
-              
-            <Typography style={{border:'2px solid white',borderRadius:'25px',fontSize:'22px',padding:'4px',color:'white',paddingTop:'2vh',paddingBottom:'2vh'}}>Earning 0.7% APR</Typography>
-            
-            </Grid>
-          </Grid>
-          
-          <Grid container xs={12} align='center' style={{marginTop:'-40vh',color:'white'}}>
-            <Grid item xs={6}/>
-            <Grid item xs={6}>
-              <Typography style={{Position:'absolute',display:'inline',color:'white',fontSize:'45px'}}>{"$ "}</Typography>
-            <CountUp start={500.000000} decimals={6} end={500.999999} duration={1000000} style={{fontSize:'50px'}}></CountUp>
-            </Grid>
-          </Grid>
-          <Grid container xs={12} style={{marginTop:'67px'}}>
-            <Grid item xs={6} align='center'>
               <Typography style={{color:'rgb(37, 48, 86)',fontSize:'46px',fontWeight:'600'}}>Send & Receive</Typography>              
             </Grid>
-            <Grid item xs={6} align='center'>
+            <Grid item xs={5} align='center' style={{marginLeft:'12vh'}}>
               <Typography style={{color:'rgb(37, 48, 86)',fontSize:'46px',fontWeight:'600'}}>Earn & Save</Typography>
             </Grid>
           </Grid>
-          <Grid container xs={12} align='center' style={{marginTop:'50px'}}>
-          
-            <Grid item xs={5} style={{marginLeft:'4vh'}}>
+          <Grid container xs={12} align='center' style={{marginTop:'50px',marginLeft:'5vh'}}>
+              <Grid item xs={1} style={{marginLeft:'-10vh'}}/>
+            <Grid item xs={5} style={{marginLeft:'-5vh'}}>
               <Typography style={{lineHeight:'32px',color:'rgb(110, 120, 152)',fontSize:'20px'}}>Send USD to your friends and family anywhere in the world — even if they don’t have a bank account.</Typography>
             </Grid>
             <Grid item xs={1}/>
