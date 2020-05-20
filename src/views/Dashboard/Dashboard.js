@@ -16,7 +16,7 @@ const Dashboard = () => {
   const classes = useStyles();
 
   return (
-    <div>
+    <div style={{background:'white'}}>
     <Landingpage/>
     
     </div>

@@ -72,7 +72,7 @@ const Topbar = props => {
   
 
   return (
-    <div className={classes.root}>
+    <div className={classes.root} style={{background:'white'}}>
       <Grid container xs={12}>
         <AppBar
           position="static"
