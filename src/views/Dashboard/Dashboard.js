@@ -8,7 +8,6 @@ import {
 
 const useStyles = makeStyles(theme => ({
   root: {
-    padding: theme.spacing(4)
   }
 }));
 
@@ -16,7 +15,7 @@ const Dashboard = () => {
   const classes = useStyles();
 
   return (
-    <div style={{background:'white'}}>
+    <div style={{backgroundColor:'white'}}>
     <Landingpage/>
     
     </div>

@@ -72,8 +72,8 @@ const Topbar = props => {
   
 
   return (
-    <div className={classes.root} style={{background:'white'}}>
-      <Grid container xs={12}>
+    <div className={classes.root} style={{backgroundColor:'white'}}>
+      <Grid container xs={12} style={{backgroundColor:'white'}}>
         <AppBar
           position="static"
           style={{ background: "white", paddingBottom: "3vh" }}

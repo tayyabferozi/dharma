@@ -33,18 +33,15 @@ const Main = props => {
 
   return (
     <div
+    style={{backgroundColor:'white'}}
       className={clsx({
         [classes.root]: true,
         [classes.shiftContent]: isDesktop
       })}
     >
       <Topbar onSidebarOpen={handleSidebarOpen} />
-      {/* <Sidebar
-        onClose={handleSidebarClose}
-        open={shouldOpenSidebar}
-        variant={isDesktop ? 'persistent' : 'temporary'}
-      /> */}
-      <main className={classes.content}>
+      
+      <main className={classes.content} style={{backgroundColor:'white'}}>
         {children}
         <Footer />
       </main>
