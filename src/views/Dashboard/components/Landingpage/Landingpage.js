@@ -95,7 +95,7 @@ const  mouseout14 = event => {
 
   return (
     <Grid container xs={12} align="center" class='MainContainer' style={{background:'white'}}>
-      <div style={{width:'120vh',height:'50vh',position:'absolute',left:'42vh',backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,1))",zIndex:"4"}}></div>
+      <div style={{width:'120vh',height:'50vh',position:'absolute',left:'42vh',backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,1))",zIndex:"4",boxShadow: "15px 20px 25px 30px white"}}></div>
       <Grid container xs={12}>
       <Grid container xs={12}>
         <Grid item xs={3} style={{marginLeft:"8vh"}}/>
@@ -134,7 +134,7 @@ const  mouseout14 = event => {
       </Grid>
       <Grid container xs={12}>
         <Grid item xs={1} style={{marginLeft:'8vh'}}/>
-        <Grid item xs={9} style={{zIndex:'4',backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,1))"}}>
+        <Grid item xs={9} style={{zIndex:'4',backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,1))",boxShadow: "15px 20px 15px white"}}>
           <Typography class='DharmaIsLimitless'>
             Dharma is a limitless,borderless way to send and receive USD -
             all while
