@@ -5,7 +5,7 @@ import { makeStyles } from '@material-ui/styles';
 import IconButton from "@material-ui/core/IconButton";
 import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
-
+import MobileCarousel from "./MobileCarousel";
 import { Card, CardContent, Grid, Typography, Avatar } from '@material-ui/core';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import AppleIcon from '@material-ui/icons/Apple';
@@ -95,40 +95,34 @@ const  mouseout14 = event => {
 
   return (
     <Grid container xs={12} align="center" class='MainContainer' style={{background:'white'}}>
-      <Grid item xs={2}/>
-      <Grid item xs={8}>
-        
-      <div 
-        style={{
-          height:'40vh',
-          boxShadow: "0px 0px 15px 15px white",backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,1))",
-          zIndex:"4",
-          width:'122vh',
-          borderRadius:'15px',
-          height:'44vh',
-          marginLeft:'2vh',
-          position:'absolute',
-          }}
-        />
+      <Grid item xs={4}/>
+      <Grid item xs={4}>
       </Grid>
       <Grid item xs={2}/>
-      <div 
-      >
-    </div>
-      <Grid container xs={12}>
       
       <Grid container xs={12}>
-        <Grid item xs={2} style={{marginLeft:"12vh"}}/>
-        <Grid item xs={6} style={{zIndex:'4'}}>
+      
+      <Grid container xs={1} style={{marginLeft:'15vh'}}/>
+      <Grid item xs={8} 
+        style={{
+          backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,1))",
+          zIndex:'4',
+          boxShadow: "0px 0px 15px 15px white",
+          borderRadius:'25px',
+        }}
+      > 
+        
+      
+        <Grid item xs={3} style={{marginLeft:"2vh"}}/>
+        <Grid item xs={9} style={{zIndex:'4'}}>
         <Typography class='SendMoneyTo'>
           Send money to
         </Typography>
         </Grid>
-        <Grid item xs={3}/>
-      </Grid>
+        <Grid item xs={1}/>
+      
       <Grid container xs={12} style={{marginTop:'-16vh'}}>
-        <Grid item xs={1} style={{marginLeft:'12vh'}}/>
-        <Grid item xs={8} style={{zIndex:'4'}}>
+        <Grid item xs={12} style={{zIndex:'4'}}>
           <Typography class='anyone'>
             anyone.
           </Typography>
@@ -137,11 +131,11 @@ const  mouseout14 = event => {
             Earn interest
           </Typography>
         </Grid>
-        <Grid item xs={3}/>
-      </Grid>
+    
+  
       <Grid container xs={12} style={{marginTop:'-7vh'}}>
         <Grid item xs={3}/>
-        <Grid item xs={6} style={{zIndex:'4'}}>
+        <Grid item xs={12} style={{zIndex:'4'}}>
         <Typography class='From'>
               {"from "}
         </Typography > 
@@ -149,29 +143,21 @@ const  mouseout14 = event => {
           anywhere.
         </Typography>  
         </Grid>
-        <Grid item xs={3}/>
       </Grid>
       </Grid>
-      <div 
-        style={{
-          position:'absolute',
-          borderRadius:'15px',
-          width:'146vh',
-          left:'30vh',
-          height:'11vh',
-          boxShadow: "0px 0px 15px 15px white",
-          backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,1))",
-          zIndex:'4',
-          
-          
-        }}
-        />
+      <Grid item xs={2}/>
+      </Grid>
+        </Grid>
       <Grid container xs={12}>
         <Grid item xs={1} style={{marginLeft:'8vh'}}/>
         <Grid item xs={9} 
           style={{
-              zIndex:'4'
-    
+            
+              backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,1))",
+              zIndex:'4',
+              boxShadow: "0px 0px 15px 15px white",
+              borderRadius:'25px',
+          
             }}
         >
           
@@ -197,9 +183,9 @@ const  mouseout14 = event => {
       </Grid>
       <Grid container xs={12}>
         <Grid container xs={12} style={{marginTop:'8vh'}}>
-          <Grid item xs={3} style={{}}/>
-          <Grid container xs={5} align='right'>
-            <Grid item xs={1}/>
+          <Grid item xs={3} style={{marginLeft:'3vh'}}/>
+          <Grid container xs={5} align='center'>
+            <Grid item xs={2}/>
             <Grid item xs={5}>
               <Button variant="contained" color="primary" 
                 style={{
@@ -232,8 +218,7 @@ const  mouseout14 = event => {
                 </Grid>
               </Button>
             </Grid>
-            <Grid item xs={1} style={{marginLeft:'4vh'}}/>
-            <Grid item xs={4} align='left'>
+            <Grid container xs={5} align='center'>
               <Button variant="contained" color="primary" 
                 style={{
                   background:'white',
@@ -269,7 +254,7 @@ const  mouseout14 = event => {
           <Grid item xs={1} align="center">
             <div id="bubbles" style={{zIndex:"-10"}} style={{borderRadius:'24px',marginTop:'0vh',zIndex:'-10'}}>
             
-         <div class="bubblex2 x2" style={{padding:'2px',zIndex:'1',animationDelay:'0s'}}>
+         <div class="bubblex2 x2" style={{padding:'2px',zIndex:'1',animationDelay:'2'}}>
          <div class="items">
               <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
               
@@ -279,7 +264,7 @@ const  mouseout14 = event => {
               </div>
         </div>
               
-        <div class="bubblex3 x3" style={{padding:'2px',zIndex:'1',animationDelay:'2s'}}>
+        <div class="bubblex3 x3" style={{padding:'2px',zIndex:'1',animationDelay:'4s'}}>
         <div class="items">
               <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
               
@@ -288,7 +273,7 @@ const  mouseout14 = event => {
                 <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
               </div>
         </div>
-        <div class="bubblex4 x4" style={{padding:'2px',zIndex:'1',animationDelay:'4s'}}>
+        <div class="bubblex4 x4" style={{padding:'2px',zIndex:'1',animationDelay:'14s'}}>
         <div class="items">
               <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
               
@@ -297,7 +282,7 @@ const  mouseout14 = event => {
                 <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
               </div>
         </div>
-        <div class="bubblex5 x5" style={{padding:'2px',zIndex:'0',animationDelay:'6s'}}>
+        <div class="bubblex5 x5" style={{padding:'2px',zIndex:'0',animationDelay:'10s'}}>
            <div id="outerContainer">
             <div id="container">
               <div class="item">
@@ -311,7 +296,7 @@ const  mouseout14 = event => {
             </div>
           </div>
         </div>
-        <div class="bubblex6 x6" style={{padding:'2px',zIndex:'0',animationDelay:'8s'}}>
+        <div class="bubblex6 x6" style={{padding:'2px',zIndex:'0',animationDelay:'14s'}}>
         <div class="items">
               <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
               
@@ -320,7 +305,7 @@ const  mouseout14 = event => {
                 <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
               </div>
         </div>
-        <div class="bubblex7 x7" style={{padding:'2px',zIndex:'0',animationDelay:'9s'}}>
+        <div class="bubblex7 x7" style={{padding:'2px',zIndex:'0',animationDelay:'8s'}}>
         <div class="items">
               <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
               
@@ -332,7 +317,7 @@ const  mouseout14 = event => {
         
         
         
-        <div class="bubblex8 x8" style={{padding:'2px',zIndex:'0',animationDelay:'11s',marginTop:'50px'}}>
+        <div class="bubblex8 x8" style={{padding:'2px',zIndex:'0',animationDelay:'2s',marginTop:'50px'}}>
            <div id="outerContainer">
             <div id="container">
               <div class="item">
@@ -356,60 +341,81 @@ const  mouseout14 = event => {
         <Grid container xs={12} style={{zIndex:'10'}}>
           
           <Grid container xs={12} align='center'>
-            <Grid item xs={1} style={{}}/>
-            <Grid container xs={5}>
-            <img src={require('../../../../assets/carouselphone.png')} width='550px' style={{zIndex:'10'}} ></img>
-              
-              <Carousel dotPosition="left" autoplay style={{marginLeft:'16vh',marginTop:'-30vh',zIndex:'32'}}>
-                <div style={{}}>
-                  <img src={require('../../../../assets/carousel1.png')}></img>
-                </div>
-                <div>
-                  <img src={require('../../../../assets/carousel2.png')}></img>
-                </div>
-                <div>
-                  <img src={require('../../../../assets/carousel3.png')}></img>
-                </div>
-                <div>
-                <img src={require('../../../../assets/carousel1.png')}></img>
-                </div>
-              </Carousel>
+              <Grid item xs={2}/>
+            <Grid container xs={4} align='center'style={{zIndex:'20'}}>
+              <Grid item xs={12}>
+            <img src={require('../../../../assets/carouselphone.png')} style={{zIndex:'20',maxWidth:"500px",height:'600px'}} ></img>
+            <Grid item xs={12} align='center' 
+              style={{
+                marginTop:'5vh',
+                webkitBoxAlign: "center",
+                alignItems: "center",
+                display: "flex",
+                flexDirection: "column",
+                webkitBoxPack: "center",
+                justifyContent: "center"
+                }}
+              >
+              <MobileCarousel/>
+              </Grid>
+              </Grid>
+              </Grid>
+            <Grid container xs={4} align='center' style={{zIndex:'20'}}>
+              <Grid item xs={12} align='center' style={{marginLeft:'0vh',}}>
+              <img src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20',maxWidth:"500px",height:'600px'}}></img>
             </Grid>
-            <Grid container xs={5} align='center' style={{zIndex:'20'}}>
-              <Grid item xs={12} style={{marginLeft:'0vh',}} align='left'>
-              <img width='550px' src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20'}}></img>
-            </Grid>
-            <Grid item xs={1}/>
-            <Grid container xs={12} style={{marginTop:'-45vh'}}>
-              <Grid item xs={4} style={{marginLeft:'-3vh'}}/>
-              <Grid item xs={4}>
-            <Typography style={{zIndex:'32',border:'2px solid white',borderRadius:'25px',fontSize:'22px',padding:'4px',color:'white',paddingTop:'2vh',paddingBottom:'2vh'}}>Earning 0.7% APR</Typography>
+            <Grid item xs={12} align='center' 
+              style={{
+                marginTop:'-85vh',
+                webkitBoxAlign: "center",
+                alignItems: "center",
+                display: "flex",
+                flexDirection: "column",
+                webkitBoxPack: "center",
+                justifyContent: "center"
+                }}
+              >
+            <Typography 
+              style={{
+                zIndex:'32',
+                border:'2px solid white',
+                borderRadius:'25px',
+                fontSize:'22px',
+                padding:'4px',
+                color:'white',
+                position:'absolute',
+                paddingTop:'2vh',
+                paddingBottom:'2vh'
+              }}
+            >
+              Earning 0.7% APR
+            </Typography>
             
+              
             </Grid>
-              <Grid item xs={4}/>
-            </Grid>
-            <Grid item xs={2} style={{marginLeft:'6vh'}}/>
-            <Grid item xs={4} style={{marginTop:'-35vh'}}>
+            <Grid item xs={12} align='center' style={{marginTop:'-35vh'}}>
             <Typography style={{zIndex:'32',display:'inline',fontSize:'50px',paddingRight:'1vh',color:'white'}}>{"$"}</Typography><CountUp start={500.0100000} decimals={6} end={500.999999} duration={1000000} style={{fontSize:'50px',color:'white',display:'inline',zIndex:'32'}}></CountUp>
             </Grid>
-            <Grid item xs={1}/> 
+        
+            <Grid item xs={2}/>
             </Grid>
+            
           </Grid>
         
         </Grid>
-        <Grid container xs={12} style={{marginTop:'67px',marginLeft:'5vh'}}>
-            <Grid item xs={1} style={{marginLeft:'-6vh'}} />
+        <Grid container xs={12} style={{marginTop:'67px'}}>
+            <Grid item xs={1} style={{marginLeft:'4vh'}} />
             <Grid item xs={5} align='center'>
               <Typography style={{color:'rgb(37, 48, 86)',fontSize:'46px',fontWeight:'600'}}>Send & Receive</Typography>              
             </Grid>
             <Grid item xs={1} style={{marginLeft:'-20vh'}}/>
-            <Grid item xs={5} align='center' style={{marginLeft:'4vh'}}>
+            <Grid item xs={5} align='center' style={{marginLeft:'0vh'}}>
               <Typography style={{color:'rgb(37, 48, 86)',fontSize:'46px',fontWeight:'600'}}>Earn & Save</Typography>
             </Grid>
           </Grid>
-          <Grid container xs={12} align='center' style={{marginTop:'50px',marginLeft:'5vh'}}>
-              <Grid item xs={1} style={{marginLeft:'-6vh'}}/>
-            <Grid item xs={5} style={{marginLeft:'0vh'}}>
+          <Grid container xs={12} align='center' style={{marginTop:'50px'}}>
+              <Grid item xs={2} style={{marginLeft:'-6vh'}}/>
+            <Grid item xs={4} style={{marginLeft:'0vh'}}>
               <Typography style={{lineHeight:'32px',color:'rgb(110, 120, 152)',fontSize:'20px'}}>Send USD to your friends and family anywhere in the world — even if they don’t have a bank account.</Typography>
             </Grid>
             <Grid item xs={0}/>

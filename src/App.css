@@ -1,7 +1,5 @@
 html,
-body {}
-
-#bubbles {
+body #bubbles {
 	height: 100%;
 	background-image: -moz-linear-gradient(center bottom, rgb(14, 173, 173) 33%, rgb(0, 255, 255) 67%);
 	padding: 2px;
@@ -79,8 +77,8 @@ body {
 }
 
 .x2 {
-	top: 1200px;
-	left: 200px;
+	top: 900px;
+	left: 400px;
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);
@@ -91,7 +89,7 @@ body {
 }
 
 .x3 {
-	top: 1220px;
+	top: 1120px;
 	left: 450px;
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
@@ -103,8 +101,8 @@ body {
 }
 
 .x4 {
-	top: 1240px;
-	left: 700px;
+	top: 1100px;
+	left: 500px;
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);
@@ -115,8 +113,8 @@ body {
 }
 
 .x5 {
-	top: 1230px;
-	left: 250px;
+	top: 830px;
+	left: 800px;
 	background: linear-gradient(63.74deg, rgb(0, 84, 253) -16.64%, rgb(255, 25, 247) 90%, rgb(255, 46, 93) 120%);
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
@@ -128,8 +126,8 @@ body {
 }
 
 .x6 {
-	top: 1220px;
-	left: 1050px;
+	top: 1120px;
+	left: 800px;
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);
@@ -140,8 +138,8 @@ body {
 }
 
 .x7 {
-	top: 840px;
-	left: 500px;
+	top: 1140px;
+	left: 1000px;
 	-webkit-transform: scale(0.8);
 	-moz-transform: scale(0.8);
 	transform: scale(0.8);
@@ -152,8 +150,8 @@ body {
 }
 
 .x8 {
-	top: 1100px;
-	left: 1200px;
+	top: 800px;
+	left: 1000px;
 	background: linear-gradient(63.74deg, rgb(0, 84, 253) -16.64%, rgb(255, 25, 247) 90%, rgb(255, 46, 93) 120%);
 	-webkit-animation: movecloudsx8 30s linear infinite, sideWaysx8 2s ease-in-out infinite alternate;
 	-moz-animation: movecloudsx8 30s linear infinite, sideWaysx8 2s ease-in-out infinite alternate;
@@ -170,12 +168,12 @@ body {
 
 @keyframes movecloudsx2 {
 	0% {
-		top: 1000px;
+		top: 900px;
 	}
 
 	95%,
 	100% {
-		top: -10px;
+		top: -100px;
 	}
 }
 
@@ -192,7 +190,7 @@ body {
 
 @keyframes movecloudsx3 {
 	0% {
-		top: 1300px;
+		top: 1000px;
 	}
 
 	99%,
@@ -219,7 +217,7 @@ body {
 
 	85%,
 	100% {
-		top: -50px;
+		top: -250px;
 	}
 }
 
@@ -259,7 +257,7 @@ body {
 
 @keyframes movecloudsx6 {
 	0% {
-		top: 1500px;
+		top: 1000px;
 	}
 
 	99%,
@@ -282,7 +280,7 @@ body {
 
 @keyframes movecloudsx7 {
 	0% {
-		top: 1500px;
+		top: 1300px;
 	}
 
 	99%,
@@ -305,7 +303,7 @@ body {
 
 @keyframes movecloudsx8 {
 	0% {
-		top: 1200px;
+		top: 1000px;
 	}
 
 	95%,

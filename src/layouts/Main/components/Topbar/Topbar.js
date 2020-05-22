@@ -72,14 +72,10 @@ const Topbar = props => {
   
 
   return (
-    <div className={classes.root} style={{backgroundColor:'white'}}>
-      <Grid container xs={12} style={{backgroundColor:'white'}}>
-        <AppBar
-          position="static"
-          style={{ background: "white", paddingBottom: "3vh" }}
-        >
-          <Toolbar>
-            <Grid container xs={12}>
+    <div className={classes.root} style={{backgroundColor:'white',zIndex:'30'}}>
+      <Grid container xs={12} style={{backgroundColor:'white',zIndex:'30'}}>
+    
+            <Grid container xs={12} style={{zIndex:'30'}}>
               <Grid item xs={2} style={{ marginTop: "4vh" }}>
                 <IconButton
                   edge="start"
@@ -180,8 +176,7 @@ const Topbar = props => {
                 </Button>
               </Grid>
             </Grid>
-          </Toolbar>
-        </AppBar>
+          
         </Grid>
         </div>
   );
