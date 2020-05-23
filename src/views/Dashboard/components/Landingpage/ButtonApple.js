@@ -39,7 +39,7 @@ const ButtonApple = () => {
                   fontSize:'12px',
                   fontWeight:'600',
                   height:'85px',
-                  width:'32vh',
+                  width:'25vh',
                   borderRadius:'10px'
                 }}
               >
@@ -53,7 +53,7 @@ const ButtonApple = () => {
                   />
                   </Grid>
                   <Grid container xs={8} style={{lineHeight:'40px'}}>
-                    <Typography style={{color:'white',fontSize:'11px',fontWeight:'bold',lineHeight:'25px'}}>Download on the<br/><span style={{fontWeight:'bold',fontSize:'20px'}}>App Store</span></Typography> 
+                    <Typography style={{color:'white',fontSize:'11px',fontWeight:'bold',lineHeight:'25px'}}>Download on the<br/><span style={{fontWeight:'bold',fontSize:'20px',textTransform:'none'}}>App Store</span></Typography> 
                     <br/> 
                     </Grid>
                     <Grid item xs={4}/>

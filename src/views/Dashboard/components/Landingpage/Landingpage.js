@@ -108,7 +108,7 @@ const  mouseout14 = event => {
       <Grid container xs={1} style={{marginLeft:'15vh'}}/>
       <Grid item xs={8} 
         style={{
-          backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,1))",
+          backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,1))",
           zIndex:'4',
           boxShadow: "0px 0px 15px 15px white",
           borderRadius:'25px',
@@ -156,7 +156,7 @@ const  mouseout14 = event => {
         <Grid item xs={9} 
           style={{
             
-              backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.9), rgba(255,255,255,1))",
+              backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,1))",
               zIndex:'4',
               boxShadow: "0px 0px 15px 15px white",
               borderRadius:'25px',
@@ -217,7 +217,7 @@ const  mouseout14 = event => {
               <Grid item xs={1}/>
             <Grid container xs={5} align='center'style={{zIndex:'20'}}>
               <Grid item xs={12} style={{marginLeft:'8vh'}}>
-            <img src={require('../../../../assets/carouselphone.png')} style={{zIndex:'20',maxWidth:"80vh", width: '80vh',height:'94vh'}} ></img>
+            <img src={require('../../../../assets/carouselphone.png')} style={{zIndex:'20',maxWidth:"70vh",height:'94vh'}} ></img>
             <Grid item xs={12} align='center' 
               style={{
                 marginLeft:'4vh',
@@ -236,7 +236,7 @@ const  mouseout14 = event => {
               </Grid>
             <Grid container xs={5} align='center' style={{zIndex:'20'}}>
               <Grid item xs={12} align='center' style={{marginLeft:'0vh',}}>
-              <img src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20',maxWidth:"80vh", width: '80vh',height:'94vh'}}></img>
+              <img src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20',maxWidth:"70vh",height:'94vh'}}></img>
             </Grid>
             <Grid item xs={12} align='center' 
               style={{
