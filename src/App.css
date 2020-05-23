@@ -1,510 +1,585 @@
 html,
 body #bubbles {
-	height: 100%;
-	background-image: -moz-linear-gradient(center bottom, rgb(14, 173, 173) 33%, rgb(0, 255, 255) 67%);
-	padding: 2px;
+  height: 100%;
+  background-image: -moz-linear-gradient(
+    center bottom,
+    rgb(14, 173, 173) 33%,
+    rgb(0, 255, 255) 67%
+  );
+  padding: 2px;
 }
 
 #bubbles {
-	padding: 200px 0;
+  padding: 200px 0;
 }
 
 body {
-	color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .bubblex2 {
-	width: 90px;
-	height: 90px;
-	border-radius: 200px;
-	-moz-border-radius: 200px;
-	-webkit-border-radius: 200px;
-	position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: absolute;
 }
 
 .bubblex3 {
-	width: 90px;
-	height: 90px;
-	border-radius: 200px;
-	-moz-border-radius: 200px;
-	-webkit-border-radius: 200px;
-	position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: absolute;
 }
 
 .bubblex4 {
-	width: 90px;
-	height: 90px;
-	border-radius: 200px;
-	-moz-border-radius: 200px;
-	-webkit-border-radius: 200px;
-	position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: absolute;
 }
 
 .bubblex5 {
-	width: 90px;
-	height: 90px;
-	border-radius: 200px;
-	-moz-border-radius: 200px;
-	-webkit-border-radius: 200px;
-	position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: absolute;
 }
 
 .bubblex6 {
-	width: 90px;
-	height: 90px;
-	border-radius: 200px;
-	-moz-border-radius: 200px;
-	-webkit-border-radius: 200px;
-	position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: absolute;
 }
 
 .bubblex7 {
-	width: 90px;
-	height: 90px;
-	border-radius: 200px;
-	-moz-border-radius: 200px;
-	-webkit-border-radius: 200px;
-	position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: absolute;
 }
 
 .bubblex8 {
-	width: 90px;
-	height: 90px;
-	border-radius: 200px;
-	-moz-border-radius: 200px;
-	-webkit-border-radius: 200px;
-	position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 200px;
+  -moz-border-radius: 200px;
+  -webkit-border-radius: 200px;
+  position: absolute;
 }
 
 .x2 {
-	top: 900px;
-	left: 400px;
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	transform: scale(0.8);
-	opacity: 1;
-	-webkit-animation: movecloudsx2 30s linear infinite, sideWaysx2 3s ease-in-out infinite alternate;
-	-moz-animation: movecloudsx2 30s linear infinite, sideWaysx2 3s ease-in-out infinite alternate;
-	-o-animation: movecloudsx2 30s linear infinite, sideWaysx2 3s ease-in-out infinite alternate;
+  top: 800px;
+  left: 400px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 1;
+  -webkit-animation: movecloudsx2 30s linear infinite,
+    sideWaysx2 3s ease-in-out infinite alternate;
+  -moz-animation: movecloudsx2 30s linear infinite,
+    sideWaysx2 3s ease-in-out infinite alternate;
+  -o-animation: movecloudsx2 30s linear infinite,
+    sideWaysx2 3s ease-in-out infinite alternate;
 }
 
 .x3 {
-	top: 1120px;
-	left: 450px;
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	transform: scale(0.8);
-	opacity: 1;
-	-webkit-animation: movecloudsx3 30s linear infinite, sideWaysx3 2s ease-in-out infinite alternate;
-	-moz-animation: movecloudsx3 30s linear infinite, sideWaysx3 2s ease-in-out infinite alternate;
-	-o-animation: movecloudsx3 30s linear infinite, sideWaysx3 2s ease-in-out infinite alternate;
+  top: 1120px;
+  left: 450px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 1;
+  -webkit-animation: movecloudsx3 30s linear infinite,
+    sideWaysx3 2s ease-in-out infinite alternate;
+  -moz-animation: movecloudsx3 30s linear infinite,
+    sideWaysx3 2s ease-in-out infinite alternate;
+  -o-animation: movecloudsx3 30s linear infinite,
+    sideWaysx3 2s ease-in-out infinite alternate;
 }
 
 .x4 {
-	top: 1100px;
-	left: 500px;
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	transform: scale(0.8);
-	opacity: 1;
-	-webkit-animation: movecloudsx4 30s linear infinite, sideWaysx4 3s ease-in-out infinite alternate;
-	-moz-animation: movecloudsx4 30s linear infinite, sideWaysx4 3s ease-in-out infinite alternate;
-	-o-animation: movecloudsx4 30s linear infinite, sideWaysx4 3s ease-in-out infinite alternate;
+  top: 1100px;
+  left: 500px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 1;
+  -webkit-animation: movecloudsx4 30s linear infinite,
+    sideWaysx4 3s ease-in-out infinite alternate;
+  -moz-animation: movecloudsx4 30s linear infinite,
+    sideWaysx4 3s ease-in-out infinite alternate;
+  -o-animation: movecloudsx4 30s linear infinite,
+    sideWaysx4 3s ease-in-out infinite alternate;
 }
 
 .x5 {
-	top: 830px;
-	left: 800px;
-	background: linear-gradient(63.74deg, rgb(0, 84, 253) -16.64%, rgb(255, 25, 247) 90%, rgb(255, 46, 93) 120%);
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	transform: scale(0.8);
-	opacity: 20;
-	-webkit-animation: movecloudsx5 30s linear infinite, sideWaysx5 2s ease-in-out infinite alternate;
-	-moz-animation: movecloudsx5 30s linear infinite, sideWaysx5 2s ease-in-out infinite alternate;
-	-o-animation: movecloudsx5 30s linear infinite, sideWaysx5 2s ease-in-out infinite alternate;
+  top: 830px;
+  left: 800px;
+  background: linear-gradient(
+    63.74deg,
+    rgb(0, 84, 253) -16.64%,
+    rgb(255, 25, 247) 90%,
+    rgb(255, 46, 93) 120%
+  );
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 20;
+  -webkit-animation: movecloudsx5 30s linear infinite,
+    sideWaysx5 2s ease-in-out infinite alternate;
+  -moz-animation: movecloudsx5 30s linear infinite,
+    sideWaysx5 2s ease-in-out infinite alternate;
+  -o-animation: movecloudsx5 30s linear infinite,
+    sideWaysx5 2s ease-in-out infinite alternate;
 }
 
 .x6 {
-	top: 1120px;
-	left: 800px;
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	transform: scale(0.8);
-	opacity: 1;
-	-webkit-animation: movecloudsx4 30s linear infinite, sideWaysx4 3s ease-in-out infinite alternate;
-	-moz-animation: movecloudsx4 30s linear infinite, sideWaysx4 3s ease-in-out infinite alternate;
-	-o-animation: movecloudsx4 30s linear infinite, sideWaysx4 3s ease-in-out infinite alternate;
+  top: 1120px;
+  left: 800px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 1;
+  -webkit-animation: movecloudsx4 30s linear infinite,
+    sideWaysx4 3s ease-in-out infinite alternate;
+  -moz-animation: movecloudsx4 30s linear infinite,
+    sideWaysx4 3s ease-in-out infinite alternate;
+  -o-animation: movecloudsx4 30s linear infinite,
+    sideWaysx4 3s ease-in-out infinite alternate;
 }
 
 .x7 {
-	top: 1140px;
-	left: 1000px;
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	transform: scale(0.8);
-	opacity: 1;
-	-webkit-animation: movecloudsx4 30s linear infinite, sideWaysx4 3s ease-in-out infinite alternate;
-	-moz-animation: movecloudsx4 30s linear infinite, sideWaysx4 3s ease-in-out infinite alternate;
-	-o-animation: movecloudsx4 30s linear infinite, sideWaysx4 3s ease-in-out infinite alternate;
+  top: 1140px;
+  left: 1000px;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 1;
+  -webkit-animation: movecloudsx4 30s linear infinite,
+    sideWaysx4 3s ease-in-out infinite alternate;
+  -moz-animation: movecloudsx4 30s linear infinite,
+    sideWaysx4 3s ease-in-out infinite alternate;
+  -o-animation: movecloudsx4 30s linear infinite,
+    sideWaysx4 3s ease-in-out infinite alternate;
 }
 
 .x8 {
-	top: 800px;
-	left: 1000px;
-	background: linear-gradient(63.74deg, rgb(0, 84, 253) -16.64%, rgb(255, 25, 247) 90%, rgb(255, 46, 93) 120%);
-	-webkit-animation: movecloudsx8 30s linear infinite, sideWaysx8 2s ease-in-out infinite alternate;
-	-moz-animation: movecloudsx8 30s linear infinite, sideWaysx8 2s ease-in-out infinite alternate;
-	-o-animation: movecloudsx8 30s linear infinite, sideWaysx8 2s ease-in-out infinite alternate;
-	animation-delay: 2s;
-	-webkit-transform: scale(0.8);
-	-moz-transform: scale(0.8);
-	transform: scale(0.8);
-	opacity: 20;
-	-webkit-animation: movecloudsx5 30s linear infinite, sideWaysx5 2s ease-in-out infinite alternate;
-	-moz-animation: movecloudsx5 30s linear infinite, sideWaysx5 2s ease-in-out infinite alternate;
-	-o-animation: movecloudsx5 30s linear infinite, sideWaysx5 2s ease-in-out infinite alternate;
+  top: 800px;
+  left: 1000px;
+  background: linear-gradient(
+    63.74deg,
+    rgb(0, 84, 253) -16.64%,
+    rgb(255, 25, 247) 90%,
+    rgb(255, 46, 93) 120%
+  );
+  -webkit-animation: movecloudsx8 30s linear infinite,
+    sideWaysx8 2s ease-in-out infinite alternate;
+  -moz-animation: movecloudsx8 30s linear infinite,
+    sideWaysx8 2s ease-in-out infinite alternate;
+  -o-animation: movecloudsx8 30s linear infinite,
+    sideWaysx8 2s ease-in-out infinite alternate;
+  animation-delay: 2s;
+  -webkit-transform: scale(0.8);
+  -moz-transform: scale(0.8);
+  transform: scale(0.8);
+  opacity: 20;
+  -webkit-animation: movecloudsx5 30s linear infinite,
+    sideWaysx5 2s ease-in-out infinite alternate;
+  -moz-animation: movecloudsx5 30s linear infinite,
+    sideWaysx5 2s ease-in-out infinite alternate;
+  -o-animation: movecloudsx5 30s linear infinite,
+    sideWaysx5 2s ease-in-out infinite alternate;
 }
 
 @keyframes movecloudsx2 {
-	0% {
-		top: 900px;
-	}
+  0% {
+    top: 800px;
+  }
 
-	95%,
-	100% {
-		top: -100px;
-	}
+  95%,
+  100% {
+    top: -100px;
+  }
 }
 
 @keyframes sideWaysx2 {
-	0% {
-		margin-left: -70px;
-	}
+  0% {
+    margin-left: -70px;
+  }
 
-	95%,
-	100% {
-		margin-left: 70px;
-	}
+  95%,
+  100% {
+    margin-left: 70px;
+  }
 }
 
 @keyframes movecloudsx3 {
-	0% {
-		top: 1000px;
-	}
+  0% {
+    top: 1000px;
+  }
 
-	99%,
-	100% {
-		top: -200px;
-	}
+  99%,
+  100% {
+    top: -200px;
+  }
 }
 
 @keyframes sideWaysx3 {
-	0% {
-		margin-left: -40px;
-	}
+  0% {
+    margin-left: -40px;
+  }
 
-	79%,
-	100% {
-		margin-left: 40px;
-	}
+  79%,
+  100% {
+    margin-left: 40px;
+  }
 }
 
 @keyframes movecloudsx4 {
-	0% {
-		top: 1100px;
-	}
+  0% {
+    top: 1100px;
+  }
 
-	85%,
-	100% {
-		top: -250px;
-	}
+  85%,
+  100% {
+    top: -250px;
+  }
 }
 
 @keyframes sideWaysx4 {
-	0% {
-		margin-left: -70px;
-	}
+  0% {
+    margin-left: -70px;
+  }
 
-	90%,
-	100% {
-		margin-left: 70px;
-	}
+  90%,
+  100% {
+    margin-left: 70px;
+  }
 }
 
 @keyframes movecloudsx5 {
-	0% {
-		top: 1000px;
-	}
+  0% {
+    top: 1000px;
+  }
 
-	99%,
-	100% {
-		top: -100px;
-	}
+  99%,
+  100% {
+    top: -100px;
+  }
 }
 
 @keyframes sideWaysx5 {
-	0% {
-		margin-left: -50px;
-	}
+  0% {
+    margin-left: -50px;
+  }
 
-	10% {}
+  10% {
+  }
 
-	100% {
-		margin-left: 50px;
-	}
+  100% {
+    margin-left: 50px;
+  }
 }
 
 @keyframes movecloudsx6 {
-	0% {
-		top: 1000px;
-	}
+  0% {
+    top: 1000px;
+  }
 
-	99%,
-	100% {
-		top: -100px;
-	}
+  99%,
+  100% {
+    top: -100px;
+  }
 }
 
 @keyframes sideWaysx6 {
-	0% {
-		margin-left: -50px;
-	}
+  0% {
+    margin-left: -50px;
+  }
 
-	10% {}
+  10% {
+  }
 
-	100% {
-		margin-left: 50px;
-	}
+  100% {
+    margin-left: 50px;
+  }
 }
 
 @keyframes movecloudsx7 {
-	0% {
-		top: 1300px;
-	}
+  0% {
+    top: 1300px;
+  }
 
-	99%,
-	100% {
-		top: -100px;
-	}
+  99%,
+  100% {
+    top: -100px;
+  }
 }
 
 @keyframes sideWaysx7 {
-	0% {
-		margin-left: -50px;
-	}
+  0% {
+    margin-left: -50px;
+  }
 
-	10% {}
+  10% {
+  }
 
-	100% {
-		margin-left: 50px;
-	}
+  100% {
+    margin-left: 50px;
+  }
 }
 
 @keyframes movecloudsx8 {
-	0% {
-		top: 1000px;
-	}
+  0% {
+    top: 1000px;
+  }
 
-	95%,
-	100% {
-		top: -100px;
-	}
+  95%,
+  100% {
+    top: -100px;
+  }
 }
 
 @keyframes sideWaysx8 {
-	0% {
-		margin-left: -50px;
-	}
+  0% {
+    margin-left: -50px;
+  }
 
-	10% {}
+  10% {
+  }
 
-	100% {
-		margin-left: 50px;
-	}
+  100% {
+    margin-left: 50px;
+  }
 }
 
 .ant-carousel .slick-slide {
-	text-align: center;
-	height: 120px !important;
-	width: 320px !important;
-	line-height: 260px;
-	background: white;
-	overflow: hidden;
+  text-align: center;
+  height: 120px !important;
+  width: 320px !important;
+  line-height: 260px;
+  background: white;
+  overflow: hidden;
 }
 
 .ant-carousel .slick-slide img {
-	color: white;
-	min-width: 10vh;
-	min-height: 10vh;
+  color: white;
+  min-width: 10vh;
+  min-height: 10vh;
 }
 
 .ant-carousel .slick-slide h3 {
-	color: red;
-	width: 100%;
-	height: 100%;
+  color: red;
+  width: 100%;
+  height: 100%;
 }
 
 .module-border-wrap {
-	position: absolute !important;
-	background: linear-gradient(to right, red, purple);
-	padding: 10px;
-	width: 10vh;
+  position: absolute !important;
+  background: linear-gradient(to right, red, purple);
+  padding: 10px;
+  width: 10vh;
 }
 
 .module {
-	background: #222;
-	color: white;
-	padding: 2rem;
+  background: #222;
+  color: white;
+  padding: 2rem;
 }
 
 .circle {
-	border-radius: 50%;
-	background: linear-gradient(63.74deg, rgb(0, 84, 253) -16.64%, rgb(255, 25, 247) 90%, rgb(255, 46, 93) 120%);
-	width: 60px;
-	height: 60px;
-	position: absolute;
-	opacity: 1;
-	top: 15px;
-	left: 15px;
-	z-index: -2;
-	animation: scaleIn 3s infinite cubic-bezier(.00, .00, .09, .05);
+  border-radius: 50%;
+  background: linear-gradient(
+    63.74deg,
+    rgb(0, 84, 253) -16.64%,
+    rgb(255, 25, 247) 90%,
+    rgb(255, 46, 93) 120%
+  );
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  opacity: 1;
+  top: 15px;
+  left: 15px;
+  z-index: -2;
+  animation: scaleIn 3s infinite cubic-bezier(0, 0, 0.09, 0.05);
 }
 
 .twitter img {
-	z-index: 120;
-	position: absolute;
-	width: 40px;
-	top: 50px;
-	left: 60px;
+  z-index: 120;
+  position: absolute;
+  width: 40px;
+  top: 50px;
+  left: 60px;
 }
 
 .twitters img {
-	z-index: 120;
-	position: absolute;
-	width: 50px;
-	top: 78px;
-	left: 75px;
+  z-index: 120;
+  position: absolute;
+  width: 50px;
+  top: 78px;
+  left: 75px;
 }
 
 .item {
-	z-index: 100;
-	padding: 5px;
+  z-index: 100;
+  padding: 5px;
 }
 
 .item img {
-	position: absolute;
-	z-index: 100;
-	width: 70px;
-	top: 10px;
-	left: 10px;
+  position: absolute;
+  z-index: 100;
+  width: 70px;
+  top: 10px;
+  left: 10px;
 }
 
 .items img {
-	position: absolute;
-	z-index: 100;
-	width: 100px;
-	top: 10px;
-	left: 10px;
+  position: absolute;
+  z-index: 100;
+  width: 100px;
+  top: 10px;
+  left: 10px;
 }
 
 @keyframes scaleIn {
-	from {
-		transform: scale(1.5, 1.5);
-		opacity: 0;
-	}
+  from {
+    transform: scale(1.5, 1.5);
+    opacity: 0;
+  }
 
-	to {
-		transform: scale(2, 2);
-		opacity: .8;
-	}
+  to {
+    transform: scale(2, 2);
+    opacity: 0.8;
+  }
 }
 
 .MainContainer {
-	margin-top: 16vh;
-	z-index: 3;
+  margin-top: 16vh;
+  z-index: 3;
 }
 
 .TransparencyBox {
-	background-image: linear-gradient(to bottom, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.8));
+  background-image: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 1),
+    rgba(255, 255, 255, 0.8)
+  );
 }
 
 .SendMoneyTo {
-	font-weight: 700;
-	color: rgb(31, 42, 75);
-	font-size: 80px;
+  font-weight: 700;
+  color: rgb(31, 42, 75);
+  font-size: 80px;
 }
 
 .anyone {
-	background: webkit-linear-gradient(90deg, rgb(87, 34, 255) 0%, rgb(198, 3, 255) 70%);
-	background-image: linear-gradient(63.74deg, rgb(0, 84, 253) -16.64%, rgb(255, 25, 247) 90%, rgb(255, 46, 93) 120%);
-	color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
-	font-weight: 700;
-	font-size: 80px;
-	display: inline;
+  background: webkit-linear-gradient(
+    90deg,
+    rgb(87, 34, 255) 0%,
+    rgb(198, 3, 255) 70%
+  );
+  background-image: linear-gradient(
+    63.74deg,
+    rgb(0, 84, 253) -16.64%,
+    rgb(255, 25, 247) 90%,
+    rgb(255, 46, 93) 120%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 80px;
+  display: inline;
 }
 
 .EarnInterest {
-	color: rgb(31, 42, 75);
-	font-weight: 700;
-	display: inline;
-	font-size: 80px;
+  color: rgb(31, 42, 75);
+  font-weight: 700;
+  display: inline;
+  font-size: 80px;
 }
 
 .From {
-	font-weight: 700;
-	color: rgb(31, 42, 75);
-	font-size: 80px;
-	display: inline;
+  font-weight: 700;
+  color: rgb(31, 42, 75);
+  font-size: 80px;
+  display: inline;
 }
 
 .anywhere {
-	background: linear-gradient(63.74deg,
-			rgb(255, 25, 247) 0%,
-			rgb(255, 46, 93) 40%,
-			rgb(255, 200, 7) 87.53%,
-			rgb(230, 185, 116) 122.25%,
-			rgb(230, 185, 116) 122.25%) text;
-	line-height: 83px;
-	background-image: linear-gradient(63.74deg,
-			rgb(255, 25, 247) 0%,
-			rgb(255, 46, 93) 40%,
-			rgb(255, 200, 7) 87.53%,
-			rgb(230, 185, 116) 122.25%,
-			rgb(230, 185, 116) 122.25%);
-	color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
-	font-weight: 700;
-	font-size: 80px;
-	display: inline;
+  background: linear-gradient(
+      63.74deg,
+      rgb(255, 25, 247) 0%,
+      rgb(255, 46, 93) 40%,
+      rgb(255, 200, 7) 87.53%,
+      rgb(230, 185, 116) 122.25%,
+      rgb(230, 185, 116) 122.25%
+    )
+    text;
+  line-height: 83px;
+  background-image: linear-gradient(
+    63.74deg,
+    rgb(255, 25, 247) 0%,
+    rgb(255, 46, 93) 40%,
+    rgb(255, 200, 7) 87.53%,
+    rgb(230, 185, 116) 122.25%,
+    rgb(230, 185, 116) 122.25%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 700;
+  font-size: 80px;
+  display: inline;
 }
 
 .DharmaIsLimitless {
-	display: inline;
-	color: rgb(110, 120, 152);
-	font-size: 24px;
-	font-weight: 400;
-	color: transparent;
+  display: inline;
+  color: rgb(110, 120, 152);
+  font-size: 24px;
+  font-weight: 400;
+  color: transparent;
 }
 
 .APR {
-	display: inline;
-	background: -webkit-linear-gradient(90deg, rgb(87, 34, 255) 0%, rgb(198, 3, 255) 70%);
-	line-height: 32px;
-	background-image: linear-gradient(63.74deg, rgb(0, 84, 253) -16.64%, rgb(255, 25, 247) 90%, rgb(255, 46, 93) 120%);
-	color: transparent;
-	-webkit-background-clip: text;
-	background-clip: text;
-	font-weight: 400;
-	font-size: 24px;
+  display: inline;
+  font-weight: bold;
+  background: -webkit-linear-gradient(
+    90deg,
+    rgb(87, 34, 255) 0%,
+    rgb(198, 3, 255) 70%
+  );
+  line-height: 32px;
+  background-image: linear-gradient(
+    63.74deg,
+    rgb(0, 84, 253) -16.64%,
+    rgb(255, 25, 247) 90%,
+    rgb(255, 46, 93) 120%
+  );
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-weight: 400;
+  font-size: 24px;
 }
 
 .bankAccount {
-	display: inline;
-	color: rgb(110, 120, 152);
-	font-size: 24px;
-	font-weight: 400;
+  display: inline;
+  color: rgb(110, 120, 152);
+  font-size: 24px;
+  font-weight: 400;
 }

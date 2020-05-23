@@ -75,23 +75,14 @@ const Topbar = props => {
     <div className={classes.root} style={{backgroundColor:'white',zIndex:'30'}}>
       <Grid container xs={12} style={{backgroundColor:'white',zIndex:'30'}}>
     
-            <Grid container xs={12} style={{zIndex:'30'}}>
-              <Grid item xs={2} style={{ marginTop: "4vh" }}>
-                <IconButton
-                  edge="start"
-                  className={classes.menuButton}
-                  color="inherit"
-                  aria-label="menu"
-                >
-                  <RadioButtonUncheckedIcon
-                    style={{ color: "black", fontSize: "35px" }}
-                  />
-                </IconButton>
+            <Grid container xs={12} style={{zIndex:'30'}} align='center'>
+              <Grid item xs={1} style={{ marginTop: "3vh" }}>
+                <img width='60' src={require('../../../../assets/logo.png')} />
               </Grid>
-              <Grid item xs={4} />
+              <Grid item xs={6} />
               <Grid
                 container
-                xs={6}
+                xs={5}
                 style={{ marginTop: "4vh" }}
                 align="center"
                 justify="space-between"
@@ -100,7 +91,7 @@ const Topbar = props => {
                   <Typography
                     style={{
                       fontSize: "15px",
-                      marginTop: "-2.4vh",
+                      marginTop: "0vh",
                       opactiy: "0.8",
                       color: "#6e7898"
                     }}
@@ -117,7 +108,7 @@ const Topbar = props => {
                     style={{
                       color: "rgb(110, 120, 152)",
                       fontSize: "15px",
-                      marginTop: "-2.4vh",
+                      marginTop: "0vh",
                       opactiy: "0.8"
                     }}
                     onMouseEnter={mouse1}
@@ -133,7 +124,7 @@ const Topbar = props => {
                     style={{
                       color: "rgb(110, 120, 152)",
                       fontSize: "15px",
-                      marginTop: "-2.4vh",
+                      marginTop: "0vh",
                       opactiy: "0.8"
                     }}
                     onMouseEnter={mouse2}
@@ -148,7 +139,7 @@ const Topbar = props => {
                     style={{
                       color: "rgb(37, 48, 86)",
                       fontSize: "15px",
-                      marginTop: "-2.4vh"
+                      marginTop: "0vh"
                     }}
                     onMouseEnter={mouse3}
                     onMouseLeave={mouseout3}
@@ -174,6 +165,9 @@ const Topbar = props => {
                 >
                   Get Started Online
                 </Button>
+                <Typography>
+                  {"  "}
+                </Typography>
               </Grid>
             </Grid>
           

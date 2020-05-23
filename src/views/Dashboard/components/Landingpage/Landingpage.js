@@ -28,6 +28,9 @@ import 'antd/dist/antd.css';
 import SupervisedUserCircleIcon from '@material-ui/icons/SupervisedUserCircle';
 import { Carousel, Radio } from 'antd';
 import ArrowRightIcon from '@material-ui/icons/ArrowRight';
+import Bubbles from "./Bubbles";
+import ButtonApple from "./ButtonApple";
+import ButtonGoogle from "./ButtonGoogle";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -115,31 +118,31 @@ const  mouseout14 = event => {
       
         <Grid item xs={3} style={{marginLeft:"2vh"}}/>
         <Grid item xs={9} style={{zIndex:'4'}}>
-        <Typography class='SendMoneyTo'>
+        <Typography class='SendMoneyTo' style={{lineHeight:'86px',margin:'0'}}>
           Send money to
         </Typography>
         </Grid>
         <Grid item xs={1}/>
       
-      <Grid container xs={12} style={{marginTop:'-16vh'}}>
+      <Grid container xs={12} style={{marginTop:'0vh'}}>
         <Grid item xs={12} style={{zIndex:'4'}}>
-          <Typography class='anyone'>
+          <Typography class='anyone' style={{lineHeight:'86px',margin:'0'}}>
             anyone.
           </Typography>
-          <Typography class='EarnInterest'>
+          <Typography class='EarnInterest' style={{lineHeight:'86px',margin:'0'}}>
             {" "}
             Earn interest
           </Typography>
         </Grid>
     
   
-      <Grid container xs={12} style={{marginTop:'-7vh'}}>
+      <Grid container xs={12} style={{marginTop:'0vh'}}>
         <Grid item xs={3}/>
         <Grid item xs={12} style={{zIndex:'4'}}>
-        <Typography class='From'>
+        <Typography class='From' style={{lineHeight:'86px',margin:'0'}}>
               {"from "}
         </Typography > 
-        <Typography class='anywhere'>
+        <Typography class='anywhere' style={{lineHeight:'86px',margin:'0'}}>
           anywhere.
         </Typography>  
         </Grid>
@@ -148,7 +151,7 @@ const  mouseout14 = event => {
       <Grid item xs={2}/>
       </Grid>
         </Grid>
-      <Grid container xs={12}>
+      <Grid container xs={12} style={{marginTop:'2vh'}}>
         <Grid item xs={1} style={{marginLeft:'8vh'}}/>
         <Grid item xs={9} 
           style={{
@@ -170,7 +173,7 @@ const  mouseout14 = event => {
             Dharma is a limitless,borderless way to send and receive USD -
             all while
           </Typography>
-          <Typography class='APR'>
+          <Typography class='APR' style={{fontWeight:'600'}}>
             {" earning 0.7% APR"}
           </Typography>  
           <Typography class='bankAccount'>
@@ -183,155 +186,25 @@ const  mouseout14 = event => {
       </Grid>
       <Grid container xs={12}>
         <Grid container xs={12} style={{marginTop:'8vh'}}>
-          <Grid item xs={3} style={{marginLeft:'3vh'}}/>
-          <Grid container xs={5} align='center'>
-            <Grid item xs={2}/>
-            <Grid item xs={5}>
-              <Button variant="contained" color="primary" 
-                style={{
-                  zIndex:'4',
-                  background:'rgb(31, 42, 75)',
-                  fontSize:'12px',
-                  fontWeight:'600',
-                  height:'85px',
-                  width:'27vh',
-                  borderRadius:'10px'
-                }}
-              >
-                <Grid container xs={12} align='center'>
-                  <Grid item xs={4}>
-                  <AppleIcon 
-                    style={{
-                      fontSize:'50px',
-        
-                      }}
-                  />
-                  </Grid>
-                  <Grid container xs={8}>
-                    <Typography style={{color:'white',fontSize:'13px'}}>Download on the</Typography> 
-                    <br/> 
-                    </Grid>
-                    <Grid item xs={4}/>
-                    <Grid item xs={8} style={{marginTop:'-4vh'}}>
-                    <Typography style={{color:'white',fontSize:'18px',fontWeight:'600'}}>App Store</Typography>
-                  </Grid>
-                </Grid>
-              </Button>
+          <Grid item xs={3} style={{marginLeft:'2vh'}}/>
+          <Grid container xs={5} align='center' justify='space-between'>
+            <Grid item xs={1}/>
+            <Grid item xs={5} style={{marginLeft:'0vh'}}>
+              <ButtonApple/>
             </Grid>
-            <Grid container xs={5} align='center'>
-              <Button variant="contained" color="primary" 
-                style={{
-                  background:'white',
-                
-                  zIndex:'4',
-                  fontSize:'12px',
-                  height:'85px',
-                  fontWeight:'600',
-                  width:'27vh',
-                  borderRadius:'15px'
-                  }}
-                  >
-                <FaGooglePlay 
-                  style={{
-                    fontSize:'40px',
-                    color:'grey'
-                  }}
-              />
-                  <br/>
-                  <Typography style={{fontSize:'15px',paddingLeft:'3vh',color:'grey'}}> 
-                   Get it on Google Play
-                  </Typography>
-              </Button>
+            <Grid item xs={5} align='center' style={{marginLeft:'2vh',}}>
+              <ButtonGoogle/>
             </Grid>
             
           </Grid>
-          <Grid item xs={3}/>
+          <Grid item xs={0}/>
         </Grid>
         <Grid container xs={12}>
           <Grid itemx xs={12}>
           <Grid container xs={12} style={{marginTop:'-60vh'}}>
           <Grid item xs={10} />
           <Grid item xs={1} align="center">
-            <div id="bubbles" style={{zIndex:"-10"}} style={{borderRadius:'24px',marginTop:'0vh',zIndex:'-10'}}>
-            
-         <div class="bubblex2 x2" style={{padding:'2px',zIndex:'1',animationDelay:'2'}}>
-         <div class="items">
-              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
-              
-              </div>
-              <div class='twitters'>
-                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
-              </div>
-        </div>
-              
-        <div class="bubblex3 x3" style={{padding:'2px',zIndex:'1',animationDelay:'4s'}}>
-        <div class="items">
-              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
-              
-              </div>
-              <div class='twitters'>
-                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
-              </div>
-        </div>
-        <div class="bubblex4 x4" style={{padding:'2px',zIndex:'1',animationDelay:'14s'}}>
-        <div class="items">
-              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
-              
-              </div>
-              <div class='twitters'>
-                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
-              </div>
-        </div>
-        <div class="bubblex5 x5" style={{padding:'2px',zIndex:'0',animationDelay:'10s'}}>
-           <div id="outerContainer">
-            <div id="container">
-              <div class="item">
-              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
-              
-              </div>
-              <div class='twitter'>
-                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
-              </div>
-              <div class="circle c3"></div>
-            </div>
-          </div>
-        </div>
-        <div class="bubblex6 x6" style={{padding:'2px',zIndex:'0',animationDelay:'14s'}}>
-        <div class="items">
-              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
-              
-              </div>
-              <div class='twitters'>
-                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
-              </div>
-        </div>
-        <div class="bubblex7 x7" style={{padding:'2px',zIndex:'0',animationDelay:'8s'}}>
-        <div class="items">
-              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
-              
-              </div>
-              <div class='twitters'>
-                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
-              </div>
-        </div>
-        
-        
-        
-        <div class="bubblex8 x8" style={{padding:'2px',zIndex:'0',animationDelay:'2s',marginTop:'50px'}}>
-           <div id="outerContainer">
-            <div id="container">
-              <div class="item">
-              <img width='40' src="https://d33wubrfki0l68.cloudfront.net/ro/people/brett-goulder/assets/profile/dc2c22ae34bfdf6fec64a3b04c8e9d8130fa47b4/circular-photo.png" />
-              
-              </div>
-              <div class='twitter'>
-                <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
-              </div>
-              <div class="circle c3"></div>
-            </div>
-          </div>
-        </div>
-            </div>
+            <Bubbles/>
           </Grid>
         </Grid>
         
@@ -340,13 +213,14 @@ const  mouseout14 = event => {
       </Grid>
         <Grid container xs={12} style={{zIndex:'10'}}>
           
-          <Grid container xs={12} align='center'>
-              <Grid item xs={2}/>
-            <Grid container xs={4} align='center'style={{zIndex:'20'}}>
-              <Grid item xs={12}>
-            <img src={require('../../../../assets/carouselphone.png')} style={{zIndex:'20',maxWidth:"500px",height:'600px'}} ></img>
+          <Grid container xs={12} align='center' spacing={5} style={{marginTop:'5vh'}}>
+              <Grid item xs={1}/>
+            <Grid container xs={5} align='center'style={{zIndex:'20'}}>
+              <Grid item xs={12} style={{marginLeft:'8vh'}}>
+            <img src={require('../../../../assets/carouselphone.png')} style={{zIndex:'20',maxWidth:"80vh", width: '80vh',height:'94vh'}} ></img>
             <Grid item xs={12} align='center' 
               style={{
+                marginLeft:'4vh',
                 marginTop:'5vh',
                 webkitBoxAlign: "center",
                 alignItems: "center",
@@ -360,9 +234,9 @@ const  mouseout14 = event => {
               </Grid>
               </Grid>
               </Grid>
-            <Grid container xs={4} align='center' style={{zIndex:'20'}}>
+            <Grid container xs={5} align='center' style={{zIndex:'20'}}>
               <Grid item xs={12} align='center' style={{marginLeft:'0vh',}}>
-              <img src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20',maxWidth:"500px",height:'600px'}}></img>
+              <img src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20',maxWidth:"80vh", width: '80vh',height:'94vh'}}></img>
             </Grid>
             <Grid item xs={12} align='center' 
               style={{
@@ -397,7 +271,7 @@ const  mouseout14 = event => {
             <Typography style={{zIndex:'32',display:'inline',fontSize:'50px',paddingRight:'1vh',color:'white'}}>{"$"}</Typography><CountUp start={500.0100000} decimals={6} end={500.999999} duration={1000000} style={{fontSize:'50px',color:'white',display:'inline',zIndex:'32'}}></CountUp>
             </Grid>
         
-            <Grid item xs={2}/>
+            <Grid item xs={1}/>
             </Grid>
             
           </Grid>
@@ -418,8 +292,8 @@ const  mouseout14 = event => {
             <Grid item xs={4} style={{marginLeft:'0vh'}}>
               <Typography style={{lineHeight:'32px',color:'rgb(110, 120, 152)',fontSize:'20px'}}>Send USD to your friends and family anywhere in the world — even if they don’t have a bank account.</Typography>
             </Grid>
-            <Grid item xs={0}/>
-            <Grid item xs={5} align='center' style={{marginLeft:'0vh'}}>
+            <Grid item xs={1}/>
+            <Grid item xs={5} align='center' style={{marginLeft:'-10vh'}}>
               <Typography style={{lineHeight:'32px',color:'rgb(110, 120, 152)',fontSize:'20px'}}>Every dollar in your Dharma account is earning 0.7% APR —<br/> and you can withdraw it anytime; 24/7/365.</Typography>
             </Grid>
           </Grid>
@@ -435,7 +309,6 @@ const  mouseout14 = event => {
           </Grid>
           <Grid container xs={12} style={{marginTop:'10vh'}} alignItems='center' justify='space-evenly'>
             <Grid item xs={3} align='center'>
-              {/* <Typography><PaymentIcon className={classes.root} style={{fontSize:'45px',marginBottom:'3vh'}}/></Typography> */}
               <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'5vh'}} class="sc-bZQynM fWtrRV"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0C1.34315 0 0 1.34314 0 3V21C0 22.6569 1.34315 24 3 24H29C30.6569 24 32 22.6569 32 21V3C32 1.34315 30.6569 0 29 0H3ZM2 3C2 2.44772 2.44771 2 3 2H29C29.5523 2 30 2.44772 30 3V5H2V3ZM2 11V21C2 21.5523 2.44772 22 3 22H29C29.5523 22 30 21.5523 30 21V11H2Z" fill="url(#paint0_linear)"></path><defs><linearGradient id="paint0_linear" x1="32" y1="3.41651e-07" x2="26.8145" y2="28.5189" gradientUnits="userSpaceOnUse"><stop offset="0.0288666" stop-color="#FEA41C"></stop><stop offset="0.223691" stop-color="#FF5F61"></stop><stop offset="0.408517" stop-color="#FF2FA9"></stop><stop offset="0.628457" stop-color="#FE1CD5"></stop><stop offset="0.733043" stop-color="#CD1CEE"></stop><stop offset="0.864847" stop-color="#8C23F9"></stop><stop offset="0.96226" stop-color="#4635FF"></stop></linearGradient></defs></svg>
               <Typography style={{fontWeight:'500',fontSize:'18px'}}>Easy as 1, 2, 3...</Typography>
               <Typography style={{fontSize:'16px',fontWeight:'400',marginTop:'26px',color:'rgb(110, 120, 152)'}}>Connect your debit card, tap a button, and your money is uploaded to the Internet.</Typography>
@@ -483,8 +356,24 @@ const  mouseout14 = event => {
               <Grid item xs={12} align='center' style={{marginTop:'20vh'}}><Typography style={{color:'white',fontSize:'66px',fontWeight:'600'}}>Start saving today.</Typography></Grid>
               <Grid item xs={12} align='center' style={{marginTop:'-40px'}}><Typography style={{color:'white',fontSize:'18px',lineHeight:'1.6'}}>Join thousands of people earning<br/> interest on Dharma today</Typography></Grid>
               <Grid item xs={3}/>
-              <Grid item xs={3} align='center'style={{marginTop:'-5vh'}}><Button variant="contained" color="primary" style={{background:'rgb(31, 42, 75)',fontSize:'12px',fontWeight:'600',height:'85px',width:'30vh',borderRadius:'15px'}}><AppleIcon style={{fontSize:'50px',marginTop:'-2vh',paddingRight:'1vh'}}/>Download on the <br/> App Store</Button></Grid>
-              <Grid item xs={3} align='center'style={{marginTop:'-5vh'}}><Button variant="contained" color="primary" style={{background:'rgb(31, 42, 75)',fontSize:'12px',height:'85px',fontWeight:'600',width:'30vh',borderRadius:'15px'}}><FaGooglePlay style={{fontSize:'40px',color:'white'}}/><br/><Typography style={{fontSize:'15px',paddingLeft:'3vh',color:'white'}}> Get it on Google Play</Typography></Button></Grid>
+              <Grid item xs={3} align='center'style={{marginTop:'-5vh'}}><ButtonApple/></Grid>
+              <Grid item xs={3} align='center'style={{marginTop:'-5vh'}}><Button variant="contained" color="primary" 
+                style={{
+                  background:'rgb(31, 42, 75)',
+                  color:'white',
+                  width:'32vh',
+                  zIndex:'4',
+                  height:'85px',
+                  fontWeight:'600',
+                  borderRadius:'15px'
+                  }}
+                  ><svg style={{width:'40px',color:'white',zIndex:'20'}} width="2.3px,4px" height="3.5px,4px" viewBox="0 0 32 35" fill="white" xmlns="http://www.w3.org/2000/svg" class="sc-bZQynM dQJoOP"><path fill-rule="evenodd" clip-rule="evenodd" d="M0.93205 0.847113C0.542115 1.2669 0.316895 1.90833 0.316895 2.7479V32.5258C0.316895 33.3653 0.542115 34.0068 0.945496 34.4098L1.0497 34.5004L17.7497 17.8165V17.4437L1.03626 0.756439L0.93205 0.847113Z" fill="white"></path><path opacity="0.8" fill-rule="evenodd" clip-rule="evenodd" d="M23.3063 23.3946L17.7363 17.8299V17.4404L23.3063 11.8757L23.4274 11.9496L30.0159 15.6907C31.9017 16.7519 31.9017 18.5049 30.0159 19.5796L23.4274 23.3207L23.3063 23.3946Z" fill="white"></path><path opacity="0.9" fill-rule="evenodd" clip-rule="evenodd" d="M23.4268 23.3207L17.7358 17.6352L0.931641 34.4232C1.5468 35.0814 2.57878 35.1553 3.73177 34.5139L23.4268 23.3207Z" fill="white"></path><path opacity="0.7" fill-rule="evenodd" clip-rule="evenodd" d="M23.4268 11.9496L3.73177 0.773236C2.57878 0.115013 1.54343 0.205687 0.931641 0.86391L17.7358 17.6352L23.4268 11.9496Z" fill="white"></path><path opacity="0.2" fill-rule="evenodd" clip-rule="evenodd" d="M23.3061 23.1998L3.74545 34.3023C2.65296 34.9303 1.67812 34.8866 1.04952 34.3157L0.945312 34.4198L1.04952 34.5105C1.67812 35.0781 2.65296 35.1251 3.74545 34.4971L23.4405 23.3207L23.3061 23.1998Z" fill="white" fill-opacity="0.2"></path></svg>
+                  
+                  <Typography style={{fontSize:'15px',color:'white',paddingLeft:'3vh',textAlign:'left'}}> 
+                   Get it on<br/><b>Google Play</b>
+                  </Typography>
+                  
+              </Button></Grid>
               <Grid item xs={3}/>
             </Grid>
             <Grid item xs={1}/>
