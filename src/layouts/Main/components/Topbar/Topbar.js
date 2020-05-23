@@ -76,13 +76,13 @@ const Topbar = props => {
       <Grid container xs={12} style={{backgroundColor:'white',zIndex:'30'}}>
     
             <Grid container xs={12} style={{zIndex:'30'}} align='center'>
-              <Grid item xs={1} style={{ marginTop: "3vh" }}>
+              <Grid item xs={2} style={{ marginTop: "3vh" }}>
                 <img width='60' src={require('../../../../assets/logo.png')} />
               </Grid>
-              <Grid item xs={6} />
+              <Grid item xs={4} />
               <Grid
                 container
-                xs={5}
+                xs={6}
                 style={{ marginTop: "4vh" }}
                 align="center"
                 justify="space-between"
