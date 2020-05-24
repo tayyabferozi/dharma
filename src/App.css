@@ -126,8 +126,8 @@ body {
 }
 
 .x5 {
-  top: 830px;
-  left: 800px;
+  top: 900px;
+  left: 900px;
   background: linear-gradient(
     63.74deg,
     rgb(0, 84, 253) -16.64%,
@@ -373,7 +373,7 @@ body {
   line-height: 260px;
   background: white;
   overflow: hidden;
-  margin-left: 45px;
+  margin-left: 65px;
 }
 
 .ant-carousel .slick-slide img {

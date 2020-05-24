@@ -203,7 +203,7 @@ const  mouseout14 = event => {
           <Grid container xs={12} style={{marginTop:'-60vh'}}>
           <Grid item xs={10} />
           <Grid item xs={1} align="center">
-            {/* <Bubbles/> */}
+            <Bubbles/>
           </Grid>
         </Grid>
         
@@ -211,9 +211,9 @@ const  mouseout14 = event => {
         </Grid>
       </Grid>
           <Grid container xs={12} align='center' justify='center' spacing={5} style={{marginTop:'5vh', zIndex:'10'}}>
-            <Grid container xs={9} justify='space-around'>
+            <Grid container xs={10} justify='space-around'>
               <Grid container xs={5} align='center' justify='center' style={{zIndex:'20'}}>
-                  <img src={require('../../../../assets/carouselphone.png')} style={{zIndex:'20',minWidth:"75vh",height:'82vh',paddingLeft:'12vh'}} ></img>
+                  <img src={require('../../../../assets/carouselphone.png')} style={{zIndex:'20',minWidth:"90vh",height:'90vh',paddingLeft:'12vh'}} ></img>
                   <MobileCarousel/>
               </Grid>
               <Grid container xs={5} align='center' style={{zIndex:'20'}} spacing={0}
@@ -221,7 +221,7 @@ const  mouseout14 = event => {
               alignItems="center"
               justify="center"
               >
-                <img src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20',maxWidth:"65vh",height:'82vh',position:'absolute'}}></img>
+                <img src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20',maxWidth:"80vh",height:'90vh',position:'absolute'}}></img>
               <Typography 
                 style={{
                   zIndex:'32',
@@ -245,22 +245,22 @@ const  mouseout14 = event => {
             </Grid>
           </Grid>
         <Grid container xs={12} style={{marginTop:'67px'}}>
-            <Grid item xs={1} style={{marginLeft:'4vh'}} />
+            <Grid item xs={1} style={{marginLeft:'5vh'}} />
             <Grid item xs={5} align='center'>
               <Typography style={{color:'rgb(37, 48, 86)',fontSize:'46px',fontWeight:'600'}}>Send & Receive</Typography>              
             </Grid>
-            <Grid item xs={1} style={{marginLeft:'-20vh'}}/>
-            <Grid item xs={5} align='center' style={{marginLeft:'0vh'}}>
+            
+            <Grid item xs={5} align='center' style={{marginLeft:'-4vh'}}>
               <Typography style={{color:'rgb(37, 48, 86)',fontSize:'46px',fontWeight:'600'}}>Earn & Save</Typography>
             </Grid>
           </Grid>
           <Grid container xs={12} align='center' style={{marginTop:'50px'}}>
-              <Grid item xs={2} style={{marginLeft:'-6vh'}}/>
+              <Grid item xs={2} style={{marginLeft:'-4vh'}}/>
             <Grid item xs={4} style={{marginLeft:'0vh'}}>
               <Typography style={{lineHeight:'32px',color:'rgb(110, 120, 152)',fontSize:'20px'}}>Send USD to your friends and family anywhere in the world — even if they don’t have a bank account.</Typography>
             </Grid>
-            <Grid item xs={1}/>
-            <Grid item xs={5} align='center' style={{marginLeft:'-10vh'}}>
+            
+            <Grid item xs={5} align='center' style={{marginLeft:'2vh'}}>
               <Typography style={{lineHeight:'32px',color:'rgb(110, 120, 152)',fontSize:'20px'}}>Every dollar in your Dharma account is earning 0.7% APR —<br/> and you can withdraw it anytime; 24/7/365.</Typography>
             </Grid>
           </Grid>
