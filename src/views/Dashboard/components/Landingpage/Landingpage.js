@@ -186,12 +186,12 @@ const  mouseout14 = event => {
       </Grid>
       <Grid container xs={12}>
         <Grid container xs={12} style={{marginTop:'8vh'}}>
-          <Grid item xs={3} style={{marginLeft:'8vh'}}/>
-          <Grid container xs={5} align='center' justify='space-around'>
-            <Grid item xs={5} style={{paddingLeft:'8vh'}}>
+          <Grid item xs={3} style={{marginLeft:'6vh'}}/>
+          <Grid container xs={6} align='center' justify='space-around'>
+            <Grid item xs={5} style={{paddingLeft:'4vh'}}>
               <ButtonApple/>
             </Grid>
-            <Grid item xs={5} align='center' style={{paddingRight:'6vh',}}>
+            <Grid item xs={5} align='center' style={{paddingRight:'22vh',}}>
               <ButtonGoogle/>
             </Grid>
             
@@ -210,18 +210,18 @@ const  mouseout14 = event => {
           </Grid>
         </Grid>
       </Grid>
-          <Grid container xs={12} align='center' justify='center' spacing={5} style={{marginTop:'5vh', zIndex:'10'}}>
-            <Grid container xs={10} justify='space-around'>
+          <Grid container xs={12} align='center' justify='center' spacing={5} style={{marginTop:'5vh', zIndex:'10',paddingLeft:'0vh',marginLeft:'-4vh'}}>
+            <Grid container xs={11} justify='space-around'>
               <Grid container xs={5} align='center' justify='center' style={{zIndex:'20'}}>
-                  <img src={require('../../../../assets/carouselphone.png')} style={{zIndex:'20',minWidth:"90vh",height:'90vh',paddingLeft:'12vh'}} ></img>
+                  <img src={require('../../../../assets/carouselphone.png')} style={{zIndex:'20',minWidth:"650px",height:'700px',paddingLeft:'12vh'}} ></img>
                   <MobileCarousel/>
               </Grid>
-              <Grid container xs={5} align='center' style={{zIndex:'20'}} spacing={0}
+              <Grid container xs={5} align='center' style={{zIndex:'20'}} spacing={8}
               direction="column"
               alignItems="center"
               justify="center"
               >
-                <img src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20',maxWidth:"80vh",height:'90vh',position:'absolute'}}></img>
+                <img src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20',maxWidth:"550px",height:'700px',position:'absolute'}}></img>
               <Typography 
                 style={{
                   zIndex:'32',
