@@ -369,15 +369,16 @@ body {
 .ant-carousel .slick-slide {
   text-align: center;
   height: 120px !important;
-  width: 320px !important;
+  width: 35vh !important;
   line-height: 260px;
   background: white;
   overflow: hidden;
+  margin-left: 45px;
 }
 
 .ant-carousel .slick-slide img {
   color: white;
-  min-width: 10vh;
+  max-width: 35vh;
   min-height: 10vh;
 }
 

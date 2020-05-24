@@ -186,13 +186,12 @@ const  mouseout14 = event => {
       </Grid>
       <Grid container xs={12}>
         <Grid container xs={12} style={{marginTop:'8vh'}}>
-          <Grid item xs={3} style={{marginLeft:'2vh'}}/>
-          <Grid container xs={5} align='center' justify='space-between'>
-            <Grid item xs={1}/>
-            <Grid item xs={5} style={{marginLeft:'0vh'}}>
+          <Grid item xs={3} style={{marginLeft:'8vh'}}/>
+          <Grid container xs={5} align='center' justify='space-around'>
+            <Grid item xs={5} style={{paddingLeft:'8vh'}}>
               <ButtonApple/>
             </Grid>
-            <Grid item xs={5} align='center' style={{marginLeft:'2vh',}}>
+            <Grid item xs={5} align='center' style={{paddingRight:'6vh',}}>
               <ButtonGoogle/>
             </Grid>
             
@@ -204,79 +203,47 @@ const  mouseout14 = event => {
           <Grid container xs={12} style={{marginTop:'-60vh'}}>
           <Grid item xs={10} />
           <Grid item xs={1} align="center">
-            <Bubbles/>
+            {/* <Bubbles/> */}
           </Grid>
         </Grid>
         
           </Grid>
         </Grid>
       </Grid>
-        <Grid container xs={12} style={{zIndex:'10'}}>
-          
-          <Grid container xs={12} align='center' spacing={5} style={{marginTop:'5vh'}}>
-              <Grid item xs={1}/>
-            <Grid container xs={5} align='center'style={{zIndex:'20'}}>
-              <Grid item xs={12} style={{marginLeft:'8vh'}}>
-            <img src={require('../../../../assets/carouselphone.png')} style={{zIndex:'20',maxWidth:"70vh",height:'94vh'}} ></img>
-            <Grid item xs={12} align='center' 
-              style={{
-                marginLeft:'4vh',
-                marginTop:'5vh',
-                webkitBoxAlign: "center",
-                alignItems: "center",
-                display: "flex",
-                flexDirection: "column",
-                webkitBoxPack: "center",
-                justifyContent: "center"
+          <Grid container xs={12} align='center' justify='center' spacing={5} style={{marginTop:'5vh', zIndex:'10'}}>
+            <Grid container xs={9} justify='space-around'>
+              <Grid container xs={5} align='center' justify='center' style={{zIndex:'20'}}>
+                  <img src={require('../../../../assets/carouselphone.png')} style={{zIndex:'20',minWidth:"75vh",height:'82vh',paddingLeft:'12vh'}} ></img>
+                  <MobileCarousel/>
+              </Grid>
+              <Grid container xs={5} align='center' style={{zIndex:'20'}} spacing={0}
+              direction="column"
+              alignItems="center"
+              justify="center"
+              >
+                <img src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20',maxWidth:"65vh",height:'82vh',position:'absolute'}}></img>
+              <Typography 
+                style={{
+                  zIndex:'32',
+                  marginTop:'15vh',
+                  border:'2px solid white',
+                  borderRadius:'25px',
+                  fontSize:'22px',
+                  padding:'4px',
+                  color:'white',
+                  paddingTop:'20px',
+                  paddingBottom:'20px'
                 }}
               >
-              <MobileCarousel/>
-              </Grid>
-              </Grid>
-              </Grid>
-            <Grid container xs={5} align='center' style={{zIndex:'20'}}>
-              <Grid item xs={12} align='center' style={{marginLeft:'0vh',}}>
-              <img src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20',maxWidth:"70vh",height:'94vh'}}></img>
-            </Grid>
-            <Grid item xs={12} align='center' 
-              style={{
-                marginTop:'-85vh',
-                webkitBoxAlign: "center",
-                alignItems: "center",
-                display: "flex",
-                flexDirection: "column",
-                webkitBoxPack: "center",
-                justifyContent: "center"
-                }}
-              >
-            <Typography 
-              style={{
-                zIndex:'32',
-                border:'2px solid white',
-                borderRadius:'25px',
-                fontSize:'22px',
-                padding:'4px',
-                color:'white',
-                position:'absolute',
-                paddingTop:'2vh',
-                paddingBottom:'2vh'
-              }}
-            >
-              Earning 0.7% APR
-            </Typography>
-            
+                Earning 0.7% APR
+              </Typography>
               
-            </Grid>
-            <Grid item xs={12} align='center' style={{marginTop:'-35vh'}}>
-            <Typography style={{zIndex:'32',display:'inline',fontSize:'50px',paddingRight:'1vh',color:'white'}}>{"$"}</Typography><CountUp start={500.0100000} decimals={6} end={500.999999} duration={1000000} style={{fontSize:'50px',color:'white',display:'inline',zIndex:'32'}}></CountUp>
-            </Grid>
-        
-            <Grid item xs={1}/>
-            </Grid>
             
+            <CountUp start={500.0100000} decimals={6} end={500.999999} duration={1000000} style={{fontSize:'50px',color:'white',paddingTop:'5vh',display:'inline',zIndex:'32'}}></CountUp>
+            
+            </Grid>
+            </Grid>
           </Grid>
-        
-        </Grid>
         <Grid container xs={12} style={{marginTop:'67px'}}>
             <Grid item xs={1} style={{marginLeft:'4vh'}} />
             <Grid item xs={5} align='center'>
