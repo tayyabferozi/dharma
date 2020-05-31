@@ -37,7 +37,7 @@ const ButtonGoogle = () => {
         <Button variant="contained" color="primary" 
                 style={{
                   background:'white',
-                  width:'25vh',
+                  width:200,
                   zIndex:'4',
                   height:'85px',
                   fontWeight:'600',

@@ -34,8 +34,57 @@ import ButtonGoogle from "./ButtonGoogle";
 
 const useStyles = makeStyles(theme => ({
   root: {
-    color: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+    flexGrow: 1,
   },
+  control: {
+    padding: theme.spacing(2),
+  },
+  countMobile: {
+    zIndex:'32',
+    marginTop:'15vh',
+    border:'2px solid white',
+    borderRadius:'25px',
+    fontSize:'22px',
+    padding:'4px',
+    color:'white',
+    paddingTop:'20px',
+    paddingBottom:'20px'
+  },
+  transparencyBox: {
+    backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,1))",
+    zIndex:'4',
+    boxShadow: "0px 0px 15px 15px white",
+    borderRadius:'25px',
+  },
+  CountUp: {
+    fontSize:'50px',
+    color:'white',
+    paddingTop:'5vh',
+    display:'inline',
+    zIndex:'32'
+  },
+  SendAndReceive: {
+    color:'rgb(37, 48, 86)',
+    fontSize:'46px',
+    fontWeight:'600'
+  },
+  spacing: {
+    margin: theme.spacing(4),
+  },
+  VideoButton: {
+    "&:hover": {
+      backgroundColor: "white"
+    },
+
+    color: 'rgb(37,48,86)',
+    fontSize:'14px',
+    fontWeight:'500',
+    lineHeight: 1.5,
+    background:'white',
+    marginLeft:'14px',
+    paddingLeft:'2vh'
+  }
+
 }));
 
 const Landingpage = props => {
@@ -97,79 +146,46 @@ const  mouseout14 = event => {
 };
 
   return (
-    <Grid container xs={12} align="center" class='MainContainer' style={{background:'white'}}>
-      <Grid item xs={4}/>
-      <Grid item xs={4}>
-      </Grid>
-      <Grid item xs={2}/>
-      
+    <Grid container md={12} lg={12} align="center" class='MainContainer' style={{background:'white'}}>
       <Grid container xs={12}>
-      
-      <Grid container xs={1} style={{marginLeft:'15vh'}}/>
-      <Grid item xs={8} 
-        style={{
-          backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,1))",
-          zIndex:'4',
-          boxShadow: "0px 0px 15px 15px white",
-          borderRadius:'25px',
-        }}
-      > 
-        
-      
-        <Grid item xs={3} style={{marginLeft:"2vh"}}/>
-        <Grid item xs={9} style={{zIndex:'4'}}>
-        <Typography class='SendMoneyTo' style={{lineHeight:'86px',margin:'0'}}>
-          Send money to
-        </Typography>
-        </Grid>
-        <Grid item xs={1}/>
-      
-      <Grid container xs={12} style={{marginTop:'0vh'}}>
-        <Grid item xs={12} style={{zIndex:'4'}}>
-          <Typography class='anyone' style={{lineHeight:'86px',margin:'0'}}>
-            anyone.
-          </Typography>
-          <Typography class='EarnInterest' style={{lineHeight:'86px',margin:'0'}}>
-            {" "}
-            Earn interest
-          </Typography>
-        </Grid>
-    
-  
-      <Grid container xs={12} style={{marginTop:'0vh'}}>
-        <Grid item xs={3}/>
-        <Grid item xs={12} style={{zIndex:'4'}}>
-        <Typography class='From' style={{lineHeight:'86px',margin:'0'}}>
-              {"from "}
-        </Typography > 
-        <Typography class='anywhere' style={{lineHeight:'86px',margin:'0'}}>
-          anywhere.
-        </Typography>  
+        <Grid item md={1} lg={1} style={{marginLeft:'15vh'}}/>
+          <Grid item md={8} lg={8} className={classes.transparencyBox}> 
+          <Grid item md={1} lg={3} style={{marginLeft:"2vh"}}/>
+          <Grid item md={11} lg={9} style={{zIndex:'4'}}>
+            <Typography class='SendMoneyTo' style={{lineHeight:'86px',margin:'0'}}>
+              Send money to
+            </Typography>
+          </Grid>
+          
+          <Grid container md={12} lg={12} align='center'>
+            <Grid item md={12} lg={12} style={{zIndex:'4'}}>
+              <Typography class='anyone' style={{lineHeight:'86px',margin:'0'}}>
+                anyone.
+              </Typography>
+              <Typography class='EarnInterest' style={{lineHeight:'86px',margin:'0'}}>
+                {" "}
+                Earn interest
+              </Typography>
+              </Grid>
+            <Grid container xs={12} style={{marginTop:'0vh'}}>
+              <Grid item xs={3}/>
+              <Grid item xs={12} style={{zIndex:'4'}}>
+                <Typography class='From' style={{lineHeight:'86px',margin:'0'}}>
+                  {"from "}
+                </Typography> 
+                <Typography class='anywhere' style={{lineHeight:'86px',margin:'0'}}>
+                  anywhere.
+                </Typography>  
+              </Grid>
+            </Grid>
+          </Grid>
+          <Grid item xs={2}/>
         </Grid>
       </Grid>
-      </Grid>
-      <Grid item xs={2}/>
-      </Grid>
-        </Grid>
       <Grid container xs={12} style={{marginTop:'2vh'}}>
         <Grid item xs={1} style={{marginLeft:'8vh'}}/>
-        <Grid item xs={9} 
-          style={{
-            
-              backgroundImage: "linear-gradient(to right, rgba(255,255,255,0.8), rgba(255,255,255,1))",
-              zIndex:'4',
-              boxShadow: "0px 0px 15px 15px white",
-              borderRadius:'25px',
-          
-            }}
-        >
-          
-          <Typography class='DharmaIsLimitless' 
-            style={{
-              color: "rgb(110, 120, 152)",
-              
-            }}
-          >
+        <Grid item xs={9} className={classes.transparencyBox}>
+          <Typography class='DharmaIsLimitless' style={{color: "rgb(110, 120, 152)"}}>
             Dharma is a limitless,borderless way to send and receive USD -
             all while
           </Typography>
@@ -184,114 +200,104 @@ const  mouseout14 = event => {
         </Grid>
         <Grid item xs={1}/>
       </Grid>
-      <Grid container xs={12}>
-        <Grid container xs={12} style={{marginTop:'8vh'}}>
-          <Grid item xs={3} style={{marginLeft:'6vh'}}/>
-          <Grid container xs={6} align='center' justify='space-around'>
-            <Grid item xs={5} style={{paddingLeft:'4vh'}}>
-              <ButtonApple/>
-            </Grid>
-            <Grid item xs={5} align='center' style={{paddingRight:'22vh',}}>
-              <ButtonGoogle/>
-            </Grid>
-            
-          </Grid>
-          <Grid item xs={0}/>
+  <Grid container direction column xs={12} style={{marginTop:'5vh'}}>
+    <Grid container xs={1} style={{marginLeft:'4vh'}}/>    
+  <Grid container xs={3} align='right'>  
+      <Grid container direction='column' justify='right'  align='right'>
+        <Grid item>
+        <ButtonApple />
         </Grid>
-        <Grid container xs={12}>
-          <Grid itemx xs={12}>
-          <Grid container xs={12} style={{marginTop:'-60vh'}}>
-          <Grid item xs={10} />
-          <Grid item xs={1} align="center">
-            <Bubbles/>
-          </Grid>
-        </Grid>
-        
-          </Grid>
-        </Grid>
+        <Grid item style={{paddingTop:'10vh'}}>
+        <img src={require('../../../../assets/carouselphone.png')}  style={{zIndex:'20',width:'500px',height:'550px'}}></img>    
+        </Grid>   
       </Grid>
-          <Grid container xs={12} align='center' justify='center' spacing={5} style={{marginTop:'5vh', zIndex:'10',paddingLeft:'0vh',marginLeft:'-4vh'}}>
-            <Grid container xs={11} justify='space-around'>
-              <Grid container xs={5} align='center' justify='center' style={{zIndex:'20'}}>
-                  <img src={require('../../../../assets/carouselphone.png')} style={{zIndex:'20',minWidth:"650px",height:'700px',paddingLeft:'12vh'}} ></img>
-                  <MobileCarousel/>
-              </Grid>
-              <Grid container xs={5} align='center' style={{zIndex:'20'}} spacing={8}
-              direction="column"
-              alignItems="center"
-              justify="center"
-              >
-                <img src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20',maxWidth:"550px",height:'700px',position:'absolute'}}></img>
-              <Typography 
-                style={{
-                  zIndex:'32',
-                  marginTop:'15vh',
-                  border:'2px solid white',
-                  borderRadius:'25px',
-                  fontSize:'22px',
-                  padding:'4px',
-                  color:'white',
-                  paddingTop:'20px',
-                  paddingBottom:'20px'
-                }}
-              >
-                Earning 0.7% APR
-              </Typography>
-              
-            
-            <CountUp start={500.0100000} decimals={6} end={500.999999} duration={1000000} style={{fontSize:'50px',color:'white',paddingTop:'5vh',display:'inline',zIndex:'32'}}></CountUp>
-            
-            </Grid>
-            </Grid>
-          </Grid>
-        <Grid container xs={12} style={{marginTop:'67px'}}>
-            <Grid item xs={1} style={{marginLeft:'5vh'}} />
-            <Grid item xs={5} align='center'>
-              <Typography style={{color:'rgb(37, 48, 86)',fontSize:'46px',fontWeight:'600'}}>Send & Receive</Typography>              
-            </Grid>
-            
-            <Grid item xs={5} align='center' style={{marginLeft:'-4vh'}}>
-              <Typography style={{color:'rgb(37, 48, 86)',fontSize:'46px',fontWeight:'600'}}>Earn & Save</Typography>
-            </Grid>
-          </Grid>
-          <Grid container xs={12} align='center' style={{marginTop:'50px'}}>
-              <Grid item xs={2} style={{marginLeft:'-4vh'}}/>
-            <Grid item xs={4} style={{marginLeft:'0vh'}}>
-              <Typography style={{lineHeight:'32px',color:'rgb(110, 120, 152)',fontSize:'20px'}}>Send USD to your friends and family anywhere in the world — even if they don’t have a bank account.</Typography>
-            </Grid>
-            
-            <Grid item xs={5} align='center' style={{marginLeft:'2vh'}}>
-              <Typography style={{lineHeight:'32px',color:'rgb(110, 120, 152)',fontSize:'20px'}}>Every dollar in your Dharma account is earning 0.7% APR —<br/> and you can withdraw it anytime; 24/7/365.</Typography>
-            </Grid>
-          </Grid>
-          <Grid container xs={12} align='center' style={{marginTop:'80px'}}>
-            <Grid item xs={12}>
-            <Button variant="contained" color="primary" style={{fontSize:'10px', color:'rgb(110, 120, 152)',background:'white',width:'25vh'}}><ArrowRightIcon style={{background: "webkit-radial-gradient(33% 100% circle, #515ECF 4%, #9B36B7 30%, #D92E7F 62%, #F15245 85%, #FED373)",
-	background: "radial-gradient(circle at 33% 100%, #ff3be7 4%, #ff3be7 28%, #03ffe8 62%, #F15245 85%, #FED373)",
-	webkitBackgroundClip: "text",
-	webkitTextFillColor: "transparent"
-	
-                }}/>Watch our video</Button>
-            </Grid>
-          </Grid>
-          <Grid container xs={12} style={{marginTop:'10vh'}} alignItems='center' justify='space-evenly'>
-            <Grid item xs={3} align='center'>
-              <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'5vh'}} class="sc-bZQynM fWtrRV"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0C1.34315 0 0 1.34314 0 3V21C0 22.6569 1.34315 24 3 24H29C30.6569 24 32 22.6569 32 21V3C32 1.34315 30.6569 0 29 0H3ZM2 3C2 2.44772 2.44771 2 3 2H29C29.5523 2 30 2.44772 30 3V5H2V3ZM2 11V21C2 21.5523 2.44772 22 3 22H29C29.5523 22 30 21.5523 30 21V11H2Z" fill="url(#paint0_linear)"></path><defs><linearGradient id="paint0_linear" x1="32" y1="3.41651e-07" x2="26.8145" y2="28.5189" gradientUnits="userSpaceOnUse"><stop offset="0.0288666" stop-color="#FEA41C"></stop><stop offset="0.223691" stop-color="#FF5F61"></stop><stop offset="0.408517" stop-color="#FF2FA9"></stop><stop offset="0.628457" stop-color="#FE1CD5"></stop><stop offset="0.733043" stop-color="#CD1CEE"></stop><stop offset="0.864847" stop-color="#8C23F9"></stop><stop offset="0.96226" stop-color="#4635FF"></stop></linearGradient></defs></svg>
-              <Typography style={{fontWeight:'500',fontSize:'18px'}}>Easy as 1, 2, 3...</Typography>
-              <Typography style={{fontSize:'16px',fontWeight:'400',marginTop:'26px',color:'rgb(110, 120, 152)'}}>Connect your debit card, tap a button, and your money is uploaded to the Internet.</Typography>
-            </Grid>
-            <Grid item xs={3} align='center'>
-              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'5vh'}} class="sc-bZQynM lJVJ"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2ZM0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7ZM16.8281 18.2423C15.5419 20.1837 15.754 22.8251 17.4645 24.5355C19.1749 26.246 21.8163 26.4581 23.7577 25.1719L16.8281 18.2423ZM18.2423 16.8281L25.1719 23.7577C26.4581 21.8163 26.246 19.1749 24.5355 17.4645C22.8251 15.754 20.1837 15.5419 18.2423 16.8281ZM16.0503 25.9497C13.3166 23.2161 13.3166 18.7839 16.0503 16.0503C18.7839 13.3166 23.2161 13.3166 25.9497 16.0503C28.6834 18.7839 28.6834 23.2161 25.9497 25.9497C23.2161 28.6834 18.7839 28.6834 16.0503 25.9497ZM24.7071 4.70711C25.0976 4.31658 25.0976 3.68342 24.7071 3.29289C24.3166 2.90237 23.6834 2.90237 23.2929 3.29289L3.29289 23.2929C2.90237 23.6834 2.90237 24.3166 3.29289 24.7071C3.68342 25.0976 4.31658 25.0976 4.70711 24.7071L24.7071 4.70711Z" fill="url(#paint0_linear)"></path><defs><linearGradient id="paint0_linear" x1="28" y1="3.98593e-07" x2="20.1296" y2="32.4639" gradientUnits="userSpaceOnUse"><stop offset="0.0288666" stop-color="#FEA41C"></stop><stop offset="0.223691" stop-color="#FF5F61"></stop><stop offset="0.408517" stop-color="#FF2FA9"></stop><stop offset="0.628457" stop-color="#FE1CD5"></stop><stop offset="0.733043" stop-color="#CD1CEE"></stop><stop offset="0.864847" stop-color="#8C23F9"></stop><stop offset="0.96226" stop-color="#4635FF"></stop></linearGradient></defs></svg>
-              <Typography style={{fontWeight:'500',fontSize:'18px'}}>Zero Fees, Zero Surprises</Typography>
-              <Typography style={{fontSize:'16px',fontWeight:'400',marginTop:'26px',color:'rgb(110, 120, 152)'}}>No deposit fees, no withdrawal fees, no transfer fees — Dharma is 100% free.</Typography>
-            </Grid>
-            <Grid item xs={3} align='center'>
-            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'5vh'}} class="sc-bZQynM dRSHTE"><path d="M6 5H26M6 5V10M6 5H4H26M26 5V10M26 5H28M6 10V31H26V10M6 10H1V1H31V10H26M10 21V24C10 25.6569 11.3431 27 13 27H19C20.6569 27 22 25.6569 22 24V21M23 14.5C23 17.5376 19.866 20 16 20C12.134 20 9 17.5376 9 14.5C9 11.4624 12.134 9 16 9C19.866 9 23 11.4624 23 14.5Z" stroke="url(#paint0_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><defs><linearGradient id="paint0_linear" x1="31" y1="1" x2="22.5674" y2="35.7828" gradientUnits="userSpaceOnUse"><stop offset="0.0288666" stop-color="#FEA41C"></stop><stop offset="0.223691" stop-color="#FF5F61"></stop><stop offset="0.408517" stop-color="#FF2FA9"></stop><stop offset="0.628457" stop-color="#FE1CD5"></stop><stop offset="0.733043" stop-color="#CD1CEE"></stop><stop offset="0.864847" stop-color="#8C23F9"></stop><stop offset="0.96226" stop-color="#4635FF"></stop></linearGradient></defs></svg>  
-              <Typography style={{fontWeight:'500',fontSize:'18px'}}>Withdraw Anytime — 24/7/365</Typography>
-              <Typography style={{fontSize:'16px',fontWeight:'400',marginTop:'26px',color:'rgb(110, 120, 152)'}}>Withdraw money directly to over 11,500 U.S. banks and credit unions.</Typography>
-            </Grid>
-          </Grid>
-          <Grid container xs={12} style={{marginTop:'10vh'}}   direction="row" justify="space-evenly" alignItems="center">
+  </Grid>
+  <Grid item xs={2}/>
+  <Grid container xs={4} align='left' >  
+      <Grid container direction='column' justify='left'  align='left'>
+        <Grid item >
+        <ButtonGoogle />
+        </Grid>
+        <Grid item style={{paddingTop:'10vh'}}>
+        <img src={require('../../../../assets/countmobile.png')}  style={{zIndex:'20',width:'500px',height:'550px'}}></img>    
+        </Grid>   
+      </Grid> 
+      </Grid>
+      
+  </Grid>
+  <Grid container xs={12}style={{marginTop:'5vh', zIndex:'10'}}>
+    {/* <Grid container xs={12} align='center' justify='space-evenly'>
+      <Grid container xs={5} align='center' style={{zIndex:'20',paddingRight:'17vh',marginTop:'-20vh'}}
+        direction="column"
+        alignItems="center"
+        justify="center"
+      >
+        <Typography className='countMobile'>
+          Earning 0.7% APR
+        </Typography>  
+        <CountUp
+          className={classes.CountUp} 
+          start={500.0100000} 
+          decimals={6} 
+          end={500.999999} 
+          duration={1000000} 
+        />
+      </Grid>
+    </Grid> */}
+  </Grid>
+  <Grid container xs={12} style={{marginTop:'67px'}}>
+    <Grid item xs={1} style={{marginLeft:'5vh'}} />
+    <Grid item xs={5} align='center'>
+      <Typography className={classes.SendAndReceive}>Send & Receive</Typography>              
+    </Grid>
+    <Grid item xs={5} align='center' style={{marginLeft:'-4vh'}}>
+      <Typography className={classes.SendAndReceive}>Earn & Save</Typography>
+    </Grid>
+  </Grid>
+  <Grid container xs={12} align='center' style={{marginTop:'50px'}}>
+    <Grid item xs={2} style={{marginLeft:'-4vh'}}/>
+    <Grid item xs={4} style={{marginLeft:'0vh'}}>
+      <Typography style={{lineHeight:'32px',color:'rgb(110, 120, 152)',fontSize:'20px'}}>Send USD to your friends and family anywhere in the world — even if they don’t have a bank account.</Typography>
+    </Grid>
+    <Grid item xs={5} align='center' style={{marginLeft:'2vh'}}>
+      <Typography style={{lineHeight:'32px',color:'rgb(110, 120, 152)',fontSize:'20px'}}>Every dollar in your Dharma account is earning 0.7% APR —<br/> and you can withdraw it anytime; 24/7/365.</Typography>
+    </Grid>
+  </Grid>
+  <Grid container xs={12} align='center' style={{marginTop:'80px'}}>
+    <Grid item xs={12}>
+      <Button 
+        variant="contained" 
+        color="primary" 
+        className={classes.VideoButton}
+      >
+        <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg" class="sc-bZQynM iJaZLJ"><path d="M1 2.76619V11.2338C1 12.0111 1.84797 12.4912 2.5145 12.0913L9.57084 7.85749C10.2182 7.46909 10.2182 6.53091 9.57084 6.14251L2.5145 1.9087C1.84797 1.50878 1 1.9889 1 2.76619Z" stroke="url(#paint0_linear)" stroke-width="2"></path><defs><linearGradient id="paint0_linear" x1="11" y1="1" x2="7.04888" y2="14.5814" gradientUnits="userSpaceOnUse"><stop offset="0.0288666" stop-color="#FEA41C"></stop><stop offset="0.223691" stop-color="#FF5F61"></stop><stop offset="0.408517" stop-color="#FF2FA9"></stop><stop offset="0.628457" stop-color="#FE1CD5"></stop><stop offset="0.733043" stop-color="#CD1CEE"></stop><stop offset="0.864847" stop-color="#8C23F9"></stop><stop offset="0.96226" stop-color="#4635FF"></stop></linearGradient></defs></svg>
+        Watch our video
+      </Button>
+    </Grid>
+  </Grid>
+  <Grid container xs={12} style={{marginTop:'10vh'}} alignItems='center' justify='space-evenly'>
+    <Grid item xs={3} align='center'>
+      <svg width="32" height="24" viewBox="0 0 32 24" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'5vh'}} class="sc-bZQynM fWtrRV"><path fill-rule="evenodd" clip-rule="evenodd" d="M3 0C1.34315 0 0 1.34314 0 3V21C0 22.6569 1.34315 24 3 24H29C30.6569 24 32 22.6569 32 21V3C32 1.34315 30.6569 0 29 0H3ZM2 3C2 2.44772 2.44771 2 3 2H29C29.5523 2 30 2.44772 30 3V5H2V3ZM2 11V21C2 21.5523 2.44772 22 3 22H29C29.5523 22 30 21.5523 30 21V11H2Z" fill="url(#paint0_linear)"></path><defs><linearGradient id="paint0_linear" x1="32" y1="3.41651e-07" x2="26.8145" y2="28.5189" gradientUnits="userSpaceOnUse"><stop offset="0.0288666" stop-color="#FEA41C"></stop><stop offset="0.223691" stop-color="#FF5F61"></stop><stop offset="0.408517" stop-color="#FF2FA9"></stop><stop offset="0.628457" stop-color="#FE1CD5"></stop><stop offset="0.733043" stop-color="#CD1CEE"></stop><stop offset="0.864847" stop-color="#8C23F9"></stop><stop offset="0.96226" stop-color="#4635FF"></stop></linearGradient></defs></svg>
+      <Typography style={{fontWeight:'500',fontSize:'18px'}}>
+        Easy as 1, 2, 3...
+      </Typography>
+      <Typography style={{fontSize:'16px',fontWeight:'400',marginTop:'26px',color:'rgb(110, 120, 152)'}}>
+        Connect your debit card, tap a button, and your money
+        is uploaded to the Internet.
+      </Typography>
+    </Grid>
+    <Grid item xs={3} align='center'>
+      <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'5vh'}} class="sc-bZQynM lJVJ"><path fill-rule="evenodd" clip-rule="evenodd" d="M7 2C4.23858 2 2 4.23858 2 7C2 9.76142 4.23858 12 7 12C9.76142 12 12 9.76142 12 7C12 4.23858 9.76142 2 7 2ZM0 7C0 3.13401 3.13401 0 7 0C10.866 0 14 3.13401 14 7C14 10.866 10.866 14 7 14C3.13401 14 0 10.866 0 7ZM16.8281 18.2423C15.5419 20.1837 15.754 22.8251 17.4645 24.5355C19.1749 26.246 21.8163 26.4581 23.7577 25.1719L16.8281 18.2423ZM18.2423 16.8281L25.1719 23.7577C26.4581 21.8163 26.246 19.1749 24.5355 17.4645C22.8251 15.754 20.1837 15.5419 18.2423 16.8281ZM16.0503 25.9497C13.3166 23.2161 13.3166 18.7839 16.0503 16.0503C18.7839 13.3166 23.2161 13.3166 25.9497 16.0503C28.6834 18.7839 28.6834 23.2161 25.9497 25.9497C23.2161 28.6834 18.7839 28.6834 16.0503 25.9497ZM24.7071 4.70711C25.0976 4.31658 25.0976 3.68342 24.7071 3.29289C24.3166 2.90237 23.6834 2.90237 23.2929 3.29289L3.29289 23.2929C2.90237 23.6834 2.90237 24.3166 3.29289 24.7071C3.68342 25.0976 4.31658 25.0976 4.70711 24.7071L24.7071 4.70711Z" fill="url(#paint0_linear)"></path><defs><linearGradient id="paint0_linear" x1="28" y1="3.98593e-07" x2="20.1296" y2="32.4639" gradientUnits="userSpaceOnUse"><stop offset="0.0288666" stop-color="#FEA41C"></stop><stop offset="0.223691" stop-color="#FF5F61"></stop><stop offset="0.408517" stop-color="#FF2FA9"></stop><stop offset="0.628457" stop-color="#FE1CD5"></stop><stop offset="0.733043" stop-color="#CD1CEE"></stop><stop offset="0.864847" stop-color="#8C23F9"></stop><stop offset="0.96226" stop-color="#4635FF"></stop></linearGradient></defs></svg>
+      <Typography style={{fontWeight:'500',fontSize:'18px'}}>Zero Fees, Zero Surprises</Typography>
+      <Typography style={{fontSize:'16px',fontWeight:'400',marginTop:'26px',color:'rgb(110, 120, 152)'}}>No deposit fees, no withdrawal fees, no transfer fees — Dharma is 100% free.</Typography>
+    </Grid>
+    <Grid item xs={3} align='center'>
+      <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'5vh'}} class="sc-bZQynM dRSHTE"><path d="M6 5H26M6 5V10M6 5H4H26M26 5V10M26 5H28M6 10V31H26V10M6 10H1V1H31V10H26M10 21V24C10 25.6569 11.3431 27 13 27H19C20.6569 27 22 25.6569 22 24V21M23 14.5C23 17.5376 19.866 20 16 20C12.134 20 9 17.5376 9 14.5C9 11.4624 12.134 9 16 9C19.866 9 23 11.4624 23 14.5Z" stroke="url(#paint0_linear)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path><defs><linearGradient id="paint0_linear" x1="31" y1="1" x2="22.5674" y2="35.7828" gradientUnits="userSpaceOnUse"><stop offset="0.0288666" stop-color="#FEA41C"></stop><stop offset="0.223691" stop-color="#FF5F61"></stop><stop offset="0.408517" stop-color="#FF2FA9"></stop><stop offset="0.628457" stop-color="#FE1CD5"></stop><stop offset="0.733043" stop-color="#CD1CEE"></stop><stop offset="0.864847" stop-color="#8C23F9"></stop><stop offset="0.96226" stop-color="#4635FF"></stop></linearGradient></defs></svg>  
+      <Typography style={{fontWeight:'500',fontSize:'18px'}}>Withdraw Anytime — 24/7/365</Typography>
+      <Typography style={{fontSize:'16px',fontWeight:'400',marginTop:'26px',color:'rgb(110, 120, 152)'}}>Withdraw money directly to over 11,500 U.S. banks and credit unions.</Typography>
+    </Grid>
+  </Grid>
+  <Grid container xs={12} style={{marginTop:'10vh'}}   direction="row" justify="space-evenly" alignItems="center">
             <Grid item xs={3} align='center'>
             
              <svg width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg" style={{marginBottom:'5vh'}} class="sc-bZQynM gOAebT"><path fill-rule="evenodd" clip-rule="evenodd" d="M16 2.12292C14.3758 2.52255 12.7922 3.8928 11.5076 6.17655C11.1912 6.73903 10.8984 7.34876 10.633 8H16V2.12292ZM9.76446 5.19603C9.28388 6.05041 8.85673 6.99025 8.49049 8H4.9989C6.5703 5.90795 8.67597 4.24015 11.1134 3.19916C10.6211 3.80376 10.17 4.47504 9.76446 5.19603ZM7.86948 10H3.73009C2.77228 11.812 2.17473 13.8438 2.0328 16H7.01672C7.08788 13.8778 7.38426 11.8525 7.86948 10ZM16 10H9.94346C9.4235 11.807 9.09564 13.8365 9.01791 16H16V10ZM18 16V10H24.0565C24.5765 11.807 24.9044 13.8365 24.9821 16H18ZM26.9833 16C26.9121 13.8778 26.6157 11.8525 26.1305 10H30.2699C31.2277 11.812 31.8253 13.8438 31.9672 16H26.9833ZM25.5095 8H29.0011C27.4297 5.90795 25.324 4.24015 22.8866 3.19916C23.3789 3.80376 23.83 4.47505 24.2355 5.19603C24.7161 6.05041 25.1433 6.99025 25.5095 8ZM18 8H23.367C23.1016 7.34876 22.8088 6.73903 22.4924 6.17655C21.2078 3.8928 19.6242 2.52255 18 2.12292V8ZM17 0C7.61116 0 0 7.61116 0 17C0 26.3888 7.61116 34 17 34C26.3888 34 34 26.3888 34 17C34 7.61116 26.3888 0 17 0ZM16 18H9.01791C9.09564 20.1635 9.4235 22.193 9.94346 24H16V18ZM16 26H10.633C10.8984 26.6512 11.1912 27.261 11.5076 27.8234C12.7922 30.1072 14.3758 31.4774 16 31.8771V26ZM7.86948 24C7.38426 22.1475 7.08788 20.1222 7.01672 18H2.0328C2.17473 20.1562 2.77228 22.188 3.73009 24H7.86948ZM4.9989 26H8.49049C8.85673 27.0098 9.28388 27.9496 9.76446 28.804C10.17 29.525 10.6211 30.1962 11.1134 30.8008C8.67598 29.7599 6.5703 28.092 4.9989 26ZM18 26H23.367C23.1016 26.6512 22.8088 27.261 22.4924 27.8234C21.2078 30.1072 19.6242 31.4775 18 31.8771V26ZM24.0565 24H18V18H24.9821C24.9044 20.1635 24.5765 22.193 24.0565 24ZM25.5095 26C25.1433 27.0098 24.7161 27.9496 24.2355 28.804C23.83 29.525 23.3789 30.1962 22.8866 30.8008C25.324 29.7599 27.4297 28.092 29.0011 26H25.5095ZM30.2699 24H26.1305C26.6157 22.1475 26.9121 20.1222 26.9833 18H31.9672C31.8253 20.1562 31.2277 22.188 30.2699 24Z" fill="url(#paint0_linear)"></path><defs><linearGradient id="paint0_linear" x1="34" y1="4.84006e-07" x2="24.4431" y2="39.4205" gradientUnits="userSpaceOnUse"><stop offset="0.0288666" stop-color="#FEA41C"></stop><stop offset="0.223691" stop-color="#FF5F61"></stop><stop offset="0.408517" stop-color="#FF2FA9"></stop><stop offset="0.628457" stop-color="#FE1CD5"></stop><stop offset="0.733043" stop-color="#CD1CEE"></stop><stop offset="0.864847" stop-color="#8C23F9"></stop><stop offset="0.96226" stop-color="#4635FF"></stop></linearGradient></defs></svg>

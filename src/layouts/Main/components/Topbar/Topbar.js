@@ -20,6 +20,29 @@ const useStyles = makeStyles(theme => ({
   },
   title: {
     flexGrow: 1
+  },
+  FAQs: {
+    fontSize: "15px",
+    marginTop: "0vh",
+    opactiy: "0.8",
+    color: "#6e7898"
+                    
+  },
+  GetStartedOnline: {
+    borderRadius: "25px",
+    background:"linear-gradient(90deg, rgb(87, 34, 255) 0%, rgb(198, 3, 255) 70%)",
+    width: "173px",
+    height: "40px",
+    fontSize: "12px",
+    fontWeight: "500",
+    paddingLeft: "20px",
+    paddingRight: "20px"              
+  },
+  SmartWallet: {
+    color: "rgb(37, 48, 86)",
+    fontSize: "15px",
+    marginTop: "0vh"
+                    
   }
 }));
 
@@ -73,28 +96,24 @@ const Topbar = props => {
 
   return (
     <div className={classes.root} style={{backgroundColor:'white',zIndex:'30'}}>
-      <Grid container xs={12} style={{backgroundColor:'white',zIndex:'30'}}>
-    
-            <Grid container xs={12} style={{zIndex:'30'}} align='center'>
-              <Grid item xs={2} style={{ marginTop: "3vh" }}>
+      <Grid container sm={11} md={11} lg={11} style={{backgroundColor:'white',zIndex:'30'}}>
+            <Grid container align="center" justify="space-between" sm={12} md={12} lg={12} style={{zIndex:'30'}}>
+              <Grid item sm={2} md={2} lg={2} align='center' style={{ marginTop: "3vh",paddingRight:'5vh' }}>
                 <img width='60' src={require('../../../../assets/logo.png')} />
               </Grid>
-              <Grid item xs={4} />
               <Grid
                 container
-                xs={6}
-                style={{ marginTop: "4vh" }}
-                align="center"
-                justify="space-between"
+
+                sm={8}
+                lg={6}
+                md={6}
+                style={{ marginTop: "4vh",paddingLeft:'5vh' }}
+                
               >
+                <Grid item md={2} sm={2} lg={2}>
                 <IconButton>
                   <Typography
-                    style={{
-                      fontSize: "15px",
-                      marginTop: "0vh",
-                      opactiy: "0.8",
-                      color: "#6e7898"
-                    }}
+                    className={classes.FAQs}
                     onMouseEnter={mouse}
                     onMouseLeave={mouseout}
                     id="colorstext"
@@ -103,14 +122,11 @@ const Topbar = props => {
                     FAQs
                   </Typography>
                 </IconButton>
+                </Grid>
+                <Grid item md={3} sm={3} lg={3}>
                 <IconButton>
                   <Typography
-                    style={{
-                      color: "rgb(110, 120, 152)",
-                      fontSize: "15px",
-                      marginTop: "0vh",
-                      opactiy: "0.8"
-                    }}
+                    className={classes.FAQs}
                     onMouseEnter={mouse1}
                     onMouseLeave={mouseout1}
                     id="colorstext1"
@@ -119,14 +135,11 @@ const Topbar = props => {
                     How It Works
                   </Typography>
                 </IconButton>
+                </Grid>
+                <Grid item md={3} sm={3} lg={3}>
                 <IconButton>
                   <Typography
-                    style={{
-                      color: "rgb(110, 120, 152)",
-                      fontSize: "15px",
-                      marginTop: "0vh",
-                      opactiy: "0.8"
-                    }}
+                    className={classes.FAQs}
                     onMouseEnter={mouse2}
                     onMouseLeave={mouseout2}
                     id="colorstext2"
@@ -134,13 +147,11 @@ const Topbar = props => {
                     Smart Wallet
                   </Typography>
                 </IconButton>
+                </Grid>
+                <Grid item lg={2} sm={2} md={2}>
                 <IconButton>
                   <Typography
-                    style={{
-                      color: "rgb(37, 48, 86)",
-                      fontSize: "15px",
-                      marginTop: "0vh"
-                    }}
+                    className={classes.SmartWallet}
                     onMouseEnter={mouse3}
                     onMouseLeave={mouseout3}
                     id="colorstext3"
@@ -148,29 +159,21 @@ const Topbar = props => {
                     Contact
                   </Typography>
                 </IconButton>
+                </Grid>
+                <Grid item md={2} sm={2} lg={2}>
                 <Button
                   variant="contained"
                   color="primary"
-                  style={{
-                    borderRadius: "25px",
-                    background:
-                      "linear-gradient(90deg, rgb(87, 34, 255) 0%, rgb(198, 3, 255) 70%)",
-                    width: "173px",
-                    height: "40px",
-                    fontSize: "12px",
-                    fontWeight: "500",
-                    paddingLeft: "20px",
-                    paddingRight: "20px"
-                  }}
+                  className={classes.GetStartedOnline}
                 >
                   Get Started Online
                 </Button>
                 <Typography>
                   {"  "}
                 </Typography>
+                </Grid>
               </Grid>
             </Grid>
-          
         </Grid>
         </div>
   );
