@@ -13,7 +13,7 @@ import PropTypes from 'prop-types';
 import RadioButtonUncheckedIcon from "@material-ui/icons/RadioButtonUnchecked";
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1
+  
   },
   menuButton: {
     marginRight: theme.spacing(2)
@@ -25,23 +25,33 @@ const useStyles = makeStyles(theme => ({
     fontSize: "15px",
     marginTop: "0vh",
     opactiy: "0.8",
-    color: "#6e7898"
+    color: "#8a93ad",
+    fontWeight:'600'
                     
   },
   GetStartedOnline: {
-    borderRadius: "25px",
-    background:"linear-gradient(90deg, rgb(87, 34, 255) 0%, rgb(198, 3, 255) 70%)",
-    width: "173px",
+    borderRadius: "40px",
+    background:"white",
+    border:'2px solid #f3f4f9',
+    color:'rgb(37, 48, 86)',
+    width: "12vh",
     height: "40px",
-    fontSize: "12px",
-    fontWeight: "500",
-    paddingLeft: "20px",
-    paddingRight: "20px"              
+    fontSize: "14px",
+    fontWeight: "600",
+    paddingLeft: "10px",
+    paddingRight: "10px",
+    textTransform:'none',
+    boxShadow: "none",
+    "&:hover": {
+      backgroundColor: 'rgb(37, 48, 86)',
+      color:'white'
+    }       
   },
   SmartWallet: {
     color: "rgb(37, 48, 86)",
     fontSize: "15px",
-    marginTop: "0vh"
+    marginTop: "0vh",
+    fontWeight:'600'
                     
   }
 }));
@@ -86,7 +96,7 @@ const Topbar = props => {
     el.style.color = colorhex[Math.floor(Math.random() * 1)];
   };
   const  mouseout3 = event => {
-    var white = "#6e7898";
+    var white = "#253056";
     var el = document.getElementById("colorstext3");
     el.style.color = white;
   };
@@ -96,19 +106,17 @@ const Topbar = props => {
 
   return (
     <div className={classes.root} style={{backgroundColor:'white',zIndex:'30'}}>
-      <Grid container sm={11} md={11} lg={11} style={{backgroundColor:'white',zIndex:'30'}}>
+      <Grid container sm={12} md={12} lg={12} style={{backgroundColor:'white',zIndex:'30',paddingTop:'5vh'}}>
             <Grid container align="center" justify="space-between" sm={12} md={12} lg={12} style={{zIndex:'30'}}>
-              <Grid item sm={2} md={2} lg={2} align='center' style={{ marginTop: "3vh",paddingRight:'5vh' }}>
-                <img width='60' src={require('../../../../assets/logo.png')} />
+              <Grid item sm={2} md={2} lg={2} align='center' style={{ marginTop: "3vh",paddingRight:'10vh' }}>
+                <img width='60' src={require('../../../../assets/Logo.png')} />
               </Grid>
               <Grid
                 container
-
-                sm={8}
-                lg={6}
-                md={6}
-                style={{ marginTop: "4vh",paddingLeft:'5vh' }}
-                
+                sm={6}
+                lg={4}
+                md={5}
+                style={{ marginTop: "4vh",paddingLeft:'5vh',paddingRight:'4rem' }}
               >
                 <Grid item md={2} sm={2} lg={2}>
                 <IconButton>
@@ -123,7 +131,7 @@ const Topbar = props => {
                   </Typography>
                 </IconButton>
                 </Grid>
-                <Grid item md={3} sm={3} lg={3}>
+                <Grid item md={4} sm={4} lg={4}>
                 <IconButton>
                   <Typography
                     className={classes.FAQs}
@@ -136,7 +144,7 @@ const Topbar = props => {
                   </Typography>
                 </IconButton>
                 </Grid>
-                <Grid item md={3} sm={3} lg={3}>
+                <Grid item md={4} sm={4} lg={4}>
                 <IconButton>
                   <Typography
                     className={classes.FAQs}
@@ -148,25 +156,13 @@ const Topbar = props => {
                   </Typography>
                 </IconButton>
                 </Grid>
-                <Grid item lg={2} sm={2} md={2}>
-                <IconButton>
-                  <Typography
-                    className={classes.SmartWallet}
-                    onMouseEnter={mouse3}
-                    onMouseLeave={mouseout3}
-                    id="colorstext3"
-                  >
-                    Contact
-                  </Typography>
-                </IconButton>
-                </Grid>
                 <Grid item md={2} sm={2} lg={2}>
                 <Button
                   variant="contained"
                   color="primary"
                   className={classes.GetStartedOnline}
                 >
-                  Get Started Online
+                  Log In
                 </Button>
                 <Typography>
                   {"  "}

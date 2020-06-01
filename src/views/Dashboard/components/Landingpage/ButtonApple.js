@@ -39,7 +39,7 @@ const ButtonApple = () => {
                   fontSize:'12px',
                   fontWeight:'600',
                   height:'85px',
-                  width:200,
+                  width:'200px',
                   borderRadius:'10px'
                 }}
               >
