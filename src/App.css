@@ -493,37 +493,78 @@ body {
 @media only screen and (max-width: 600px) {
 
   #CarouselDesktop,
-  #CountDesktop {
+  #CountDesktop,
+  #AppleDesktop,
+  #GoogleDesktop,
+  #desktop {
     display: none;
   }
 
   #CarouselMobile,
-  #CountMobile {
+  #CountMobile,
+  #AppleMobile,
+  #GoogleMobile {
     display: block;
+  }
+
+  #AppleMobile,
+  #GoogleMobile {
+    width: 163px;
+    height: 68px
   }
 }
 
 @media only screen and (min-width: 601px) {
 
   #CarouselDesktop,
-  #CountDesktop {
+  #CountDesktop,
+  #AppleDesktop,
+  #GoogleDesktop #desktop {
     display: block;
   }
 
+  #AppleDesktop button {
+    height: 85px !important;
+  }
+
   #CarouselMobile,
-  #CountMobile {
+  #CountMobile,
+  #AppleMobile,
+  #GoogleMobile,
+  #Mobile {
     display: none;
   }
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 600px) {
 
   .SendMoneyTo,
   .anyone,
   .EarnInterest,
   .From,
   .anywhere {
-    font-size: 60px;
+    font-size: 40px !important;
+    line-height: 40px !important;
+  }
+
+  .DharmaIsLimitless,
+  .APR,
+  .bankAccount,
+  .TopbarDesktop,
+  #ContentUnderDesktop {
+    display: none !important;
+  }
+
+  .MainContainer {
+    margin-top: 3vh;
+  }
+
+  .TopbarContainer {
+    padding-top: 0vh !important;
+  }
+
+  #ButtonMobile {
+    margin-top: 4vh !important;
   }
 }
 

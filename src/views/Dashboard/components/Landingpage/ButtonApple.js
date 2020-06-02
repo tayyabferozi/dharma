@@ -36,15 +36,15 @@ const ButtonApple = () => {
                 style={{
                   zIndex:'4',
                   background:'rgb(31, 42, 75)',
-                  fontSize:'12px',
+                  fontSize:'14px',
                   fontWeight:'600',
                   height:'85px',
-                  width:'200px',
+                  width:'210px',
                   borderRadius:'10px'
                 }}
               >
-                  <AppleIcon style={{fontSize:'50px'}} />
-                    <Typography style={{color:'white',fontSize:'11px',fontWeight:'bold',lineHeight:'25px'}}>
+                  <AppleIcon style={{fontSize:'50px',marginRight:'2vh'}} />
+                    <Typography style={{color:'white',fontSize:'12px',fontWeight:'bold',lineHeight:'25px',textAlign:'left'}}>
                       Download on the
                       <br/>
                       <span style={{fontWeight:'bold',fontSize:'20px',textTransform:'none'}}>

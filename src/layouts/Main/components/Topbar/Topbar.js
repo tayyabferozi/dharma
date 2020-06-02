@@ -47,6 +47,24 @@ const useStyles = makeStyles(theme => ({
       color:'white'
     }       
   },
+  GetStartedOnlineMobile: {
+    borderRadius: "40px",
+    background:"white",
+    border:'2px solid #f3f4f9',
+    color:'rgb(37, 48, 86)',
+    width: "100%",
+    height: "40px",
+    fontSize: "14px",
+    fontWeight: "600",
+    paddingLeft: "10px",
+    paddingRight: "10px",
+    textTransform:'none',
+    boxShadow: "none",
+    "&:hover": {
+      backgroundColor: 'rgb(37, 48, 86)',
+      color:'white'
+    }       
+  },
   SmartWallet: {
     color: "rgb(37, 48, 86)",
     fontSize: "15px",
@@ -106,8 +124,8 @@ const Topbar = props => {
 
   return (
     <div className={classes.root} style={{backgroundColor:'white',zIndex:'30'}}>
-      <Grid container sm={12} md={12} lg={12} style={{backgroundColor:'white',zIndex:'30',paddingTop:'5vh'}}>
-            <Grid container align="center" justify="space-between" sm={12} md={12} lg={12} style={{zIndex:'30'}}>
+      <Grid container sm={12} md={12} lg={12}  style={{backgroundColor:'white',zIndex:'30',paddingTop:'5vh'}}>
+      <Grid container align="center" justify="space-between" id="desktop" sm={12} md={12} lg={12} style={{zIndex:'30'}}>
               <Grid item sm={2} md={2} lg={2} align='center' style={{ marginTop: "3vh",paddingRight:'10vh' }}>
                 <img width='60' src={require('../../../../assets/Logo.png')} />
               </Grid>
@@ -162,6 +180,40 @@ const Topbar = props => {
                   color="primary"
                   className={classes.GetStartedOnline}
                 >
+                  Log In
+                </Button>
+                <Typography>
+                  {"  "}
+                </Typography>
+                </Grid>
+              </Grid>
+            </Grid>
+            <Grid container align="center" justify="space-between" id="Mobile"  sm={12} md={12} lg={12} style={{zIndex:'30'}}>
+              <Grid item xs={2} align='left' style={{ marginTop: "3vh",marginBottom:'3vh',paddingLeft:'2vh' }}>
+                <img width='60' src={require('../../../../assets/Logo.png')} />
+              </Grid>
+              <Grid
+                container
+                align='center'
+                xs={5}
+                justify='space-between'
+                style={{ paddingTop: "4vh",paddingRight:'4vh'}}
+              >
+                <Grid item md={2} sm={2} lg={2} xs={5}>
+                <IconButton>
+                  <Typography
+                    className={classes.FAQs}
+                  >
+                    {" "}
+                    FAQs
+                  </Typography>
+                </IconButton>
+                </Grid>
+                <Grid item md={2} sm={2} lg={2} xs={7}>
+                <Button
+                  variant="contained"
+                  className={classes.GetStartedOnlineMobile}
+                  >
                   Log In
                 </Button>
                 <Typography>
