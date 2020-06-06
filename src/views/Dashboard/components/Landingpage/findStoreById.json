@@ -1,0 +1,754 @@
+{
+    "idStore": 9,
+    "name": "Restaurante Titanic II",
+    "address": "Calle Pedro Coca 22",
+    "town": "Madrid",
+    "postalCode": "02006",
+    "country": "España",
+    "phoneNumber": "666555888",
+    "membership": null,
+    "membershipType": 0,
+    "logo": null,
+    "menusList": [
+        {
+            "idMenu": 7,
+            "name": "Menu name",
+            "currency": "€",
+            "isActive": 1,
+            "categoriesList": [
+                {
+                    "idCategory": 103,
+                    "name": "Category name",
+                    "isActive": 1,
+                    "order": null,
+                    "sectionsList": [
+                        {
+                            "idSection": 205,
+                            "title": "Name Section 1",
+                            "isActive": 0,
+                            "pictureUrl": null,
+                            "order": 1,
+                            "itemsList": [
+                                {
+                                    "idItem": 199,
+                                    "title": "Name Item 1",
+                                    "details": "tomato, cheese, olives, egg",
+                                    "pictureUrl": null,
+                                    "order": 1,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 324,
+                                            "price": 5.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        }
+                                    ],
+                                    "tagsList": []
+                                },
+                                {
+                                    "idItem": 200,
+                                    "title": "Name Item 2",
+                                    "details": "tomato, cheese, olives, egg",
+                                    "pictureUrl": null,
+                                    "order": 2,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 325,
+                                            "price": 77.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        },
+                                        {
+                                            "idPrice": 326,
+                                            "price": 150.00,
+                                            "priceOff": null,
+                                            "unit": "Big"
+                                        }
+                                    ],
+                                    "tagsList": []
+                                }
+                            ]
+                        },
+                        {
+                            "idSection": 206,
+                            "title": "Name Section 2",
+                            "isActive": 1,
+                            "pictureUrl": null,
+                            "order": 2,
+                            "itemsList": [
+                                {
+                                    "idItem": 201,
+                                    "title": "Name Item 3",
+                                    "details": "tomato, cheese, olives, egg",
+                                    "pictureUrl": null,
+                                    "order": 1,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 327,
+                                            "price": 20.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        },
+                                        {
+                                            "idPrice": 328,
+                                            "price": 23.00,
+                                            "priceOff": null,
+                                            "unit": "M"
+                                        },
+                                        {
+                                            "idPrice": 329,
+                                            "price": 25.00,
+                                            "priceOff": null,
+                                            "unit": "XL"
+                                        }
+                                    ],
+                                    "tagsList": [
+                                        {
+                                            "idTag": 1,
+                                            "name": "vegetarian",
+                                            "info": "Vegetarian friendly",
+                                            "icon": null
+                                        },
+                                        {
+                                            "idTag": 3,
+                                            "name": "spicy",
+                                            "info": "Spicy",
+                                            "icon": null
+                                        },
+                                        {
+                                            "idTag": 59,
+                                            "name": "lactose",
+                                            "info": "Contains lactose",
+                                            "icon": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "idSection": 207,
+                            "title": "Name of an Empty Section",
+                            "isActive": 1,
+                            "pictureUrl": null,
+                            "order": 2,
+                            "itemsList": []
+                        }
+                    ]
+                },
+                {
+                    "idCategory": 104,
+                    "name": "Category name 2",
+                    "isActive": 1,
+                    "order": null,
+                    "sectionsList": [
+                        {
+                            "idSection": 208,
+                            "title": "Name Section 1",
+                            "isActive": 0,
+                            "pictureUrl": null,
+                            "order": 1,
+                            "itemsList": [
+                                {
+                                    "idItem": 202,
+                                    "title": "Name Item 1",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 1,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 330,
+                                            "price": 5.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        }
+                                    ],
+                                    "tagsList": []
+                                },
+                                {
+                                    "idItem": 203,
+                                    "title": "Name Item 2",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 2,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 331,
+                                            "price": 77.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        },
+                                        {
+                                            "idPrice": 332,
+                                            "price": 150.00,
+                                            "priceOff": null,
+                                            "unit": "Big"
+                                        }
+                                    ],
+                                    "tagsList": []
+                                }
+                            ]
+                        },
+                        {
+                            "idSection": 209,
+                            "title": "Name Section 2",
+                            "isActive": 1,
+                            "pictureUrl": null,
+                            "order": 2,
+                            "itemsList": [
+                                {
+                                    "idItem": 204,
+                                    "title": "Name Item 3",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 1,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 333,
+                                            "price": 20.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        },
+                                        {
+                                            "idPrice": 334,
+                                            "price": 23.00,
+                                            "priceOff": null,
+                                            "unit": "M"
+                                        },
+                                        {
+                                            "idPrice": 335,
+                                            "price": 25.00,
+                                            "priceOff": null,
+                                            "unit": "XL"
+                                        }
+                                    ],
+                                    "tagsList": [
+                                        {
+                                            "idTag": 1,
+                                            "name": "vegetarian",
+                                            "info": "Vegetarian friendly",
+                                            "icon": null
+                                        },
+                                        {
+                                            "idTag": 3,
+                                            "name": "spicy",
+                                            "info": "Spicy",
+                                            "icon": null
+                                        },
+                                        {
+                                            "idTag": 59,
+                                            "name": "lactose",
+                                            "info": "Contains lactose",
+                                            "icon": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "idSection": 210,
+                            "title": "Name of an Empty Section",
+                            "isActive": 1,
+                            "pictureUrl": null,
+                            "order": 2,
+                            "itemsList": []
+                        }
+                    ]
+                },
+                {
+                    "idCategory": 105,
+                    "name": "Category name 3",
+                    "isActive": 1,
+                    "order": null,
+                    "sectionsList": [
+                        {
+                            "idSection": 211,
+                            "title": "Name Section 1",
+                            "isActive": 0,
+                            "pictureUrl": null,
+                            "order": 1,
+                            "itemsList": [
+                                {
+                                    "idItem": 205,
+                                    "title": "Name Item 1",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 1,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 336,
+                                            "price": 5.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        }
+                                    ],
+                                    "tagsList": []
+                                },
+                                {
+                                    "idItem": 206,
+                                    "title": "Name Item 2",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 2,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 337,
+                                            "price": 77.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        },
+                                        {
+                                            "idPrice": 338,
+                                            "price": 150.00,
+                                            "priceOff": null,
+                                            "unit": "Big"
+                                        }
+                                    ],
+                                    "tagsList": []
+                                }
+                            ]
+                        },
+                        {
+                            "idSection": 212,
+                            "title": "Name Section 2",
+                            "isActive": 1,
+                            "pictureUrl": null,
+                            "order": 2,
+                            "itemsList": [
+                                {
+                                    "idItem": 207,
+                                    "title": "Name Item 3",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 1,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 339,
+                                            "price": 20.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        },
+                                        {
+                                            "idPrice": 340,
+                                            "price": 23.00,
+                                            "priceOff": null,
+                                            "unit": "M"
+                                        },
+                                        {
+                                            "idPrice": 341,
+                                            "price": 25.00,
+                                            "priceOff": null,
+                                            "unit": "XL"
+                                        }
+                                    ],
+                                    "tagsList": [
+                                        {
+                                            "idTag": 1,
+                                            "name": "vegetarian",
+                                            "info": "Vegetarian friendly",
+                                            "icon": null
+                                        },
+                                        {
+                                            "idTag": 3,
+                                            "name": "spicy",
+                                            "info": "Spicy",
+                                            "icon": null
+                                        },
+                                        {
+                                            "idTag": 59,
+                                            "name": "lactose",
+                                            "info": "Contains lactose",
+                                            "icon": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "idSection": 213,
+                            "title": "Name of an Empty Section",
+                            "isActive": 1,
+                            "pictureUrl": null,
+                            "order": 2,
+                            "itemsList": []
+                        }
+                    ]
+                },
+                {
+                    "idCategory": 106,
+                    "name": "Category name 4",
+                    "isActive": 1,
+                    "order": null,
+                    "sectionsList": [
+                        {
+                            "idSection": 214,
+                            "title": "Name Section 1",
+                            "isActive": 0,
+                            "pictureUrl": null,
+                            "order": 1,
+                            "itemsList": [
+                                {
+                                    "idItem": 208,
+                                    "title": "Name Item 1",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 1,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 342,
+                                            "price": 5.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        }
+                                    ],
+                                    "tagsList": []
+                                },
+                                {
+                                    "idItem": 209,
+                                    "title": "Name Item 2",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 2,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 343,
+                                            "price": 77.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        },
+                                        {
+                                            "idPrice": 344,
+                                            "price": 150.00,
+                                            "priceOff": null,
+                                            "unit": "Big"
+                                        }
+                                    ],
+                                    "tagsList": []
+                                }
+                            ]
+                        },
+                        {
+                            "idSection": 215,
+                            "title": "Name Section 2",
+                            "isActive": 1,
+                            "pictureUrl": null,
+                            "order": 2,
+                            "itemsList": [
+                                {
+                                    "idItem": 210,
+                                    "title": "Name Item 3",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 1,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 345,
+                                            "price": 20.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        },
+                                        {
+                                            "idPrice": 346,
+                                            "price": 23.00,
+                                            "priceOff": null,
+                                            "unit": "M"
+                                        },
+                                        {
+                                            "idPrice": 347,
+                                            "price": 25.00,
+                                            "priceOff": null,
+                                            "unit": "XL"
+                                        }
+                                    ],
+                                    "tagsList": [
+                                        {
+                                            "idTag": 1,
+                                            "name": "vegetarian",
+                                            "info": "Vegetarian friendly",
+                                            "icon": null
+                                        },
+                                        {
+                                            "idTag": 3,
+                                            "name": "spicy",
+                                            "info": "Spicy",
+                                            "icon": null
+                                        },
+                                        {
+                                            "idTag": 59,
+                                            "name": "lactose",
+                                            "info": "Contains lactose",
+                                            "icon": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "idSection": 216,
+                            "title": "Name of an Empty Section",
+                            "isActive": 1,
+                            "pictureUrl": null,
+                            "order": 2,
+                            "itemsList": []
+                        }
+                    ]
+                },
+                {
+                    "idCategory": 107,
+                    "name": "Category name 5",
+                    "isActive": 1,
+                    "order": null,
+                    "sectionsList": [
+                        {
+                            "idSection": 217,
+                            "title": "Name Section 1",
+                            "isActive": 0,
+                            "pictureUrl": null,
+                            "order": 1,
+                            "itemsList": [
+                                {
+                                    "idItem": 211,
+                                    "title": "Name Item 1",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 1,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 348,
+                                            "price": 5.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        }
+                                    ],
+                                    "tagsList": []
+                                },
+                                {
+                                    "idItem": 212,
+                                    "title": "Name Item 2",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 2,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 349,
+                                            "price": 77.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        },
+                                        {
+                                            "idPrice": 350,
+                                            "price": 150.00,
+                                            "priceOff": null,
+                                            "unit": "Big"
+                                        }
+                                    ],
+                                    "tagsList": []
+                                }
+                            ]
+                        },
+                        {
+                            "idSection": 218,
+                            "title": "Name Section 2",
+                            "isActive": 1,
+                            "pictureUrl": null,
+                            "order": 2,
+                            "itemsList": [
+                                {
+                                    "idItem": 213,
+                                    "title": "Name Item 3",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 1,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 351,
+                                            "price": 20.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        },
+                                        {
+                                            "idPrice": 352,
+                                            "price": 23.00,
+                                            "priceOff": null,
+                                            "unit": "M"
+                                        },
+                                        {
+                                            "idPrice": 353,
+                                            "price": 25.00,
+                                            "priceOff": null,
+                                            "unit": "XL"
+                                        }
+                                    ],
+                                    "tagsList": [
+                                        {
+                                            "idTag": 1,
+                                            "name": "vegetarian",
+                                            "info": "Vegetarian friendly",
+                                            "icon": null
+                                        },
+                                        {
+                                            "idTag": 3,
+                                            "name": "spicy",
+                                            "info": "Spicy",
+                                            "icon": null
+                                        },
+                                        {
+                                            "idTag": 59,
+                                            "name": "lactose",
+                                            "info": "Contains lactose",
+                                            "icon": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "idSection": 219,
+                            "title": "Name of an Empty Section",
+                            "isActive": 1,
+                            "pictureUrl": null,
+                            "order": 2,
+                            "itemsList": []
+                        }
+                    ]
+                },
+                {
+                    "idCategory": 108,
+                    "name": "Category name 6",
+                    "isActive": 1,
+                    "order": null,
+                    "sectionsList": [
+                        {
+                            "idSection": 220,
+                            "title": "Name Section 1",
+                            "isActive": 0,
+                            "pictureUrl": null,
+                            "order": 1,
+                            "itemsList": [
+                                {
+                                    "idItem": 214,
+                                    "title": "Name Item 1",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 1,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 354,
+                                            "price": 5.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        }
+                                    ],
+                                    "tagsList": []
+                                },
+                                {
+                                    "idItem": 215,
+                                    "title": "Name Item 2",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 2,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 355,
+                                            "price": 77.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        },
+                                        {
+                                            "idPrice": 356,
+                                            "price": 150.00,
+                                            "priceOff": null,
+                                            "unit": "Big"
+                                        }
+                                    ],
+                                    "tagsList": []
+                                }
+                            ]
+                        },
+                        {
+                            "idSection": 221,
+                            "title": "Name Section 2",
+                            "isActive": 1,
+                            "pictureUrl": null,
+                            "order": 2,
+                            "itemsList": [
+                                {
+                                    "idItem": 216,
+                                    "title": "Name Item 3",
+                                    "details": "Pepperoni, tomate, basil, cream sauce",
+                                    "pictureUrl": null,
+                                    "order": 1,
+                                    "isActive": 1,
+                                    "pricesList": [
+                                        {
+                                            "idPrice": 357,
+                                            "price": 20.00,
+                                            "priceOff": null,
+                                            "unit": "Small"
+                                        },
+                                        {
+                                            "idPrice": 358,
+                                            "price": 23.00,
+                                            "priceOff": null,
+                                            "unit": "M"
+                                        },
+                                        {
+                                            "idPrice": 359,
+                                            "price": 25.00,
+                                            "priceOff": null,
+                                            "unit": "XL"
+                                        }
+                                    ],
+                                    "tagsList": [
+                                        {
+                                            "idTag": 1,
+                                            "name": "vegetarian",
+                                            "info": "Vegetarian friendly",
+                                            "icon": null
+                                        },
+                                        {
+                                            "idTag": 3,
+                                            "name": "spicy",
+                                            "info": "Spicy",
+                                            "icon": null
+                                        },
+                                        {
+                                            "idTag": 59,
+                                            "name": "lactose",
+                                            "info": "Contains lactose",
+                                            "icon": null
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "idSection": 222,
+                            "title": "Name of an Empty Section",
+                            "isActive": 1,
+                            "pictureUrl": null,
+                            "order": 2,
+                            "itemsList": []
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

@@ -1,6 +1,5 @@
 import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import AppBar from "@material-ui/core/AppBar";
 import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import Button from "@material-ui/core/Button";
@@ -9,170 +8,97 @@ import MenuIcon from "@material-ui/icons/Menu";
 import Grid from "@material-ui/core/Grid";
 import "../../../../App.css";
 import PropTypes from 'prop-types';
-
+import ShareIcon from '@material-ui/icons/Share';
 import RadioButtonUncheckedIcon from "@material-ui/icons/RadioButtonUnchecked";
+import ChevronLeftIcon from '@material-ui/icons/ChevronLeft';
+import ChevronRightIcon from '@material-ui/icons/ChevronRight';
+import "../../../../App.css";
+import AppBar from "@material-ui/core/AppBar";
+import Tabs from "@material-ui/core/Tabs";
+import Tab from "@material-ui/core/Tab";
+import Box from "@material-ui/core/Box";
+
 const useStyles = makeStyles(theme => ({
   root: {
-    flexGrow: 1
+    flexGrow: 1,
+    width: "100%",
+    color:'rgb(134, 113, 95)',
+    backgroundColor: theme.palette.background.paper
   },
   menuButton: {
     marginRight: theme.spacing(2)
   },
   title: {
     flexGrow: 1
-  }
+  },
+  Restaurant: {
+    fontSize:'16px',
+    fontFamily: 'Montserrat',
+    fontWeight:'bolder !important',
+    fontStyle:'normal',
+    color: 'rgb(134, 113, 95)',
+    letterSpacing: '2.3px',
+  },
+  
 }));
 
 const Topbar = props => {
   const { className, onSidebarOpen, ...rest } = props;
- const mouse = event => {
-    var colorhex = ["#253056"];
-    var el = document.getElementById("colorstext");
-    el.style.color = colorhex[Math.floor(Math.random() * 1)];
-  };
- const mouseout = event => {
-    var white = "#6e7898";
-    var el = document.getElementById("colorstext");
-    el.style.color = white;
-  };
-  const mouse1 = event => {
-    var colorhex = ["#253056"];
-    var el = document.getElementById("colorstext1");
-    el.style.color = colorhex[Math.floor(Math.random() * 1)];
-  };
-  const mouseout1 = event => {
-    var white = "#6e7898";
-    var el = document.getElementById("colorstext1");
-    el.style.color = white;
-  };
-
-  const mouse2 = event => {
-    var colorhex = ["#253056"];
-    var el = document.getElementById("colorstext2");
-    el.style.color = colorhex[Math.floor(Math.random() * 1)];
-  };
-  const mouseout2 = event => {
-    var white = "#6e7898";
-    var el = document.getElementById("colorstext2");
-    el.style.color = white;
-  };
-
-  const mouse3 = event => {
-    var colorhex = ["#253056"];
-    var el = document.getElementById("colorstext3");
-    el.style.color = colorhex[Math.floor(Math.random() * 1)];
-  };
-  const  mouseout3 = event => {
-    var white = "#6e7898";
-    var el = document.getElementById("colorstext3");
-    el.style.color = white;
-  };
   const classes = useStyles();
+  const [value, setValue] = React.useState(0);
 
-  
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
 
   return (
-    <div className={classes.root} style={{backgroundColor:'white',zIndex:'30'}}>
-      <Grid container xs={12} style={{backgroundColor:'white',zIndex:'30'}}>
-    
-            <Grid container xs={12} style={{zIndex:'30'}} align='center'>
-              <Grid item xs={2} style={{ marginTop: "3vh" }}>
-                <img width='60' src={require('../../../../assets/logo.png')} />
-              </Grid>
-              <Grid item xs={4} />
-              <Grid
-                container
-                xs={6}
-                style={{ marginTop: "4vh" }}
-                align="center"
-                justify="space-between"
-              >
-                <IconButton>
-                  <Typography
-                    style={{
-                      fontSize: "15px",
-                      marginTop: "0vh",
-                      opactiy: "0.8",
-                      color: "#6e7898"
-                    }}
-                    onMouseEnter={mouse}
-                    onMouseLeave={mouseout}
-                    id="colorstext"
-                  >
-                    {" "}
-                    FAQs
-                  </Typography>
-                </IconButton>
-                <IconButton>
-                  <Typography
-                    style={{
-                      color: "rgb(110, 120, 152)",
-                      fontSize: "15px",
-                      marginTop: "0vh",
-                      opactiy: "0.8"
-                    }}
-                    onMouseEnter={mouse1}
-                    onMouseLeave={mouseout1}
-                    id="colorstext1"
-                  >
-                    {" "}
-                    How It Works
-                  </Typography>
-                </IconButton>
-                <IconButton>
-                  <Typography
-                    style={{
-                      color: "rgb(110, 120, 152)",
-                      fontSize: "15px",
-                      marginTop: "0vh",
-                      opactiy: "0.8"
-                    }}
-                    onMouseEnter={mouse2}
-                    onMouseLeave={mouseout2}
-                    id="colorstext2"
-                  >
-                    Smart Wallet
-                  </Typography>
-                </IconButton>
-                <IconButton>
-                  <Typography
-                    style={{
-                      color: "rgb(37, 48, 86)",
-                      fontSize: "15px",
-                      marginTop: "0vh"
-                    }}
-                    onMouseEnter={mouse3}
-                    onMouseLeave={mouseout3}
-                    id="colorstext3"
-                  >
-                    Contact
-                  </Typography>
-                </IconButton>
-                <Button
-                  variant="contained"
-                  color="primary"
-                  style={{
-                    borderRadius: "25px",
-                    background:
-                      "linear-gradient(90deg, rgb(87, 34, 255) 0%, rgb(198, 3, 255) 70%)",
-                    width: "173px",
-                    height: "40px",
-                    fontSize: "12px",
-                    fontWeight: "500",
-                    paddingLeft: "20px",
-                    paddingRight: "20px"
-                  }}
-                >
-                  Get Started Online
-                </Button>
-                <Typography>
-                  {"  "}
-                </Typography>
-              </Grid>
-            </Grid>
-          
+    <Grid container xs={12} align='center'>
+      <AppBar style={{position:'static'}}>
+        <toolbar>
+      <Grid container xs={12} justify='space-between' style={{paddingTop:'4vh',background:'rgb(248, 243, 239)'}}>
+        <Grid item xs={2}>
+          <Typography style={{marginLeft:'-2vh',fontSize:'14px',color:'rgb(134, 113, 95)',fontFamily:'Montserrat'}}>
+            ENG
+          </Typography>
         </Grid>
-        </div>
+        <Grid item xs={5} style={{}} align='left'>
+          <Typography className={classes.Restaurant} style={{paddingLeft:'1vh'}}>
+            RESTAURANT
+          </Typography>
+        </Grid>
+        <Grid item xs={2} style={{marginTop:'-1.5vh',paddingLeft:'2vh'}} align='left'>
+          <IconButton>
+            <ShareIcon style={{fontSize:'20px',color:'rgb(134, 113, 95)',marginRight:'0vh'}}/>
+          </IconButton>
+        </Grid>
+        <div className={classes.root} style={{marginTop:'4vh'}}>
+        <toolbar position="static" style={{background:"rgb(248, 243, 239)",marginTop:'2vh'}} >
+        <Tabs
+        style={{background:'rgb(248, 243, 239)'}}
+          value={value}
+          onChange={handleChange}
+          variant="scrollable"
+          scrollButtons="on"
+          indicatorColor="primary"
+          
+          indicatorColor="rgb(134, 113, 95)"
+          centered = "true"
+          aria-label="scrollable force tabs example"
+        >
+          <Tab label="DRINKS" style={{width:'100px',paddingLeft:'1vh',paddingRight:'7vh'}} />
+          <Tab label="PIZZA" style={{width:'100px',paddingRight:'4vh'}} />
+          <Tab label="BURGER" style={{width:'100px'}} />
+          <Tab label="DESSERT" style={{width:'100px',paddingRight:'6vh'}} />
+          <Tab label="FISH" style={{width:'100px',paddingRight:'4vh'}} />
+          <Tab label="STEAK" style={{width:'100px'}} />
+        </Tabs>
+      </toolbar>
+      </div>
+      </Grid>
+      </toolbar>
+      
+      </AppBar>
+    </Grid>
   );
 };
 
