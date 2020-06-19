@@ -13,7 +13,6 @@ const Routes = () => {
       <RouteWithLayout
         component={DashboardView}
         exact
-        layout={MainLayout}
         path="/dashboard"
       />
     </Switch>
