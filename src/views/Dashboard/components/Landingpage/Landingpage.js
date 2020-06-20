@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Grid, Typography } from '@material-ui/core';
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import AppleIcon from '@material-ui/icons/Apple';
 import '../../../../../src/App.css';
 import Button from '@material-ui/core/Button';
@@ -16,9 +15,6 @@ import SubHeading from './SubHeading';
 const useStyles = makeStyles(theme => ({
   root: {
     flexGrow: 1
-  },
-  control: {
-    padding: theme.spacing(2)
   },
   countMobile: {
     zIndex: '32',
@@ -57,9 +53,6 @@ const useStyles = makeStyles(theme => ({
     color: 'rgb(37, 48, 86)',
     fontSize: '24px',
     fontWeight: '600'
-  },
-  spacing: {
-    margin: theme.spacing(4)
   },
   VideoButton: {
     '&:hover': {
