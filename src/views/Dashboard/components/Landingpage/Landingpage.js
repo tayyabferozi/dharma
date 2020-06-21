@@ -479,11 +479,11 @@ const Landingpage = props => {
           justify="right"
           align="right"
           style={{ paddingRight: '4vh', zIndex: '20' }}>
-          <Grid item xs={12} style={{ paddingTop: '15vh' }}>
+          <Grid item xs={12} style={{ paddingTop: '15vh', position: "relative" }}>
             <img
               src={require('../../../../assets/carouselphone.png')}
               style={{ zIndex: '4', width: '480px', height: '550px' }}></img>
-            <Grid
+            {/* <Grid
               container
               direction="row"
               align="center"
@@ -493,16 +493,38 @@ const Landingpage = props => {
               <Grid
                 item
                 xs={4}
-                style={{ paddingLeft: '3rem', paddingTop: '15rem' }}>
-                <Button className={classes.MobileButton}>aaaa</Button>
+                style={{ paddingTop: '15rem' }}>
+                <Button className={classes.MobileButton} style={{ marginRight: "auto" }}>aaaa</Button>
               </Grid>
               <Grid
                 item
                 xs={4}
-                style={{ paddingTop: '30vh', paddingRight: '8vh' }}>
-                <Button className={classes.MobileButton}>aaaa</Button>
+                style={{ paddingTop: '15rem' }}>
+                <Button className={classes.MobileButton} style={{ marginLeft: "auto" }}>aaaa</Button>
               </Grid>
-            </Grid>
+            </Grid> */}
+            <div style={{ position: "absolute", width: "480px", height: "550px", right: 0, bottom: 0, paddingTop: "22.5rem", textAlign: "center" }}>
+              <div className="MobileButtonContainer">
+                <button className="MobileButton">Klarna</button>
+                <button className="MobileButton"><AppleIcon />Pay</button>
+              </div>
+              <button className="MobileButton Lg">
+              <div id="arrowAnim">
+  <div class="arrowSliding">
+    <div class="arrow"></div>
+  </div>
+  <div class="arrowSliding delay1">
+    <div class="arrow"></div>
+  </div>
+  <div class="arrowSliding delay2">
+    <div class="arrow"></div>
+  </div>
+  <div class="arrowSliding delay3">
+    <div class="arrow"></div>
+  </div>
+</div>
+                Swipe to <span className="Italic">Pay</span> with <span className="Italic">Paykart</span></button>
+            </div>
           </Grid>
         </Grid>
         <Grid
