@@ -6,7 +6,6 @@ const Bubbles = () => {
   return (
     <div
       id="bubbles"
-      style={{ zIndex: '-10' }}
       style={{ borderRadius: '24px', marginTop: '0vh', zIndex: '-10' }}>
       <div class="bubblex2 x2" style={{ padding: '2px', zIndex: '1' }}>
         <div class="items">

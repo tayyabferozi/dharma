@@ -31,7 +31,7 @@ const useStyles = makeStyles(theme => ({
     background: 'white',
     border: '2px solid #f3f4f9',
     color: 'rgb(37, 48, 86)',
-    width: '12vh',
+    width: '73px',
     height: '40px',
     fontSize: '14px',
     fontWeight: '600',
@@ -119,7 +119,7 @@ const Topbar = props => {
   return (
     <div
       className={classes.root}
-      style={{ backgroundColor: 'white', zIndex: '30' }}>
+      style={{ background: "rgba(255, 255, 255, 0.9)", position: "absolute", top: 0, left: 0, right: 0, zIndex: 2, boxShadow: "5px 4px 8px 5px white" }}>
       <Grid
         container
         sm={12}
@@ -143,7 +143,7 @@ const Topbar = props => {
               lg={2}
               align="center"
               style={{ marginTop: '3vh', paddingRight: '10vh' }}>
-              <img width="60" src={require('../../../../assets/Logo.png')} />
+              <img width="60" src={require('../../../../assets/logo.png')} />
             </Grid>
             <Grid
               container
@@ -219,7 +219,7 @@ const Topbar = props => {
               marginBottom: '3vh',
               paddingLeft: '2vh'
             }}>
-            <img width="60" src={require('../../../../assets/Logo.png')} />
+            <img width="60" src={require('../../../../assets/logo.png')} />
           </Grid>
           <Grid
             container

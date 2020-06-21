@@ -20,7 +20,7 @@ const Main = props => {
       })}>
       <Topbar />
 
-      <main className={classes.content} style={{ backgroundColor: 'white' }}>
+      <main className={classes.content} style={{ backgroundColor: 'white', position: "relative", top: "99.91px" }}>
         {children}
         <Footer style={{}} />
       </main>

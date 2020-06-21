@@ -308,7 +308,7 @@ const Landingpage = props => {
         xs={12}
         id="aadesktop"
         style={{ marginTop: '2vh', justifyContent: 'center' }}>
-        <Grid item xs={8} className={classes.transparencyBox}>
+        <Grid item xs={8} className={classes.transparencyBox} style={{ zIndex: 2, background: "rgba(255, 255, 255, 0.9)", boxShadow: "rgba(255, 255, 255, 0.9) 0px 0px 18px 20px" }}>
           <div class="cssanimation sequence fadeInBottom" id="topbarAnim">
             <Typography
               id="transition"
@@ -331,7 +331,7 @@ const Landingpage = props => {
           </div>
         </Grid>
       </Grid>
-      <Grid container id="ButtonMobile" xs={12} style={{ marginTop: '10vh' }}>
+      <Grid container id="ButtonMobile" xs={12} style={{ marginTop: '10vh', zIndex: 500 }}>
         <Grid
           item
           id="AppleDesktop"
@@ -339,9 +339,9 @@ const Landingpage = props => {
           xs={6}
           justify="right"
           align="right"
-          style={{ paddingRight: '4vh' }}>
-          <div class="cssanimation sequence fadeInBottom" id="topbarAnim">
-            <Grid item xs={12}>
+          style={{ paddingRight: '4vh', zIndex: 500 }}>
+          <div class="cssanimation sequence fadeInBottom" id="topbarAnim" style={{ zIndex: 500 }}>
+            <Grid item xs={12} style={{ zIndex: 500 }}>
               <ButtonApple />
             </Grid>
           </div>
@@ -385,9 +385,10 @@ const Landingpage = props => {
           direction="column"
           xs={6}
           justify="left"
-          align="left">
-          <div class="cssanimation sequence fadeInBottom" id="topbarAnim">
-            <Grid item xs={12} style={{ paddingLeft: '4vh' }}>
+          align="left"
+          style={{ zIndex: 500 }}>
+          <div class="cssanimation sequence fadeInBottom" id="topbarAnim" style={{ zIndex: 500 }}>
+            <Grid item xs={12} style={{ paddingLeft: '4vh', zIndex: 500 }}>
               <ButtonGoogle />
             </Grid>
           </div>
@@ -1670,7 +1671,7 @@ const Landingpage = props => {
               interest on Dharma today
             </Typography>
           </Grid>
-          <Grid item xs={12} align="center" style={{}}>
+          <Grid item xs={12} align="center" style={{ marginBottom: "-1rem" }}>
             <ButtonApple />
           </Grid>
           <Grid item xs={12} align="center" style={{}}>
@@ -1996,7 +1997,7 @@ const Landingpage = props => {
         </Grid>
         <Grid item xs={1} />
       </Grid>
-    </Grid>
+    </Grid >
   );
 };
 Landingpage.propTypes = {
