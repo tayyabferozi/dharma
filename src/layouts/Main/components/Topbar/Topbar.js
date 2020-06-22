@@ -119,7 +119,8 @@ const Topbar = props => {
   return (
     <div
       className={classes.root}
-      style={{ background: "rgba(255, 255, 255, 0.9)", position: "absolute", top: 0, left: 0, right: 0, zIndex: 2, boxShadow: "5px 4px 8px 5px white" }}>
+    // style={{ background: "rgba(255, 255, 255, 0.9)", position: "absolute", top: 0, left: 0, right: 0, zIndex: 2, boxShadow: "5px 4px 8px 5px white" }}
+    >
       <Grid
         container
         sm={12}
@@ -243,7 +244,7 @@ const Topbar = props => {
           </Grid>
         </Grid>
       </Grid>
-    </div>
+    </div >
   );
 };
 

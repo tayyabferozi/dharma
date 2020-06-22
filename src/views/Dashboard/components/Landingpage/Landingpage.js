@@ -509,20 +509,7 @@ const Landingpage = props => {
                 <button className="MobileButton"><AppleIcon />Pay</button>
               </div>
               <button className="MobileButton Lg">
-              <div id="arrowAnim">
-  <div class="arrowSliding">
-    <div class="arrow"></div>
-  </div>
-  <div class="arrowSliding delay1">
-    <div class="arrow"></div>
-  </div>
-  <div class="arrowSliding delay2">
-    <div class="arrow"></div>
-  </div>
-  <div class="arrowSliding delay3">
-    <div class="arrow"></div>
-  </div>
-</div>
+                <div id="SlidingAnim"></div>
                 Swipe to <span className="Italic">Pay</span> with <span className="Italic">Paykart</span></button>
             </div>
           </Grid>
@@ -591,13 +578,24 @@ const Landingpage = props => {
           md={12}
           lg={12}
           justify="center"
+          style={{ zIndex: 500 }}
           align="center">
           <Grid
             item
             align="center"
             xs={12}
             align="center"
-            style={{ paddingTop: '5vh' }}>
+            style={{ paddingTop: '5vh', zIndex: 500, position: "relative" }}>
+            <div style={{ position: "absolute", top: "69%", left: "50%", transform: "translate(-50%, -69%)" }}>
+              <div className="MobileButtonContainer">
+                <button className="MobileButton" style={{ width: "6rem", height: "2.5rem" }}>Klarna</button>
+                <button className="MobileButton" style={{ width: "6rem", height: "2.5rem" }}><AppleIcon />Pay</button>
+              </div>
+              <button className="MobileButton Lg" style={{ width: "13rem", height: "2.5rem", border: "none" }}>
+                <div id="SlidingAnim" style={{ borderRadius: "50px" }}></div>
+                Swipe to <span className="Italic"> Pay </span> with <span className="Italic"> Paykart</span>
+              </button>
+            </div>
             <img
               src={require('../../../../assets/carouselphone.png')}
               style={{ zIndex: '20', width: '310px', height: '350px' }}></img>
@@ -608,7 +606,9 @@ const Landingpage = props => {
               xs={12}
               align="center"
               style={{ paddingTop: '4vh' }}>
-              <Typography className={classes.SendAndReceiveMobile}>
+              <Typography className={classes.SendAndReceiveMobile} style={{
+                backgroundColor: "#fff", display: "inline", boxShadow: "0 0 10px 10px #fff"
+              }}>
                 Send & Receive
               </Typography>
             </Grid>
@@ -623,7 +623,9 @@ const Landingpage = props => {
                 style={{
                   color: 'rgb(110, 120, 152)',
                   fontSize: '12px',
-                  fontWeight: '500'
+                  fontWeight: '500',
+                  backgroundColor: "#fff",
+                  boxShadow: "0 0 10px 10px #fff"
                 }}>
                 Every dollar in your Dharma account is earning 0.7% APR — and
                 you can withdraw it anytime; 24/7/365.

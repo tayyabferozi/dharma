@@ -536,7 +536,7 @@ body {
 }
 
 .MainContainer {
-  margin-top: 16vh;
+  margin-top: 6.875rem;
   z-index: 3;
 }
 
@@ -959,7 +959,6 @@ p.SendMoneyTo {
 .MobileButton {
   background-color: #000;
   color: #fff;
-  padding: 1rem 2rem;
   margin: 0.5rem;
   outline: 0;
   border: 0;
@@ -982,6 +981,7 @@ p.SendMoneyTo {
   margin-right: auto;
   background-color: rgb(18, 56, 224);
   position: relative;
+  border-radius: 25px;
 }
 
 .MobileButton.Lg .Italic {
@@ -990,8 +990,6 @@ p.SendMoneyTo {
 }
 
 #arrowAnim {
-  /* width: 100vw;
-	height: 100vh; */
   position: absolute;
   top: 50%;
   left: 0;
@@ -1005,8 +1003,6 @@ p.SendMoneyTo {
 }
 
 .arrow {
-  /* width: 5vw;
-	height: 5vw; */
   width: 10px;
   height: 10px;
   border: 10px solid;
@@ -1048,5 +1044,54 @@ p.SendMoneyTo {
   100% {
     opacity: 0;
     transform: translateX(-50px);
+  }
+}
+
+#SlidingAnim {
+  position: absolute;
+  left: -1px;
+  top: 50%;
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 25px;
+  background-color: #ffffff;
+  opacity: 0.5;
+  transform: translateY(-50%);
+  z-index: 10;
+  animation: slidingAnim 3s ease infinite;
+}
+
+@keyframes slidingAnim {
+  0% {
+    left: -1px;
+    width: 3.125rem;
+  }
+  50% {
+    left: 86%;
+    width: 3.125rem;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  #SlidingAnim {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+
+  @keyframes slidingAnim {
+    0% {
+      left: -1px;
+      width: 3.125rem;
+    }
+    50% {
+      left: 80%;
+      width: 3.125rem;
+    }
+    100% {
+      width: 102%;
+    }
   }
 }
