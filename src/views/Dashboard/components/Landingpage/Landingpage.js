@@ -503,7 +503,7 @@ const Landingpage = props => {
                 <Button className={classes.MobileButton} style={{ marginLeft: "auto" }}>aaaa</Button>
               </Grid>
             </Grid> */}
-            <div style={{ position: "absolute", width: "480px", height: "550px", right: 0, bottom: 0, paddingTop: "22.5rem", textAlign: "center" }}>
+            <div style={{ position: "absolute", width: "480px", height: "550px", right: 0, bottom: 0, paddingTop: "26rem", textAlign: "center" }}>
               <div className="MobileButtonContainer">
                 <button className="MobileButton">Klarna</button>
                 <button className="MobileButton"><AppleIcon />Pay</button>
@@ -523,7 +523,7 @@ const Landingpage = props => {
           lg={6}
           justify="left"
           align="left"
-          style={{ paddingLeft: '4vh', zIndex: '20' }}>
+          style={{ paddingLeft: '4vh', zIndex: '20', position: "relative" }}>
           <Grid item xs={12} style={{ paddingTop: '15vh' }}>
             <img
               src={require('../../../../assets/2.png')}
@@ -538,7 +538,12 @@ const Landingpage = props => {
             container
             xs={12}
             align="left"
-            style={{ marginTop: '-30vh', marginBottom: '30vh' }}>
+            style={{
+              // marginTop: '-30vh',
+              // marginBottom: '30vh',
+              position: "absolute",
+              top: "67%"
+            }}>
             <Grid
               container
               xs={12}
@@ -547,7 +552,7 @@ const Landingpage = props => {
                 zIndex: '20',
                 marginTop: '-100px',
                 alignContent: 'flex-start',
-                paddingLeft: '110px'
+                paddingLeft: '92px'
               }}
               direction="column"
               alignItems="center"
