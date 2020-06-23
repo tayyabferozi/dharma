@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { makeStyles } from '@material-ui/styles';
 import { Grid, Typography } from '@material-ui/core';
@@ -11,6 +11,8 @@ import Bubbles from './Bubbles';
 import ButtonApple from './ButtonApple';
 import ButtonGoogle from './ButtonGoogle';
 import SubHeading from './SubHeading';
+
+import detectSwipe from "./detectSwipe";
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -86,7 +88,7 @@ const useStyles = makeStyles(theme => ({
     fontSize: '12px',
     fontWeight: '600',
     height: '55px',
-    width: '168px',
+    width: '170px',
     borderRadius: '16px'
   },
   SvgHeader: {
@@ -184,6 +186,21 @@ const useStyles = makeStyles(theme => ({
 
 const Landingpage = props => {
   const { className, ...rest } = props;
+
+  const [modalState, setModalState] = useState("");
+
+  const paidHandler = () => {
+    setModalState(
+      modalState ? "" : "Active"
+    )
+    console.log(modalState)
+  }
+
+  useEffect(() => {
+
+    detectSwipe("SlidingAnim", paidHandler);
+  }, []);
+
 
   const classes = useStyles();
   const mouse10 = event => {
@@ -395,6 +412,7 @@ const Landingpage = props => {
         </Grid>
         <Grid
           item
+          className="UpperMobileGoogleButton"
           id="GoogleMobile"
           direction="column"
           xs={6}
@@ -407,7 +425,7 @@ const Landingpage = props => {
               color="primary"
               style={{
                 background: 'white',
-                width: '163px',
+                width: '170px',
                 zIndex: '4',
                 height: '55px',
                 fontWeight: '600',
@@ -503,15 +521,6 @@ const Landingpage = props => {
                 <Button className={classes.MobileButton} style={{ marginLeft: "auto" }}>aaaa</Button>
               </Grid>
             </Grid> */}
-            <div style={{ position: "absolute", width: "480px", height: "550px", right: 0, bottom: 0, paddingTop: "26rem", textAlign: "center" }}>
-              <div className="MobileButtonContainer">
-                <button className="MobileButton">Klarna</button>
-                <button className="MobileButton"><AppleIcon />Pay</button>
-              </div>
-              <button className="MobileButton Lg">
-                <div id="SlidingAnim"></div>
-                Swipe to <span className="Italic">Pay</span> with <span className="Italic">Paykart</span></button>
-            </div>
           </Grid>
         </Grid>
         <Grid
@@ -536,7 +545,7 @@ const Landingpage = props => {
           </Grid>
           <Grid
             container
-            xs={12}
+            xs={9}
             align="left"
             style={{
               // marginTop: '-30vh',
@@ -546,7 +555,7 @@ const Landingpage = props => {
             }}>
             <Grid
               container
-              xs={12}
+              xs={9}
               align="left"
               style={{
                 zIndex: '20',
@@ -574,48 +583,93 @@ const Landingpage = props => {
       <div>
         <Bubbles />
       </div>
-      <Grid container xs={12} align="center">
-        <Grid
-          id="CarouselMobile"
-          container
-          direction="column"
-          sm={12}
-          md={12}
-          lg={12}
-          justify="center"
-          style={{ zIndex: 500 }}
-          align="center">
+      <div className="AnimationHider">
+        <Grid container xs={12} align="center">
           <Grid
-            item
-            align="center"
-            xs={12}
-            align="center"
-            style={{ paddingTop: '5vh', zIndex: 500, position: "relative" }}>
-            <div style={{ position: "absolute", top: "69%", left: "50%", transform: "translate(-50%, -69%)" }}>
-              <div className="MobileButtonContainer">
-                <button className="MobileButton" style={{ width: "6rem", height: "2.5rem" }}>Klarna</button>
-                <button className="MobileButton" style={{ width: "6rem", height: "2.5rem" }}><AppleIcon />Pay</button>
-              </div>
-              <button className="MobileButton Lg" style={{ width: "13rem", height: "2.5rem", border: "none" }}>
-                <div id="SlidingAnim" style={{ borderRadius: "50px" }}></div>
-                Swipe to <span className="Italic"> Pay </span> with <span className="Italic"> Paykart</span>
-              </button>
-            </div>
-            <img
-              src={require('../../../../assets/carouselphone.png')}
-              style={{ zIndex: '20', width: '310px', height: '350px' }}></img>
+            id="CarouselMobile"
+            container
+            direction="column"
+            sm={12}
+            md={12}
+            lg={12}
+            justify="center"
+            style={{ zIndex: 500 }}
+            align="center">
             <Grid
               item
-              id="ContentUnderMobile"
-              direction="column"
+              align="center"
               xs={12}
               align="center"
-              style={{ paddingTop: '4vh' }}>
-              <Typography className={classes.SendAndReceiveMobile} style={{
-                backgroundColor: "#fff", display: "inline", boxShadow: "0 0 10px 10px #fff"
-              }}>
-                Send & Receive
+              style={{ zIndex: 500, position: "relative" }}>
+              <div style={{ position: "absolute", top: "69%", left: "50%", transform: "translate(-50%, -69%)" }}>
+                <div className="MobileButtonContainer">
+                  <button className="MobileButton" style={{ width: "6rem", height: "2.5rem" }}>Klarna</button>
+                  <button className="MobileButton" style={{ width: "6rem", height: "2.5rem" }}><AppleIcon />Pay</button>
+                </div>
+                <button onClick={paidHandler} className="MobileButton Lg" style={{ width: "13rem", height: "2.5rem", border: "none" }}>
+                  <div id="SlidingAnim"></div>
+                Swipe to <span className="Italic"> Pay </span> with <span className="Italic"> Paykart</span>
+                </button>
+              </div>
+              <img
+                src={require('../../../../assets/carouselphone.png')}
+                style={{ zIndex: '20', width: '310px', height: '350px' }} className="ImageCarousel"></img>
+              <Grid
+                item
+                id="ContentUnderMobile"
+                direction="column"
+                xs={12}
+                align="center"
+                style={{ paddingTop: '4vh' }}>
+                <Typography className={classes.SendAndReceiveMobile} style={{
+                  backgroundColor: "#fff", display: "inline", boxShadow: "0 0 10px 10px #fff"
+                }}>
+                  Send & Receive
               </Typography>
+              </Grid>
+              <Grid
+                id="CountMobile"
+                item
+                xs={12}
+                direction="column"
+                align="center"
+                style={{ paddingTop: '3vh' }}>
+                <Typography
+                  style={{
+                    color: 'rgb(110, 120, 152)',
+                    fontSize: '12px',
+                    fontWeight: '500',
+                    backgroundColor: "#fff",
+                    boxShadow: "0 0 10px 10px #fff"
+                  }}>
+                  Every dollar in your Dharma account is earning 0.7% APR — and
+                  you can withdraw it anytime; 24/7/365.
+              </Typography>
+              </Grid>
+            </Grid>
+            <Grid
+              id="CountMobile"
+              align="center"
+              item
+              xs={12}
+              style={{ paddingTop: '5vh' }}>
+              <img
+                src={require('../../../../assets/countmobile.png')}
+                style={{ zIndex: '20', width: '310px', height: '350px' }}></img>
+            </Grid>
+            <Grid
+              id="CountMobile"
+              item
+              xs={12}
+              sm={12}
+              lg={12}
+              direction="column"
+              align="center">
+              <Typography
+                className={classes.SendAndReceiveMobile}
+                style={{ paddingTop: '5vh' }}>
+                Earn & Save
+            </Typography>
             </Grid>
             <Grid
               id="CountMobile"
@@ -628,68 +682,25 @@ const Landingpage = props => {
                 style={{
                   color: 'rgb(110, 120, 152)',
                   fontSize: '12px',
-                  fontWeight: '500',
-                  backgroundColor: "#fff",
-                  boxShadow: "0 0 10px 10px #fff"
+                  fontWeight: '500'
                 }}>
-                Every dollar in your Dharma account is earning 0.7% APR — and
-                you can withdraw it anytime; 24/7/365.
-              </Typography>
+                Every dollar in your Dharma account is earning 0.7% APR — and you
+                can withdraw it anytime; 24/7/365.
+            </Typography>
             </Grid>
           </Grid>
-          <Grid
-            id="CountMobile"
-            align="center"
-            item
-            xs={12}
-            style={{ paddingTop: '5vh' }}>
-            <img
-              src={require('../../../../assets/countmobile.png')}
-              style={{ zIndex: '20', width: '310px', height: '350px' }}></img>
+          {/* <Grid container xs={12}>
+          <Grid item xs={12} align='center'>
+            <Typography className={classes.SendAndReceive}>Earn & Save</Typography>              
           </Grid>
-          <Grid
-            id="CountMobile"
-            item
-            xs={12}
-            sm={12}
-            lg={12}
-            direction="column"
-            align="center">
-            <Typography
-              className={classes.SendAndReceiveMobile}
-              style={{ paddingTop: '5vh' }}>
-              Earn & Save
-            </Typography>
           </Grid>
-          <Grid
-            id="CountMobile"
-            item
-            xs={12}
-            direction="column"
-            align="center"
-            style={{ paddingTop: '3vh' }}>
-            <Typography
-              style={{
-                color: 'rgb(110, 120, 152)',
-                fontSize: '12px',
-                fontWeight: '500'
-              }}>
-              Every dollar in your Dharma account is earning 0.7% APR — and you
-              can withdraw it anytime; 24/7/365.
-            </Typography>
-          </Grid>
+          <Grid item xs={12} style={{paddingTop:'8vh',paddingRight:'18vh'}} align='center'>
+          <Typography style={{lineHeight:'32px',color:'rgb(110, 120, 152)',fontSize:'20px'}}>
+            Every dollar in your Dharma account is earning 0.7% APR —<br/> and you can withdraw it anytime; 24/7/365.
+          </Typography> 
+          </Grid> */}
         </Grid>
-        {/* <Grid container xs={12}>
-      <Grid item xs={12} align='center'>
-        <Typography className={classes.SendAndReceive}>Earn & Save</Typography>              
-      </Grid>
-      </Grid>
-      <Grid item xs={12} style={{paddingTop:'8vh',paddingRight:'18vh'}} align='center'>
-      <Typography style={{lineHeight:'32px',color:'rgb(110, 120, 152)',fontSize:'20px'}}>
-        Every dollar in your Dharma account is earning 0.7% APR —<br/> and you can withdraw it anytime; 24/7/365.
-      </Typography> 
-      </Grid> */}
-      </Grid>
+      </div>
       <Grid container xs={12} style={{ marginTop: '5vh', zIndex: '10' }}></Grid>
       <Grid
         container
@@ -742,7 +753,7 @@ const Landingpage = props => {
       <Grid container xs={12}>
         <Grid
           item
-          xs={12}
+          lg={12}
           style={{
             paddingTop: '5vh',
             paddingBottom: '10vh'
@@ -2026,6 +2037,12 @@ const Landingpage = props => {
         </Grid>
         <Grid item xs={1} />
       </Grid>
+      <div className={"ModalContainer" + " " + modalState} onClick={paidHandler}>
+        <div className="Modal">
+          <img src={require("../../../../assets/submitted.png")} alt="payment successful" />
+          Payment Sent
+      </div>
+      </div>
     </Grid >
   );
 };
