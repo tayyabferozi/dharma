@@ -189,18 +189,81 @@ const Landingpage = props => {
 
   const [modalState, setModalState] = useState("");
 
+  const [sliderState, setSliderState] = useState(0);
+
   const paidHandler = () => {
     setModalState(
       modalState ? "" : "Active"
     )
-    console.log(modalState)
   }
 
   useEffect(() => {
 
-    detectSwipe("SlidingAnim", paidHandler);
+    // detectSwipe("SlidingAnim", paidHandler);
+
+    inputRange = document.getElementsByClassName('pullee')[0];
+
+    inputRange.min = 0;
+    inputRange.max = maxValue;
+
+
+    inputRange.addEventListener('mousedown', unlockStartHandler, false);
+    inputRange.addEventListener('mousestart', unlockStartHandler, false);
+    inputRange.addEventListener('touchstart', unlockStartHandler, false);
+    inputRange.addEventListener('mouseup', unlockEndHandler, false);
+    inputRange.addEventListener('touchend', unlockEndHandler, false);
+    inputRange.addEventListener('input', sliderChangeHandler.bind(this), false);
+
   }, []);
 
+
+
+  let rafID;
+  let currentValue;
+  let maxValue = 1000;
+  let speed = 100;
+  let inputRange;
+
+  function sliderChangeHandler(e) {
+    setSliderState(e.target.value);
+  }
+
+  function unlockStartHandler() {
+    window.cancelAnimationFrame(rafID);
+
+    currentValue = +this.value;
+
+  }
+
+  function unlockEndHandler() {
+
+    currentValue = +this.value
+
+    if (currentValue >= maxValue) {
+      successHandler();
+    }
+    else {
+      rafID = window.requestAnimationFrame(animateHandler);
+    }
+  }
+
+  function animateHandler() {
+
+    setSliderState(prevState => {
+      return currentValue;
+    });
+
+    if (currentValue > -1) {
+      window.requestAnimationFrame(animateHandler);
+    }
+
+    currentValue = currentValue - speed;
+  }
+
+  function successHandler() {
+    paidHandler();
+    setSliderState(0);
+  };
 
   const classes = useStyles();
   const mouse10 = event => {
@@ -266,7 +329,7 @@ const Landingpage = props => {
       style={{ background: 'white' }}>
       <SubHeading />
       <Grid
-        style={{ justifyContent: 'center' }}
+        style={{ justifyContent: 'center', paddingTop: "50px" }}
         container
         id="Mobile"
         align="center"
@@ -337,7 +400,7 @@ const Landingpage = props => {
             <Typography
               id="transition"
               class="APR"
-              style={{ fontWeight: '600' }}>
+              style={{ fontWeight: '600', whiteSpace: "noWrap" }}>
               {' earning 0.7% APR'}
             </Typography>
             <Typography class="bankAccount" id="transition">
@@ -372,7 +435,7 @@ const Landingpage = props => {
           align="right"
           style={{ paddingRight: '2vh', paddingTop: '1vh' }}>
           <Grid item xs={12}>
-            <Button variant="contained" className={classes.AppleMobileTop}>
+            <Button variant="contained" className={classes.AppleMobileTop} style={{ marginTop: "15px"}}>
               <AppleIcon style={{ fontSize: '40px', color: 'white' }} />
               <Typography
                 style={{
@@ -418,7 +481,7 @@ const Landingpage = props => {
           xs={6}
           justify="left"
           align="left"
-          style={{ paddingLeft: '2vh', paddingTop: '1vh' }}>
+          style={{ paddingLeft: '2vh', paddingTop: '1vh', marginTop: "10px", marginBottom: "70px" }}>
           <Grid item xs={12}>
             <Button
               variant="contained"
@@ -500,7 +563,7 @@ const Landingpage = props => {
           <Grid item xs={12} style={{ paddingTop: '15vh', position: "relative" }}>
             <img
               src={require('../../../../assets/carouselphone.png')}
-              style={{ zIndex: '4', width: '480px', height: '550px' }}></img>
+              style={{ zIndex: '4', maxWidth: '480px', width: "100%" }}></img>
             {/* <Grid
               container
               direction="row"
@@ -539,11 +602,11 @@ const Landingpage = props => {
               style={{
                 zIndex: '4',
                 marginTop: '.5vh',
-                width: '480px',
-                height: '550px'
+                maxWidth: '480px',
+                width: "100%"
               }}></img>
           </Grid>
-          <Grid
+          {/* <Grid
             container
             xs={9}
             align="left"
@@ -551,7 +614,11 @@ const Landingpage = props => {
               // marginTop: '-30vh',
               // marginBottom: '30vh',
               position: "absolute",
-              top: "67%"
+              maxWidth: "480px",
+              width: "100%",
+              top: "67%",
+              left: "53%",
+              transform: "translateX(-50%)"
             }}>
             <Grid
               container
@@ -560,13 +627,13 @@ const Landingpage = props => {
               style={{
                 zIndex: '20',
                 marginTop: '-100px',
-                alignContent: 'flex-start',
-                paddingLeft: '92px'
+                alignContent: 'flex-start'
               }}
               direction="column"
               alignItems="center"
-              justify="center">
-              <Typography className={classes.countMobile}>
+              justify="center"> */}
+              <div style={{position: "absolute", left: "42%", top: "60%", transform : "translate(-50%, -60%)"}}>
+              <Typography className={classes.countMobile} style={{marginBottom: "15px"}}>
                 <b>Earning 0.7% APR</b>
               </Typography>
               <CountUp
@@ -576,8 +643,9 @@ const Landingpage = props => {
                 end={500.999999}
                 duration={1000000}
               />
-            </Grid>
-          </Grid>
+              </div>
+            {/* </Grid>
+          </Grid> */}
         </Grid>
       </Grid>
       <div>
@@ -603,13 +671,19 @@ const Landingpage = props => {
               style={{ zIndex: 500, position: "relative" }}>
               <div style={{ position: "absolute", top: "69%", left: "50%", transform: "translate(-50%, -69%)" }}>
                 <div className="MobileButtonContainer">
-                  <button className="MobileButton" style={{ width: "6rem", height: "2.5rem" }}>Klarna</button>
-                  <button className="MobileButton" style={{ width: "6rem", height: "2.5rem" }}><AppleIcon />Pay</button>
+                  <button className="MobileButton" style={{ width: "6rem", height: "2rem" }}>Klarna</button>
+                  <button className="MobileButton" style={{ width: "6rem", height: "2rem" }}><AppleIcon />Pay</button>
                 </div>
-                <button onClick={paidHandler} className="MobileButton Lg" style={{ width: "13rem", height: "2.5rem", border: "none" }}>
+                {/* <button onClick={paidHandler} className="MobileButton Lg" style={{ width: "13rem", height: "2.5rem", border: "none" }}>
                   <div id="SlidingAnim"></div>
                 Swipe to <span className="Italic"> Pay </span> with <span className="Italic"> Paykart</span>
-                </button>
+                </button> */}
+            <div className="SwipeContainer">
+              <div className="center-xy">
+                <input type="range" value={sliderState} className="pullee" onMouseDown={() => unlockStartHandler.bind(this)} onMouseStart={() => unlockStartHandler.bind(this)} onMouseUp={() => unlockEndHandler.bind(this)} onTouchEnd={() => unlockEndHandler.bind(this)} />
+                <h5>Swipe to <span className="Italic"> Pay </span> with <span className="Italic"> Paykart</span></h5>
+              </div>
+              </div>
               </div>
               <img
                 src={require('../../../../assets/carouselphone.png')}
@@ -649,13 +723,23 @@ const Landingpage = props => {
             </Grid>
             <Grid
               id="CountMobile"
+              class="CountMobileContainer"
               align="center"
               item
               xs={12}
               style={{ paddingTop: '5vh' }}>
               <img
                 src={require('../../../../assets/countmobile.png')}
-                style={{ zIndex: '20', width: '310px', height: '350px' }}></img>
+                style={{ zIndex: '20', width: '310px', height: '350px' }}
+              
+                />
+                <CountUp
+                className={classes.CountUp + " Countup"}
+                start={500.01}
+                decimals={6}
+                end={500.999999}
+                duration={1000000}
+              />
             </Grid>
             <Grid
               id="CountMobile"
@@ -707,28 +791,30 @@ const Landingpage = props => {
         align="right"
         xs={12}
         id="desktop"
-        style={{ paddingTop: '5vh' }}>
-        <Grid item direction="column" xs={6} align="right">
-          <Grid item xs={12} style={{ paddingRight: '12vh' }}>
+        style={{ paddingTop: '5vh', maxWidth: "1000px" }}>
+        <Grid item direction="column" xs={6} align="center">
+          <Grid item xs={12} style={{ margin: "auto" }}>
             <Typography id="transitionLater" className={classes.SendAndReceive}>
               Send & Receive
             </Typography>
           </Grid>
-          <Grid item xs={12} style={{ paddingLeft: '15vh', marginTop: '5vh' }}>
+          <Grid item xs={12} style={{ marginTop: '5vh' }}>
             <Typography
               style={{
                 lineHeight: '32px',
                 color: 'rgb(110, 120, 152)',
                 textAlign: 'center',
-                fontSize: '20px'
+                fontSize: '20px',
+                maxWidth: "510px",
+                margin: "auto"
               }}>
               Send USD to your friends and family anywhere in the world — even
               if they don’t have a bank account.
             </Typography>
           </Grid>
         </Grid>
-        <Grid container xs={6}>
-          <Grid item xs={12} align="left" style={{ paddingLeft: '16vh' }}>
+        <Grid container xs={6} align="center">
+          <Grid item xs={12} style={{ margin: "auto"}}>
             <Typography className={classes.SendAndReceive}>
               Earn & Save
             </Typography>
@@ -737,12 +823,15 @@ const Landingpage = props => {
             item
             xs={12}
             align="center"
-            style={{ paddingRight: '20vh', paddingTop: '5vh' }}>
+            style={{ paddingTop: '5vh' }}>
             <Typography
               style={{
                 lineHeight: '32px',
                 color: 'rgb(110, 120, 152)',
-                fontSize: '20px'
+                fontSize: '20px',
+                maxWidth: "510px",
+                marginRight: "auto",
+                marginLeft: "auto"
               }}>
               Every dollar in your Dharma account is earning
               <br /> 0.7% APR — and you can withdraw it anytime; 24/7/365.
@@ -750,7 +839,7 @@ const Landingpage = props => {
           </Grid>
         </Grid>
       </Grid>
-      <Grid container xs={12}>
+      <Grid container xs={12} style={{position: "relative"}}>
         <Grid
           item
           lg={12}
@@ -765,7 +854,9 @@ const Landingpage = props => {
               position: 'absolute',
               marginTop: '12.5vh',
               height: '.1vh',
-              marginLeft: '28vh',
+              left: "50%",
+              top: "-50%",
+              transform: "translateX(-50%)",
               width: '72%',
               opacity: '0.3 !important'
             }}
@@ -1147,9 +1238,10 @@ const Landingpage = props => {
         justify="space-evenly"
         xs={10}
         id="Mobile"
-        style={{ paddingTop: '8vh' }}>
+        style={{ paddingTop: '8vh', marginTop: "855px" }}>
         <Grid item direction="column" xs={12} align="center">
           <Grid item xs={12}>
+          <div className={classes.whiteSvgBackground}>
             <svg
               width="32"
               height="28"
@@ -1180,6 +1272,7 @@ const Landingpage = props => {
                 </linearGradient>
               </defs>
             </svg>
+            </div>
           </Grid>
 
           <Grid item xs={12} style={{ paddingTop: '3vh', display: 'block' }}>
@@ -1196,6 +1289,7 @@ const Landingpage = props => {
         </Grid>
         <Grid container xs={12} style={{ paddingTop: '5vh' }}>
           <Grid item xs={12}>
+          <div className={classes.whiteSvgBackground}>
             <svg
               width="28"
               height="28"
@@ -1226,6 +1320,7 @@ const Landingpage = props => {
                 </linearGradient>
               </defs>
             </svg>
+            </div>
           </Grid>
           <Grid item xs={12} align="center">
             <Typography
@@ -1243,6 +1338,7 @@ const Landingpage = props => {
         </Grid>
         <Grid container xs={12} style={{ paddingTop: '5vh' }}>
           <Grid item xs={12}>
+          <div className={classes.whiteSvgBackground}>
             <svg
               width="32"
               height="28"
@@ -1274,6 +1370,7 @@ const Landingpage = props => {
                 </linearGradient>
               </defs>
             </svg>
+            </div>
           </Grid>
           <Grid item xs={12} align="center" style={{ paddingTop: '3vh' }}>
             <Typography className={classes.SvgHeader}>
@@ -1296,6 +1393,7 @@ const Landingpage = props => {
         style={{ paddingTop: '5vh' }}>
         <Grid item direction="column" xs={12} align="center">
           <Grid item xs={12}>
+          <div className={classes.whiteSvgBackground}>
             <svg
               width="34"
               height="39"
@@ -1326,6 +1424,7 @@ const Landingpage = props => {
                 </linearGradient>
               </defs>
             </svg>
+            </div>
           </Grid>
           <Grid item xs={12} style={{ paddingTop: '3vh' }}>
             <Typography
@@ -1344,6 +1443,7 @@ const Landingpage = props => {
         </Grid>
         <Grid container xs={12} style={{ paddingTop: '5vh' }}>
           <Grid item xs={12}>
+          <div className={classes.whiteSvgBackground}>            
             <svg
               width="24"
               height="28"
@@ -1374,6 +1474,7 @@ const Landingpage = props => {
                 </linearGradient>
               </defs>
             </svg>
+            </div>
           </Grid>
           <Grid item xs={12} align="center" style={{ paddingTop: '3vh' }}>
             <Typography className={classes.SvgHeader}>
@@ -1390,6 +1491,7 @@ const Landingpage = props => {
 
         <Grid container xs={12} style={{ paddingTop: '5vh' }}>
           <Grid item xs={12}>
+          <div className={classes.whiteSvgBackground}>
             <svg
               width="36"
               height="22"
@@ -1420,6 +1522,7 @@ const Landingpage = props => {
                 </linearGradient>
               </defs>
             </svg>
+            </div>
           </Grid>
           <Grid item xs={12} align="center" style={{ paddingTop: '3vh' }}>
             <Typography className={classes.SvgHeader}>
@@ -2040,7 +2143,7 @@ const Landingpage = props => {
       <div className={"ModalContainer" + " " + modalState} onClick={paidHandler}>
         <div className="Modal">
           <img src={require("../../../../assets/submitted.png")} alt="payment successful" />
-          Payment Sent
+          <p>Payment Sent</p>
       </div>
       </div>
     </Grid >

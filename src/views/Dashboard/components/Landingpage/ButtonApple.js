@@ -25,7 +25,6 @@ const ButtonApple = () => {
       <Typography
         style={{
           color: 'white',
-          fontSize: '15px',
           fontWeight: 'bold',
           lineHeight: '25px',
           textAlign: 'left',
