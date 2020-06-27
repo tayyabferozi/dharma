@@ -1,5 +1,3 @@
-
-
 @font-face {
   font-family: 'Graphik';
   src: local('GraphikMedium'), url(./fonts/GraphikMedium.otf);
@@ -275,6 +273,24 @@ body {
   -moz-transform: scale(0.8);
   transform: scale(0.8);
   opacity: 20;
+}
+
+@media screen and (max-width: 600px) {
+  .x2 {
+    left: 30% !important;
+  }
+
+  .x3 {
+    left: 30% !important;
+  }
+
+  .x4 {
+    left: 35% !important;
+  }
+
+  .x7 {
+    left: 55% !important;
+  }
 }
 
 @keyframes movecloudsx2 {
@@ -1167,8 +1183,8 @@ p.SendMoneyTo {
     font-size: 40px !important;
   }
   #ButtonMobile {
-    flex-direction: column;
-    align-items: center;
+    /* flex-direction: column;
+    align-items: center; */
   }
   .UpperMobileGoogleButton {
     padding: 0.5rem 0 0 !important;
@@ -1207,7 +1223,7 @@ p.SendMoneyTo {
 
 /* Swipe */
 
-.SwipeContainer{
+.SwipeContainer {
   position: relative;
 }
 
@@ -1353,18 +1369,31 @@ p.SendMoneyTo {
   transform: translate(-50%, -50%);
 }
 
-.CountMobileContainer{
+.CountMobileContainer {
   position: relative;
 }
 
-.CountMobileContainer .Countup{
+.CountMobileContainer .Earning {
   position: absolute;
   left: 50%;
-  top: 55%;
-  transform: translate(-50%, -55%);
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.CountMobileContainer .Countup {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -70%);
   font-size: 2rem !important;
 }
 
-.TextCenter{
+.TextCenter {
   text-align: center;
 }
+
+/* @media screen and (max-width: 639px) {
+  .LandingContainer * {
+    font-size: 40px !important;
+  }
+} */
