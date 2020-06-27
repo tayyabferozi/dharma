@@ -180,7 +180,12 @@ const useStyles = makeStyles(theme => ({
     paddingLeft: '7vh',
     paddingRight: '7vh',
     borderRadius: '25px',
-    color: 'white'
+    color: 'white',
+    display: 'block',
+    textAlign: 'center',
+    marginLeft: 'auto',
+    marginRight: 'auto',
+    width: '215px'
   }
 }));
 
@@ -661,7 +666,7 @@ const Landingpage = props => {
               }}>
               <Typography
                 className={classes.countMobile}
-                style={{ marginBottom: '15px' }}>
+                style={{ marginBottom: '15px', padding: '0.75rem 1.5rem' }}>
                 <b>Earning 0.7% APR</b>
               </Typography>
               <CountUp
@@ -794,7 +799,7 @@ const Landingpage = props => {
               />
               <Typography
                 className={classes.countMobile + ' Earning'}
-                style={{ marginBottom: '15px' }}>
+                style={{ marginBottom: '15px', padding: '0.75rem 1.5rem' }}>
                 <b>Earning 0.7% APR</b>
               </Typography>
               <CountUp
@@ -980,16 +985,14 @@ const Landingpage = props => {
             left: '50%',
             top: '50%',
             transform: 'translate(-50%, -50%)',
-            width: '70%'
+            width: '90%'
           }}>
           <div
             style={{
               borderTop: '1px solid rgba(0, 0, 0, 0.2)',
               position: 'relative',
-              top: '10px'
-            }}>
-            this
-          </div>
+              top: '2px'
+            }}></div>
         </div>
         <div
           style={{
@@ -1359,7 +1362,67 @@ const Landingpage = props => {
         justify="space-evenly"
         xs={10}
         id="Mobile"
-        style={{ paddingTop: '8vh', marginTop: '855px' }}>
+        style={{ paddingTop: '8vh', marginTop: '900px' }}>
+        <div style={{ position: 'relative', margin: '5rem', width: '100%' }}>
+          <div
+            style={{
+              position: 'absolute',
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)',
+              width: '340%'
+            }}>
+            <div
+              style={{
+                borderTop: '1px solid rgba(0, 0, 0, 0.2)',
+                position: 'relative',
+                top: '2px',
+                left: '5px'
+              }}></div>
+          </div>
+          <div
+            style={{
+              position: 'absolute',
+              left: '50%',
+              top: '50%',
+              transform: 'translate(-50%, -50%)'
+            }}>
+            <Button variant="contained" className={classes.btnWatchOurVideo}>
+              <svg
+                width="12"
+                height="14"
+                viewBox="0 0 12 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="sc-bZQynM iJaZLJ">
+                <path
+                  d="M1 2.76619V11.2338C1 12.0111 1.84797 12.4912 2.5145 12.0913L9.57084 7.85749C10.2182 7.46909 10.2182 6.53091 9.57084 6.14251L2.5145 1.9087C1.84797 1.50878 1 1.9889 1 2.76619Z"
+                  stroke="url(#paint0_linear)"
+                  stroke-width="2"></path>
+                <defs>
+                  <linearGradient
+                    id="paint0_linear"
+                    x1="11"
+                    y1="1"
+                    x2="7.04888"
+                    y2="14.5814"
+                    gradientUnits="userSpaceOnUse">
+                    <stop offset="0.0288666" stop-color="#FEA41C"></stop>
+                    <stop offset="0.223691" stop-color="#FF5F61"></stop>
+                    <stop offset="0.408517" stop-color="#FF2FA9"></stop>
+                    <stop offset="0.628457" stop-color="#FE1CD5"></stop>
+                    <stop offset="0.733043" stop-color="#CD1CEE"></stop>
+                    <stop offset="0.864847" stop-color="#8C23F9"></stop>
+                    <stop offset="0.96226" stop-color="#4635FF"></stop>
+                  </linearGradient>
+                </defs>
+              </svg>
+              <span style={{ fontSize: '12px', paddingLeft: '10px' }}>
+                Watch our video
+              </span>
+            </Button>
+          </div>
+        </div>
         <Grid item direction="column" xs={12} align="center">
           <Grid item xs={12}>
             <div className={classes.whiteSvgBackground}>
