@@ -1,16 +1,16 @@
 @font-face {
-  font-family: 'Graphik';
-  src: local('GraphikMedium'), url(./fonts/GraphikMedium.otf);
+  font-family: "Graphik";
+  src: local("GraphikMedium"), url(./fonts/GraphikMedium.otf);
 }
 
 * {
-  font-family: 'Graphik' !important;
+  font-family: "Graphik" !important;
 }
 
 html,
 body {
   width: 100%;
-  font-family: 'Graphik' !important;
+  font-family: "Graphik" !important;
   height: 100%;
   width: 100%;
   height: 100%;
@@ -20,7 +20,7 @@ body {
 }
 
 body {
-  font-family: 'Graphik';
+  font-family: "Graphik";
   color: #fff;
   text-align: center;
 }
@@ -44,11 +44,7 @@ p {
 html,
 #bubbles {
   height: 100%;
-  background-image: -moz-linear-gradient(
-    center bottom,
-    rgb(14, 173, 173) 33%,
-    rgb(0, 255, 255) 67%
-  );
+
   padding: 2px;
 }
 
@@ -75,9 +71,9 @@ div.scrollmenu a {
 
 body {
   color: rgb(255, 255, 255);
-  font-family: 'Graphik', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
+  font-family: "Graphik", -apple-system, BlinkMacSystemFont, "Segoe UI",
+    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol";
 }
 
 .bubblex2 {
@@ -191,19 +187,19 @@ body {
 .x5 {
   top: 980px;
   left: 50%;
-  background: rgb(0, 91, 234);
+  /* background: rgb(0, 91, 234);
   background: linear-gradient(
     90deg,
     rgba(0, 91, 234, 1) 0%,
     rgba(0, 198, 251, 1) 50%,
     rgba(68, 129, 235, 1) 100%
-  );
-  /* background: linear-gradient(
+  ); */
+  background: linear-gradient(
     63.74deg,
     rgb(0, 84, 253) -16.64%,
     rgb(255, 25, 247) 90%,
     rgb(255, 46, 93) 120%
-  ); */
+  );
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   transform: scale(0.8);
@@ -583,7 +579,7 @@ body {
 
 .SendMoneyTo {
   font-weight: 700;
-  font-family: 'Graphik';
+  font-family: "Graphik";
   color: rgb(31, 42, 75);
   font-size: 78px;
 }
@@ -611,7 +607,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   font-weight: 700;
-  font-family: 'Graphik';
+  font-family: "Graphik";
   font-size: 75px;
   display: inline;
 }
@@ -764,7 +760,7 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
 
   .EarnInterest {
     color: rgb(31, 42, 75);
-    font-family: 'Graphik';
+    font-family: "Graphik";
     font-weight: 700;
     display: inline;
     font-size: 78px !important;
@@ -774,7 +770,7 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
     font-weight: 700;
     color: rgb(31, 42, 75);
     font-size: 78px !important;
-    font-family: 'Graphik';
+    font-family: "Graphik";
     display: inline;
   }
 
@@ -807,7 +803,7 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-family: 'Graphik';
+    font-family: "Graphik";
     font-weight: 700;
     font-size: 78px !important;
     display: inline;
@@ -961,7 +957,7 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
   .EarnInterest,
   .From,
   .anywhere {
-    font-size: 44px !important;
+    font-size: 40px !important;
   }
 
   .from {
@@ -1220,8 +1216,8 @@ p.SendMoneyTo {
   .bubblex7,
   .bubblex8,
   .items img {
-    width: 50px !important;
-    height: 50px !important;
+    width: 80px !important;
+    height: 80px !important;
   }
 }
 
