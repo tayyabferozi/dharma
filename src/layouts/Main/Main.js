@@ -1,12 +1,12 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
-import clsx from 'clsx';
-import { makeStyles, useTheme } from '@material-ui/styles';
-import { Topbar, Footer } from './components';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import clsx from "clsx";
+import { makeStyles, useTheme } from "@material-ui/styles";
+import { Topbar, Footer } from "./components";
 
-const useStyles = makeStyles(theme => ({}));
+const useStyles = makeStyles((theme) => ({}));
 
-const Main = props => {
+const Main = (props) => {
   const { children } = props;
 
   const classes = useStyles();
@@ -14,22 +14,23 @@ const Main = props => {
 
   return (
     <div
-      style={{ backgroundColor: 'white' }}
+      style={{ backgroundColor: "white" }}
       className={clsx({
-        [classes.root]: true
-      })}>
+        [classes.root]: true,
+      })}
+    >
       <Topbar />
 
-      <main className={classes.content} style={{ backgroundColor: 'white' }}>
+      <main className={classes.content} style={{ backgroundColor: "white" }}>
         {children}
-        <Footer style={{}} />
+        <Footer />
       </main>
     </div>
   );
 };
 
 Main.propTypes = {
-  children: PropTypes.node
+  children: PropTypes.node,
 };
 
 export default Main;

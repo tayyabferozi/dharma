@@ -51,7 +51,7 @@ const Bubbles = () => {
               />
             </div>
             <div class="twitter">
-              <img src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
+              <img style={{}} src="https://images.vexels.com/media/users/3/137419/isolated/preview/b1a3fab214230557053ed1c4bf17b46c-twitter-icon-logo-by-vexels.png"></img>
             </div>
             <div class="circle c3"></div>
           </div>

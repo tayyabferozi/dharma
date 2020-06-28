@@ -87,7 +87,7 @@ const useStyles = makeStyles((theme) => ({
     background: "rgb(31, 42, 75)",
     fontSize: "12px",
     fontWeight: "600",
-    height: "55px",
+    height: "60px",
     width: "170px",
     borderRadius: "16px",
   },
@@ -463,15 +463,17 @@ const Landingpage = (props) => {
             <Button
               variant="contained"
               className={classes.AppleMobileTop}
-              style={{ marginTop: "10px", marginLeft: "-5px" }}
+              style={{ marginTop: "10px", marginLeft: "-5px", height: "60px",borderRadius:"10px" }}
             >
-              <AppleIcon style={{ fontSize: "40px", color: "white" }} />
+              <AppleIcon style={{ fontSize: "35px", color: "white",marginLeft: '-2vh',marginRight:'2vh' }} />
               <Typography
                 style={{
                   color: "white",
-                  fontSize: "10px",
+                  fontSize: "9px",
                   fontWeight: "bold",
-                  lineHeight: "20px",
+                  lineHeight: "16px",
+                  textTransform:'none',
+                  textAlign: "left",
                 }}
               >
                 Download on the
@@ -479,7 +481,7 @@ const Landingpage = (props) => {
                 <span
                   style={{
                     fontWeight: "bold",
-                    fontSize: "18px",
+                    fontSize: "16px",
                     textTransform: "none",
                   }}
                 >
@@ -532,9 +534,9 @@ const Landingpage = (props) => {
                 background: "white",
                 width: "170px",
                 zIndex: "4",
-                height: "55px",
+                height: "60px",
                 fontWeight: "600",
-                borderRadius: "16px",
+                borderRadius: "10px",
               }}
             >
               <svg
@@ -584,17 +586,20 @@ const Landingpage = (props) => {
               </svg>
               <Typography
                 style={{
-                  fontSize: "15px",
+                  fontSize: "10px",
                   paddingLeft: "0.5vh",
+                  marginLeft:'2vh',
                   color: "grey",
                   textAlign: "left",
+                  lineHeight:'16px',
                   textTransform: "none",
                 }}
               >
-                <b>
+                
                   Get it on
                   <br />
-                  Google Play
+                  <b>
+                  <span style={{fontSize:'16px'}}>Google Play</span>
                 </b>
               </Typography>
             </Button>
@@ -746,7 +751,7 @@ const Landingpage = (props) => {
               <div
                 style={{
                   position: "absolute",
-                  top: "69%",
+                  top: "65%",
                   left: "50%",
                   transform: "translate(-50%, -69%)",
                 }}
@@ -754,13 +759,13 @@ const Landingpage = (props) => {
                 <div className="MobileButtonContainer">
                   <button
                     className="MobileButton"
-                    style={{ width: "6rem", height: "2rem" }}
+                    style={{ width: "6rem", height: "1.8rem" }}
                   >
                     Klarna
                   </button>
                   <button
                     className="MobileButton"
-                    style={{ width: "6rem", height: "2rem" }}
+                    style={{ width: "6rem", height: "1.8rem" }}
                   >
                     <AppleIcon />
                     Pay
@@ -2161,7 +2166,7 @@ const Landingpage = (props) => {
               style={{
                 background: "rgb(31, 42, 75)",
                 color: "white",
-                width: "220px",
+                width: "230px",
                 zIndex: "4",
                 height: "85px",
                 fontWeight: "600",
@@ -2223,7 +2228,7 @@ const Landingpage = (props) => {
                 }}
               >
                 <b>
-                  Get it on
+                  <span style={{fontSize:'12px',textTransform:'none'}}>Get it on</span>
                   <br />
                   Google Play
                 </b>
@@ -2482,7 +2487,13 @@ const Landingpage = (props) => {
           />
         </Grid>
         <Grid item xs={1} />
-        <Grid item xs={10} id="CarouselMobile" align="center">
+        <Grid
+          item
+          xs={10}
+          id="CarouselMobile"
+          align="center"
+          style={{ marginBottom: "5vh" }}
+        >
           <Typography
             style={{
               color: "rgb(110, 120, 152)",

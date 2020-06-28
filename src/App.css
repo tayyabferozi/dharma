@@ -1,4 +1,18 @@
 @font-face {
+  font-family: "Graphik Web Bold";
+  src: url("//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.eot");
+  src: url("//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.eot?#iefix")
+      format("embedded-opentype"),
+    url("//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.woff2")
+      format("woff2"),
+    url("//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.woff")
+      format("woff"),
+    url("//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.ttf")
+      format("truetype"),
+    url("//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.svg#Graphik Web Bold")
+      format("svg");
+}
+@font-face {
   font-family: "Graphik";
   src: local("GraphikMedium"), url(./fonts/GraphikMedium.otf);
 }
@@ -10,7 +24,8 @@
 html,
 body {
   width: 100%;
-  font-family: "Graphik" !important;
+  text-rendering: optimizeLegibility !important;
+  font-family: "Graphik web bold" !important;
   height: 100%;
   width: 100%;
   height: 100%;
@@ -19,12 +34,9 @@ body {
   padding: 0;
 }
 
-body {
-  font-family: "Graphik";
-  color: #fff;
-  text-align: center;
+.MuiTypography-body1 {
+  text-rendering: optimizeLegibility !important;
 }
-
 h1 {
   margin: 0;
   line-height: 1.25em;
@@ -194,12 +206,12 @@ body {
     rgba(0, 198, 251, 1) 50%,
     rgba(68, 129, 235, 1) 100%
   ); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     63.74deg,
     rgb(0, 84, 253) -16.64%,
     rgb(255, 25, 247) 90%,
     rgb(255, 46, 93) 120%
-  );
+  ); */
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   transform: scale(0.8);
@@ -289,7 +301,7 @@ body {
   }
 
   .x7 {
-    left: 55% !important;
+    left: 50% !important;
   }
 }
 
@@ -579,7 +591,7 @@ body {
 
 .SendMoneyTo {
   font-weight: 700;
-  font-family: "Graphik";
+  font-family: "Graphik Web Bold" !important;
   color: rgb(31, 42, 75);
   font-size: 78px;
 }
@@ -607,7 +619,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   font-weight: 700;
-  font-family: "Graphik";
+  font-family: "Graphik Web Bold" !important;
   font-size: 75px;
   display: inline;
 }
@@ -638,11 +650,10 @@ body {
   .bubblex7,
   .bubblex8,
   .items img {
-    width: 80px !important;
-    height: 80px !important;
+    width: 30px !important;
+    height: 30px !important;
   }
 
-  .bubblex5,
   .bubblex8 {
     display: none;
   }
@@ -702,7 +713,10 @@ body {
   #ContentUnderDesktop {
     display: none !important;
   }
-
+  .circle {
+    top: 18px;
+    left: 15px;
+  }
   #MobilePadding {
     padding-top: 9vh !important;
   }
@@ -755,12 +769,13 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
     font-weight: 700;
     font-size: 78px;
     display: inline;
+    font-family: "Graphik Web Bold" !important;
     line-height: 45px !important;
   }
 
   .EarnInterest {
     color: rgb(31, 42, 75);
-    font-family: "Graphik";
+    font-family: "Graphik Web Bold" !important;
     font-weight: 700;
     display: inline;
     font-size: 78px !important;
@@ -770,7 +785,7 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
     font-weight: 700;
     color: rgb(31, 42, 75);
     font-size: 78px !important;
-    font-family: "Graphik";
+    font-family: "Graphik Web Bold" !important;
     display: inline;
   }
 
@@ -803,7 +818,7 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-    font-family: "Graphik";
+    font-family: "Graphik Web Bold" !important;
     font-weight: 700;
     font-size: 78px !important;
     display: inline;
@@ -965,11 +980,11 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
   }
 
   .SendMoneyTo {
-    line-height: 26px !important;
+    line-height: 35px !important;
   }
 
   .anywhere {
-    line-height: 26px !important;
+    line-height: 20px !important;
   }
 }
 
@@ -1203,7 +1218,7 @@ p.SendMoneyTo {
     width: 100% !important;
   }
   .x7 {
-    left: 60%;
+    left: 58%;
   }
 }
 
@@ -1216,8 +1231,15 @@ p.SendMoneyTo {
   .bubblex7,
   .bubblex8,
   .items img {
-    width: 80px !important;
-    height: 80px !important;
+    width: 70px !important;
+    height: 70px !important;
+  }
+  .twitters img {
+    position: absolute;
+    z-index: 100;
+    width: 40px;
+    top: 55px;
+    left: 55px;
   }
 }
 
@@ -1391,7 +1413,9 @@ p.SendMoneyTo {
 .TextCenter {
   text-align: center;
 }
-
+.MuiButton-root {
+  padding: 0 !important;
+}
 /* @media screen and (max-width: 639px) {
   .LandingContainer * {
     font-size: 40px !important;
