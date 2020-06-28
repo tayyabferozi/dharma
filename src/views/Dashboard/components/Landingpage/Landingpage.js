@@ -32,9 +32,9 @@ const useStyles = makeStyles((theme) => ({
 
   transparencyBoxMobile: {
     backgroundImage:
-      "linear-gradient(to right, rgba(255,255,255,.9), rgba(255,255,255,1))",
+      "linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,.9), rgba(255,255,255,1))",
     zIndex: "44 !important",
-    boxShadow: "5px 4px 5px 5px white",
+    boxShadow: "0px 0px 15px 25px white",
     borderRadius: "25px",
   },
 
@@ -100,8 +100,8 @@ const useStyles = makeStyles((theme) => ({
     transition: "all 300ms ease-in-out 0s",
   },
   SvgContent: {
-    fontWeight: 400,
-    fontSize: "16px",
+    fontWeight: 500,
+    fontSize: "14px",
     color: "rgb(110, 120, 152)",
     lineHeight: "24px",
     textAlign: "center",
@@ -324,7 +324,7 @@ const Landingpage = (props) => {
     >
       <SubHeading />
       <Grid
-        style={{ justifyContent: "center", paddingTop: "50px" }}
+        style={{ justifyContent: "center", paddingTop: "20px" }}
         container
         id="Mobile"
         align="center"
@@ -463,16 +463,28 @@ const Landingpage = (props) => {
             <Button
               variant="contained"
               className={classes.AppleMobileTop}
-              style={{ marginTop: "10px", marginLeft: "-5px", height: "60px",borderRadius:"10px" }}
+              style={{
+                marginTop: "10px",
+                marginLeft: "-5px",
+                height: "60px",
+                borderRadius: "10px",
+              }}
             >
-              <AppleIcon style={{ fontSize: "35px", color: "white",marginLeft: '-2vh',marginRight:'2vh' }} />
+              <AppleIcon
+                style={{
+                  fontSize: "35px",
+                  color: "white",
+                  marginLeft: "-2vh",
+                  marginRight: "2vh",
+                }}
+              />
               <Typography
                 style={{
                   color: "white",
                   fontSize: "9px",
                   fontWeight: "bold",
                   lineHeight: "16px",
-                  textTransform:'none',
+                  textTransform: "none",
                   textAlign: "left",
                 }}
               >
@@ -588,18 +600,19 @@ const Landingpage = (props) => {
                 style={{
                   fontSize: "10px",
                   paddingLeft: "0.5vh",
-                  marginLeft:'2vh',
+                  marginLeft: "2vh",
                   color: "grey",
                   textAlign: "left",
-                  lineHeight:'16px',
+                  lineHeight: "16px",
                   textTransform: "none",
                 }}
               >
-                
-                  Get it on
-                  <br />
-                  <b>
-                  <span style={{fontSize:'16px'}}>Google Play</span>
+                <b>Get it on</b>
+                <br />
+                <b>
+                  <span style={{ fontSize: "16px", fontWeight: 800 }}>
+                    Google Play
+                  </span>
                 </b>
               </Typography>
             </Button>
@@ -708,7 +721,11 @@ const Landingpage = (props) => {
             >
               <Typography
                 className={classes.countMobile}
-                style={{ marginBottom: "15px", padding: "0.75rem 1.5rem" }}
+                style={{
+                  marginBottom: "15px",
+                  padding: "0.75rem 1.5rem",
+                  width: "50%",
+                }}
               >
                 <b>Earning 0.7% APR</b>
               </Typography>
@@ -853,7 +870,11 @@ const Landingpage = (props) => {
               />
               <Typography
                 className={classes.countMobile + " Earning"}
-                style={{ marginBottom: "15px", padding: "0.75rem 1.5rem" }}
+                style={{
+                  marginBottom: "15px",
+                  padding: "0.75rem .5rem",
+                  width: "50%",
+                }}
               >
                 <b>Earning 0.7% APR</b>
               </Typography>
@@ -1566,7 +1587,7 @@ const Landingpage = (props) => {
               Easy as 1,2,3...
             </Typography>
           </Grid>
-          <Grid item xs={12} style={{ paddingTop: "2vh" }}>
+          <Grid item xs={12} style={{ paddingTop: "4vh" }}>
             <Typography className={classes.SvgContent}>
               Connect your debit card, tap a button, and your money is uploaded
               to the internet
@@ -1724,15 +1745,11 @@ const Landingpage = (props) => {
             </div>
           </Grid>
           <Grid item xs={12} style={{ paddingTop: "3vh" }}>
-            <Typography
-              id="transitionLater"
-              className={classes.SvgHeader}
-              style={{ paddingBottom: "1vh" }}
-            >
+            <Typography id="transitionLater" className={classes.SvgHeader}>
               Borderless, Global Accessibility
             </Typography>
           </Grid>
-          <Grid item xs={12} style={{}}>
+          <Grid item xs={12} style={{ paddingTop: "4vh" }}>
             <Typography className={classes.SvgContent}>
               No U.S. bank account? No problem - deposit and with draw using
               cryptocurrencies from anywhere in the world
@@ -1782,7 +1799,7 @@ const Landingpage = (props) => {
               Hyper-Secure, Non-Custodial
             </Typography>
           </Grid>
-          <Grid item xs={12} align="center" style={{ paddingBottom: "2vh" }}>
+          <Grid item xs={12} align="center" style={{ paddingTop: "4vh" }}>
             <Typography className={classes.SvgContent}>
               Your money is stored in a hyper-secure, non-custodial
               cryptocurrency wallet. Learn more.
@@ -1833,7 +1850,7 @@ const Landingpage = (props) => {
               Radical Transparency
             </Typography>
           </Grid>
-          <Grid item xs={12} align="center" style={{ paddingBottom: "1vh" }}>
+          <Grid item xs={12} align="center" style={{ paddingTop: "4vh" }}>
             <Typography className={classes.SvgContent}>
               Your money is managed on the Ethereum blockchain through 100%
               open-source, independently audited code
@@ -2228,7 +2245,9 @@ const Landingpage = (props) => {
                 }}
               >
                 <b>
-                  <span style={{fontSize:'12px',textTransform:'none'}}>Get it on</span>
+                  <span style={{ fontSize: "12px", textTransform: "none" }}>
+                    Get it on
+                  </span>
                   <br />
                   Google Play
                 </b>
