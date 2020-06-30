@@ -1,28 +1,31 @@
-/* @font-face {
-  font-family: "Graphik Web Semibold";
-  src: url("//db.onlinewebfonts.com/t/02fb003368979ba04752e4f3b4c4cebd.eot");
-  src: url("//db.onlinewebfonts.com/t/02fb003368979ba04752e4f3b4c4cebd.eot?#iefix")
-      format("embedded-opentype"),
-    url("//db.onlinewebfonts.com/t/02fb003368979ba04752e4f3b4c4cebd.woff2")
-      format("woff2"),
-    url("//db.onlinewebfonts.com/t/02fb003368979ba04752e4f3b4c4cebd.woff")
-      format("woff"),
-    url("//db.onlinewebfonts.com/t/02fb003368979ba04752e4f3b4c4cebd.ttf")
-      format("truetype"),
-    url("//db.onlinewebfonts.com/t/02fb003368979ba04752e4f3b4c4cebd.svg#Graphik Web Semibold")
-      format("svg");
-  font-stretch: condensed; */
+@font-face {
+  font-family: 'Graphik Web Bold';
+  src: url('//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.eot');
+  src: url('//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.eot?#iefix')
+      format('embedded-opentype'),
+    url('//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.woff2')
+      format('woff2'),
+    url('//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.woff')
+      format('woff'),
+    url('//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.ttf')
+      format('truetype'),
+    url('//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.svg#Graphik Web Bold')
+      format('svg');
+}
+@font-face {
+  font-family: 'Graphik';
+  src: local('GraphikMedium'), url(./fonts/GraphikMedium.otf);
+}
 
-/* @font-face {
-  font-family: "Graphik";
-  src: local("GraphikMedium"), url(./fonts/GraphikMedium.otf);
-} */
+* {
+  font-family: 'Graphik' !important;
+}
 
 html,
 body {
   width: 100%;
   text-rendering: optimizeLegibility !important;
-  /* font-family: "Graphik web bold" !important; */
+  font-family: 'Graphik web bold' !important;
   height: 100%;
   width: 100%;
   height: 100%;
@@ -80,9 +83,9 @@ div.scrollmenu a {
 
 body {
   color: rgb(255, 255, 255);
-  /* font-family: "Graphik", -apple-system, BlinkMacSystemFont, "Segoe UI",
-    Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
-    "Segoe UI Symbol"; */
+  font-family: 'Graphik', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+    'Segoe UI Symbol';
 }
 
 .bubblex2 {
@@ -195,7 +198,7 @@ body {
 
 .x5 {
   top: 980px;
-  left: 43%;
+  left: 50%;
   /* background: rgb(0, 91, 234);
   background: linear-gradient(
     90deg,
@@ -203,12 +206,12 @@ body {
     rgba(0, 198, 251, 1) 50%,
     rgba(68, 129, 235, 1) 100%
   ); */
-  background: linear-gradient(
+  /* background: linear-gradient(
     63.74deg,
     rgb(0, 84, 253) -16.64%,
     rgb(255, 25, 247) 90%,
     rgb(255, 46, 93) 120%
-  );
+  ); */
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   transform: scale(0.8);
@@ -238,7 +241,7 @@ body {
 
 .x7 {
   top: 950px;
-  left: 77%;
+  left: 73%;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   transform: scale(0.8);
@@ -253,7 +256,7 @@ body {
 
 .x8 {
   top: 1000px;
-  left: 90%;
+  left: 85%;
   /* background: rgb(0, 91, 234);
   background: linear-gradient(
     90deg,
@@ -284,11 +287,6 @@ body {
   .x2 {
     left: 30% !important;
   }
-  #borderImg {
-    width: 60px;
-    top: 20px;
-    left: 20px;
-  }
 
   .x3 {
     left: 30% !important;
@@ -296,7 +294,6 @@ body {
 
   .x4 {
     left: 35% !important;
-    top: 900px !important;
   }
 
   .x6 {
@@ -305,12 +302,6 @@ body {
 
   .x7 {
     left: 50% !important;
-  }
-  #container {
-    top: -12px;
-    left: -12px;
-    position: relative;
-    min-width: 1000px;
   }
 }
 
@@ -338,7 +329,7 @@ body {
 
 @keyframes movecloudsx3 {
   0% {
-    top: 500px;
+    top: 850px;
   }
 
   99%,
@@ -360,7 +351,7 @@ body {
 
 @keyframes movecloudsx4 {
   0% {
-    top: 600px;
+    top: 850px;
   }
 
   85%,
@@ -382,7 +373,7 @@ body {
 
 @keyframes movecloudsx5 {
   0% {
-    top: 650px;
+    top: 850px;
   }
 
   99%,
@@ -584,17 +575,6 @@ body {
     opacity: 0.8;
   }
 }
-@keyframes scaleInMobile {
-  from {
-    transform: scale(1.5, 1.5);
-    opacity: 0;
-  }
-
-  to {
-    transform: scale(1.8, 1.8);
-    opacity: 0.8;
-  }
-}
 
 .MainContainer {
   margin-top: 6.875rem;
@@ -611,6 +591,7 @@ body {
 
 .SendMoneyTo {
   font-weight: 700;
+  font-family: 'Graphik Web Bold' !important;
   color: rgb(31, 42, 75);
   font-size: 78px;
 }
@@ -638,6 +619,7 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   font-weight: 700;
+  font-family: 'Graphik Web Bold' !important;
   font-size: 75px;
   display: inline;
 }
@@ -732,9 +714,8 @@ body {
     display: none !important;
   }
   .circle {
-    top: 22px;
-    left: 20px;
-    animation: scaleInMobile 3s infinite cubic-bezier(0, 0, 0.09, 0.05);
+    top: 18px;
+    left: 15px;
   }
   #MobilePadding {
     padding-top: 9vh !important;
@@ -788,11 +769,13 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
     font-weight: 700;
     font-size: 78px;
     display: inline;
+    font-family: 'Graphik Web Bold' !important;
     line-height: 45px !important;
   }
 
   .EarnInterest {
     color: rgb(31, 42, 75);
+    font-family: 'Graphik Web Bold' !important;
     font-weight: 700;
     display: inline;
     font-size: 78px !important;
@@ -802,6 +785,7 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
     font-weight: 700;
     color: rgb(31, 42, 75);
     font-size: 78px !important;
+    font-family: 'Graphik Web Bold' !important;
     display: inline;
   }
 
@@ -834,6 +818,7 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
+    font-family: 'Graphik Web Bold' !important;
     font-weight: 700;
     font-size: 78px !important;
     display: inline;
@@ -1241,28 +1226,23 @@ p.SendMoneyTo {
   .bubblex2,
   .bubblex3,
   .bubblex4,
+  .bubblex5,
   .bubblex6,
   .bubblex7,
   .bubblex8,
   .items img {
-    width: 60px !important;
-    height: 60px !important;
-  }
-  .bubblex5 {
-    width: 80px !important;
-    height: 80px !important;
+    width: 70px !important;
+    height: 70px !important;
   }
   .twitters img {
     position: absolute;
     z-index: 100;
-    width: 30px;
-    top: 50px;
-    left: 50px;
+    width: 40px;
+    top: 55px;
+    left: 55px;
   }
 }
-.makeStyles-transparencyBoxMobile-11 {
-  line-height: normal;
-}
+
 /* Swipe */
 
 .SwipeContainer {
@@ -1441,3 +1421,44 @@ p.SendMoneyTo {
     font-size: 40px !important;
   }
 } */
+
+.SubHeading * {
+  font-size: 78px !important;
+}
+
+.SliderContainer {
+  /* width: 20rem;
+  height: 1rem; */
+  /* padding: 0.25rem; */
+  margin: 0 auto;
+  /* border: 1px solid #000; */
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  right: -3px;
+}
+.Slider {
+  width: 1.8rem;
+  height: 100%;
+  cursor: pointer;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.Slider.SeekAttention {
+  animation: attention 1.5s ease 2s infinite;
+}
+
+@keyframes attention {
+  0% {
+    width: 1.8rem;
+  }
+  25% {
+    width: 2rem;
+  }
+  75% {
+    width: 1.8rem;
+  }
+  100% {
+    width: 2.2rem;
+  }
+}

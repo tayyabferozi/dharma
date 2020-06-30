@@ -7,10 +7,10 @@ import LocalAtmIcon from '@material-ui/icons/LocalAtm';
 
 const useStyles = makeStyles(theme => ({
   transparencyBox: {
-    backgroundImage:
-      'linear-gradient(to right, rgba(255,255,255,1),rgba(255,255,255,.85), rgba(255,255,255,1))',
+    // backgroundImage:
+    //   'linear-gradient(to right, rgba(255,255,255,1),rgba(255,255,255,.85), rgba(255,255,255,1))',
     zIndex: '44 !important',
-    boxShadow: '0px 0px 10px 15px white',
+    // boxShadow: '0px 0px 10px 15px white',
     borderRadius: '25px'
   },
   ContentLine: {
@@ -32,14 +32,22 @@ const SubHeading = () => {
       container
       id="aadesktop"
       align="center"
-      xs={12}>
+      xs={12}
+      className="SubHeading">
       <Grid
         item
-        xs={7}
-        lg={7}
+        xs={11}
+        lg={11}
         align="center"
         className={classes.transparencyBox}>
-        <div class="cssanimation sequence fadeInBottom" id="topbarAnim">
+        <div
+          class="cssanimation sequence fadeInBottom"
+          id="topbarAnim"
+          style={{
+            boxShadow: 'rgba(255, 255, 255, 0.9) 0px 0px 18px 20px',
+            background: 'rgba(255, 255, 255, 0.9)',
+            maxWidth: '810px'
+          }}>
           <Grid item xs={12} align="center" lg={12}>
             <Typography class="SendMoneyTo" className={classes.Content}>
               Send money to
