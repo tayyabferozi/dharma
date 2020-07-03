@@ -1,37 +1,7 @@
-<<<<<<< HEAD
-=======
-@font-face {
-  font-family: 'Graphik Web Bold';
-  src: url('//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.eot');
-  src: url('//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.eot?#iefix')
-      format('embedded-opentype'),
-    url('//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.woff2')
-      format('woff2'),
-    url('//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.woff')
-      format('woff'),
-    url('//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.ttf')
-      format('truetype'),
-    url('//db.onlinewebfonts.com/t/03d44a9a83b9f8a39806dac12ec6d615.svg#Graphik Web Bold')
-      format('svg');
-}
-@font-face {
-  font-family: 'Graphik';
-  src: local('GraphikMedium'), url(./fonts/GraphikMedium.otf);
-}
-
-* {
-  font-family: 'Graphik' !important;
-}
-
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
 html,
 body {
   width: 100%;
   text-rendering: optimizeLegibility !important;
-<<<<<<< HEAD
-=======
-  font-family: 'Graphik web bold' !important;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   height: 100%;
   width: 100%;
   height: 100%;
@@ -39,7 +9,6 @@ body {
   line-height: 1 !important;
   padding: 0;
 }
-<<<<<<< HEAD
 @keyframes movecloudsx2 {
   0% {
     top: 2000px !important;
@@ -201,8 +170,6 @@ body {
     margin-left: 30px;
   }
 }
-=======
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
 
 .MuiTypography-body1 {
   text-rendering: optimizeLegibility !important;
@@ -253,12 +220,6 @@ div.scrollmenu a {
 
 body {
   color: rgb(255, 255, 255);
-<<<<<<< HEAD
-=======
-  font-family: 'Graphik', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-    'Segoe UI Symbol';
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
 }
 
 .bubblex2 {
@@ -289,27 +250,19 @@ body {
 }
 
 .bubblex5 {
-<<<<<<< HEAD
   width: 120px;
   height: 120px;
-=======
-  width: 90px;
-  height: 90px;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   border-radius: 200px;
   -moz-border-radius: 200px;
   -webkit-border-radius: 200px;
   position: absolute;
 }
-<<<<<<< HEAD
 #borderImg {
   top: 15px;
   left: 15px;
   width: 90px;
   height: 90px;
 }
-=======
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
 
 .bubblex6 {
   width: 90px;
@@ -330,13 +283,8 @@ body {
 }
 
 .bubblex8 {
-<<<<<<< HEAD
   width: 120px;
   height: 120px;
-=======
-  width: 90px;
-  height: 90px;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   border-radius: 200px;
   -moz-border-radius: 200px;
   -webkit-border-radius: 200px;
@@ -344,19 +292,12 @@ body {
 }
 
 .x2 {
-<<<<<<< HEAD
   top: 1000px;
-=======
-  top: 900px;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   left: 5%;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   transform: scale(0.8);
-<<<<<<< HEAD
   animation-delay: 0s;
-=======
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   opacity: 1;
   -webkit-animation: movecloudsx2 40s linear infinite,
     sideWaysx2 2s ease-in-out infinite alternate;
@@ -367,11 +308,7 @@ body {
 }
 
 .x3 {
-<<<<<<< HEAD
   top: 1100px;
-=======
-  top: 900px;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   left: 15%;
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
@@ -401,11 +338,7 @@ body {
 }
 
 .x5 {
-<<<<<<< HEAD
   top: 900px;
-=======
-  top: 980px;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   left: 50%;
   /* background: rgb(0, 91, 234);
   background: linear-gradient(
@@ -414,20 +347,12 @@ body {
     rgba(0, 198, 251, 1) 50%,
     rgba(68, 129, 235, 1) 100%
   ); */
-<<<<<<< HEAD
   background: linear-gradient(
-=======
-  /* background: linear-gradient(
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
     63.74deg,
     rgb(0, 84, 253) -16.64%,
     rgb(255, 25, 247) 90%,
     rgb(255, 46, 93) 120%
-<<<<<<< HEAD
   );
-=======
-  ); */
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   -webkit-transform: scale(0.8);
   -moz-transform: scale(0.8);
   transform: scale(0.8);
@@ -507,7 +432,6 @@ body {
   .x3 {
     left: 30% !important;
   }
-<<<<<<< HEAD
   .x5 {
     top: 880px;
   }
@@ -515,11 +439,6 @@ body {
   .x4 {
     left: 35% !important;
     top: 550px !important;
-=======
-
-  .x4 {
-    left: 35% !important;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   }
 
   .x6 {
@@ -529,7 +448,6 @@ body {
   .x7 {
     left: 50% !important;
   }
-<<<<<<< HEAD
   @keyframes movecloudsx2 {
     0% {
       top: 650px;
@@ -690,169 +608,6 @@ body {
     100% {
       margin-left: 30px;
     }
-=======
-}
-
-@keyframes movecloudsx2 {
-  0% {
-    top: 850px;
-  }
-
-  95%,
-  100% {
-    top: -200px;
-  }
-}
-
-@keyframes sideWaysx2 {
-  0% {
-    margin-left: -30px;
-  }
-
-  95%,
-  100% {
-    margin-left: 30px;
-  }
-}
-
-@keyframes movecloudsx3 {
-  0% {
-    top: 850px;
-  }
-
-  99%,
-  100% {
-    top: -200px;
-  }
-}
-
-@keyframes sideWaysx3 {
-  0% {
-    margin-left: -40px;
-  }
-
-  79%,
-  100% {
-    margin-left: 40px;
-  }
-}
-
-@keyframes movecloudsx4 {
-  0% {
-    top: 850px;
-  }
-
-  85%,
-  100% {
-    top: -250px;
-  }
-}
-
-@keyframes sideWaysx4 {
-  0% {
-    margin-left: -20px;
-  }
-
-  90%,
-  100% {
-    margin-left: 20px;
-  }
-}
-
-@keyframes movecloudsx5 {
-  0% {
-    top: 850px;
-  }
-
-  99%,
-  100% {
-    top: -200px;
-  }
-}
-
-@keyframes sideWaysx5 {
-  0% {
-    margin-left: -40px;
-  }
-
-  10% {
-  }
-
-  100% {
-    margin-left: 40px;
-  }
-}
-
-@keyframes movecloudsx6 {
-  0% {
-    top: 850px;
-  }
-
-  99%,
-  100% {
-    top: -200px;
-  }
-}
-
-@keyframes sideWaysx6 {
-  0% {
-    margin-left: -20px;
-  }
-
-  10% {
-  }
-
-  100% {
-    margin-left: 20px;
-  }
-}
-
-@keyframes movecloudsx7 {
-  0% {
-    top: 850px;
-  }
-
-  99%,
-  100% {
-    top: -100px;
-  }
-}
-
-@keyframes sideWaysx7 {
-  0% {
-    margin-left: -20px;
-  }
-
-  10% {
-  }
-
-  100% {
-    margin-left: 20px;
-  }
-}
-
-@keyframes movecloudsx8 {
-  0% {
-    top: 850px;
-  }
-
-  95%,
-  100% {
-    top: -200px;
-  }
-}
-
-@keyframes sideWaysx8 {
-  0% {
-    margin-left: -30px;
-  }
-
-  10% {
-  }
-
-  100% {
-    margin-left: 30px;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   }
 }
 
@@ -910,13 +665,8 @@ body {
   height: 60px;
   position: absolute;
   opacity: 1;
-<<<<<<< HEAD
   top: 30px;
   left: 30px;
-=======
-  top: 15px;
-  left: 15px;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   z-index: -2;
   animation: scaleIn 3s infinite cubic-bezier(0, 0, 0.09, 0.05);
 }
@@ -949,15 +699,11 @@ body {
   top: 10px;
   left: 10px;
 }
-<<<<<<< HEAD
 #borderTwitter {
   top: 70px !important;
   left: 70px !important;
   width: 50px;
 }
-=======
-
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
 .items img {
   position: absolute;
   /* z-index: 100; */
@@ -968,20 +714,12 @@ body {
 
 @keyframes scaleIn {
   from {
-<<<<<<< HEAD
     transform: scale(1.8, 1.8);
-=======
-    transform: scale(1.5, 1.5);
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
     opacity: 0;
   }
 
   to {
-<<<<<<< HEAD
     transform: scale(2.7, 2.7);
-=======
-    transform: scale(2, 2);
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
     opacity: 0.8;
   }
 }
@@ -1001,10 +739,6 @@ body {
 
 .SendMoneyTo {
   font-weight: 700;
-<<<<<<< HEAD
-=======
-  font-family: 'Graphik Web Bold' !important;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   color: rgb(31, 42, 75);
   font-size: 78px;
 }
@@ -1032,17 +766,9 @@ body {
   -webkit-background-clip: text;
   background-clip: text;
   font-weight: 700;
-<<<<<<< HEAD
   font-size: 75px;
   display: inline;
 }
-=======
-  font-family: 'Graphik Web Bold' !important;
-  font-size: 75px;
-  display: inline;
-}
-
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
 @media only screen and (max-width: 600px) {
   #CarouselDesktop,
   #CountDesktop,
@@ -1051,7 +777,6 @@ body {
   #aadesktop {
     display: none;
   }
-<<<<<<< HEAD
   #borderTwitter {
     top: 36px !important;
     left: 40px !important;
@@ -1092,8 +817,6 @@ body {
     z-index: -2;
     animation: scaleIn 5s infinite cubic-bezier(0, 0, 0.09, 0.05);
   }
-=======
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
 
   #CarouselMobile,
   #CountMobile,
@@ -1184,11 +907,7 @@ body {
   }
 
   .MainContainer {
-<<<<<<< HEAD
     margin-top: 6vh;
-=======
-    margin-top: 3vh;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   }
 
   .TopbarContainer {
@@ -1235,20 +954,11 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
     font-weight: 700;
     font-size: 78px;
     display: inline;
-<<<<<<< HEAD
     line-height: 63px !important;
-=======
-    font-family: 'Graphik Web Bold' !important;
-    line-height: 45px !important;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   }
 
   .EarnInterest {
     color: rgb(31, 42, 75);
-<<<<<<< HEAD
-=======
-    font-family: 'Graphik Web Bold' !important;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
     font-weight: 700;
     display: inline;
     font-size: 78px !important;
@@ -1258,10 +968,6 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
     font-weight: 700;
     color: rgb(31, 42, 75);
     font-size: 78px !important;
-<<<<<<< HEAD
-=======
-    font-family: 'Graphik Web Bold' !important;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
     display: inline;
   }
 
@@ -1294,10 +1000,6 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
     color: transparent;
     -webkit-background-clip: text;
     background-clip: text;
-<<<<<<< HEAD
-=======
-    font-family: 'Graphik Web Bold' !important;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
     font-weight: 700;
     font-size: 78px !important;
     display: inline;
@@ -1448,7 +1150,6 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
 @media screen and (max-width: 600px) {
   .SendMoneyTo,
   .anyone,
-<<<<<<< HEAD
   .From,
   .EarnInterest,
   .anywhere {
@@ -1465,24 +1166,6 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
 
   .anywhere {
     line-height: 42px !important;
-=======
-  .EarnInterest,
-  .From,
-  .anywhere {
-    font-size: 40px !important;
-  }
-
-  .from {
-    line-height: 146px !important;
-  }
-
-  .SendMoneyTo {
-    line-height: 35px !important;
-  }
-
-  .anywhere {
-    line-height: 20px !important;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   }
 }
 
@@ -1492,14 +1175,10 @@ background: linear-gradient(90deg, rgba(0,91,234,1) 0%, rgba(0,198,251,1) 50%, r
   width: 100%;
   z-index: 2;
 }
-<<<<<<< HEAD
 .Slider.SeekAttention {
   min-width: 34.8px;
   border-radius: 4px;
 }
-=======
-
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
 .cssanimation,
 .cssanimation {
   animation-duration: 1.5s;
@@ -1682,12 +1361,9 @@ p.SendMoneyTo {
     width: 2.5rem;
     height: 2.5rem;
   }
-<<<<<<< HEAD
   .horizontalLine {
     width: 200% !important;
   }
-=======
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
 
   @keyframes slidingAnim {
     0% {
@@ -1706,11 +1382,7 @@ p.SendMoneyTo {
 
 @media screen and (max-width: 576px) {
   .SendMoneyTo {
-<<<<<<< HEAD
     font-size: 35px !important;
-=======
-    font-size: 40px !important;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   }
   #ButtonMobile {
     /* flex-direction: column;
@@ -1723,12 +1395,7 @@ p.SendMoneyTo {
     margin-top: 1rem;
     margin-left: -1rem;
     padding-right: 1rem;
-<<<<<<< HEAD
     padding-left: 2rem;
-=======
-    padding-left: 1rem;
-    position: absolute;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
     z-index: 500;
     background-color: #fff;
   }
@@ -1750,7 +1417,6 @@ p.SendMoneyTo {
   .bubblex7,
   .bubblex8,
   .items img {
-<<<<<<< HEAD
     width: 60px !important;
     height: 60px !important;
   }
@@ -1764,23 +1430,13 @@ p.SendMoneyTo {
     width: 30px;
     top: 35px;
     left: 40px;
-=======
-    width: 70px !important;
-    height: 70px !important;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   }
   .twitters img {
     position: absolute;
     z-index: 100;
-<<<<<<< HEAD
     width: 30px;
     top: 50px;
     left: 50px;
-=======
-    width: 40px;
-    top: 55px;
-    left: 55px;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   }
 }
 
@@ -1792,10 +1448,6 @@ p.SendMoneyTo {
 
 .pullee {
   width: 13rem;
-<<<<<<< HEAD
-=======
-  background-color: transparent;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
@@ -1942,21 +1594,13 @@ p.SendMoneyTo {
 .CountMobileContainer .Earning {
   position: absolute;
   left: 50%;
-<<<<<<< HEAD
   top: 54%;
-=======
-  top: 50%;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   transform: translate(-50%, -50%);
 }
 
 .CountMobileContainer .Countup {
   position: absolute;
-<<<<<<< HEAD
   top: 44%;
-=======
-  top: 70%;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   left: 50%;
   transform: translate(-50%, -70%);
   font-size: 2rem !important;
@@ -1975,11 +1619,7 @@ p.SendMoneyTo {
 } */
 
 .SubHeading * {
-<<<<<<< HEAD
   font-size: 72px !important;
-=======
-  font-size: 78px !important;
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
 }
 
 .SliderContainer {
@@ -1998,12 +1638,8 @@ p.SendMoneyTo {
   width: 1.8rem;
   height: 100%;
   cursor: pointer;
-<<<<<<< HEAD
   background-color: rgba(255, 255, 255, 1);
   border-radius: 3px;
-=======
-  background-color: rgba(255, 255, 255, 0.8);
->>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
 }
 .Slider.SeekAttention {
   animation: attention 1.5s ease 2s infinite;
