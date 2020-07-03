@@ -55,7 +55,7 @@ const SubHeading = () => {
         >
           <Grid item xs={12} align="center" lg={12}>
             <Typography class="SendMoneyTo" className={classes.Content}>
-              The faster way
+              The fastest way
             </Typography>
           </Grid>
           <Grid container xs={12} md={12} lg={12}>
@@ -67,7 +67,7 @@ const SubHeading = () => {
                 {"to "}
               </Typography>
               <Typography class="anyone" className={classes.ContentLine1}>
-                {"Pay, "}
+                {"pay. "}
               </Typography>
               <Typography
                 class="EarnInterest"
