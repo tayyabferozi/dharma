@@ -1,9 +1,21 @@
+<<<<<<< HEAD
+=======
+@font-face {
+  font-family: "GraphikBlack";
+  src: local("GraphicBlack"), url("../../fonts/GraphikBlack.otf");
+}
+
+>>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
 .Fees {
   margin: 12.5rem 0;
   position: relative;
 }
 
 .Fees .Backdrop {
+<<<<<<< HEAD
+=======
+  font-family: "GraphikBlack";
+>>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   position: absolute;
   top: 50%;
   left: 50%;

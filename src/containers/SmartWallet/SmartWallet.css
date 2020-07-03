@@ -13,11 +13,19 @@ h4,
 h5,
 h6 {
   color: #fff;
+<<<<<<< HEAD
+=======
+  font-family: "Graphik";
+>>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   font-weight: 600;
 }
 
 h2,
 h5 {
+<<<<<<< HEAD
+=======
+  font-family: "Graphik";
+>>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   font-weight: 600;
 }
 
@@ -33,6 +41,10 @@ h2 {
 }
 
 h3 {
+<<<<<<< HEAD
+=======
+  font-family: "Graphik";
+>>>>>>> 5302928999a7f4344cf49583113bd858dfc765ed
   font-weight: 600;
 }
 
